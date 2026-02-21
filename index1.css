@@ -1,0 +1,768 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(ai-generated-7628305_1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 600px;
+    z-index: 9000;
+    
+    
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    background-color: transparent  ;
+    background-color: #000000; /* Warna background gelap */
+    color: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9000;
+    box-shadow: 0 7px 15px 0 rgb(255, 255, 255);
+   
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+/* Styling Menu Links (Desktop) */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
+    
+}
+
+.nav-links li a:hover {
+    color: #979393; /* Warna saat kursor di atas menu */
+}
+
+/* Styling Hamburger Icon (Hidden di Desktop) */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+
+
+h2{
+    margin: 20px 20px 20px 20px;
+    padding-top: 100px;
+    font-size: 100px;
+    float: left;
+    color: white;
+
+}
+
+
+
+
+section {
+    height: 620px; /* Setiap section setinggi layar */
+    padding: 20px;
+}
+#Home { background-color:rgb(37, 37, 37); }
+
+#about { background-color:rgb(37, 37, 37); }
+#profil{
+    background-color: rgb(37, 37, 37);
+
+}
+#galery { background-color:rgb(37, 37, 37); }
+#kontak{ background-color:rgb(37, 37, 37);}
+
+
+
+mark{
+    
+    cursor: pointer;
+}
+
+abbr{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+
+
+
+
+
+.akhir1{
+    background-color: rgb(0, 0, 0);
+    box-shadow: 7px 7px 30px 7px rgb(255, 255, 255);
+width: 100%;
+height: 400px;
+margin-top:50px;
+
+
+}
+
+.penutup{
+    color:white;
+   font-size: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+   padding-top: 150px;
+   margin-left: 20px;
+  
+}
+
+
+.tgl {
+    color: white;
+    font-size: 18px;
+    padding-top: 15px;
+    margin-left: 20px;
+    
+    
+}
+
+.logoo{
+    color: white;
+    margin: 80px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+  
+}
+
+
+
+small{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body { font-family: sans-serif; margin: 0; }
+
+.loader {
+  width:215px;
+  height: 215px;
+  display: block;
+  padding-left: 21px;
+  margin-left: -30px;
+  position: relative;
+  background: #000000;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 30px  rgb(255, 255, 255);
+  border-radius: 0px 50px 50px 0px;
+}
+
+
+
+  
+.loader{
+    float:left ;
+    margin-right:30px;
+    margin-bottom: 25px;
+}
+
+
+
+.bagportfolio,small{
+    color: white;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+}
+
+
+
+
+
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin: 30px;
+}
+
+input{
+    width: 80%;
+    height:10px;
+    background-color: white;
+}
+
+.name{
+    margin:2px 2px 2px 10px;
+   margin-top: -10px;
+}
+
+
+
+
+
+
+.loader1 {
+  width:215px;
+  height: 215px;
+  display: block;
+  padding-left: 21px;
+  margin-left: 50px;
+  position: relative;
+  background: rgb(0, 0, 0);
+  box-sizing: border-box;
+  box-shadow: 7px 7px 50px  rgb(255, 255, 255);
+  border-radius: 50px 0px 0px 50px;
+}
+
+
+
+  
+.loader1{
+    margin-bottom: 25px;
+}
+
+
+.bagian2{
+    color: white;
+    margin-left: 175px;
+}
+
+
+
+
+.spinner {
+  width: 70px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid rgb(0, 0, 0);
+  border-right-color: rgb(255, 255, 255);
+  animation: l2  3s infinite linear;
+}
+
+.spinnerr {
+  width: 70px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid rgb(0, 0, 0);
+  border-right-color: rgb(255, 255, 255);
+  animation: l2 4s infinite linear;
+}
+
+.spinnerrr {
+  width: 70px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid rgb(0, 0, 0);
+  border-right-color: rgb(255, 255, 255);
+  animation: l2 5s infinite linear;
+}
+
+.spinner,.spinnerr,.spinnerrr{
+    margin-top: 15px;
+}
+@keyframes l2 {to{transform: rotate(1turn)}}
+
+
+
+.isian{
+    width: 140px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 10px;
+}
+
+.isiann{
+    width: 100px;
+    background-color: rgb(0, 183, 255);
+    height:3px;
+}
+
+.hobi{
+    color: white;
+    margin-left: 100px;
+}
+
+
+.penjelasanhobi{
+    color: white;
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 760px) {
+    body {
+        font-size: 18px;
+        background-color: rgb(0, 0, 0);
+
+    }
+
+   
+}
+
+@media screen and (min-width: 1240px) {
+  html{
+    scroll-behavior: smooth;
+  }
+  
+    body{
+    background-image: url(ai-generated-7628305_1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1000;
+    
+    
+}
+
+   
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    background-color: transparent  ;
+    background-color: #000000; /* Warna background gelap */
+    color: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    position: fixed;
+    z-index: 9000px;
+    width: 100%;
+    box-shadow: 0 7px 15px 0 rgb(255, 255, 255);
+   
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+/* Styling Menu Links (Desktop) */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
+    
+}
+
+.nav-links li a:hover {
+    color: #979393; /* Warna saat kursor di atas menu */
+}
+
+/* Styling Hamburger Icon (Hidden di Desktop) */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 80px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 50px;
+    font-size: 60px;
+    
+}
+
+
+.judulporto{
+    font-size: 50px;
+}
+
+[data-aos=fade-right].loader{
+ animation-delay: 4s;
+}
+
+
+
+
+
+
+section {
+    height: 620px; /* Setiap section setinggi layar */
+    padding: 20px;
+        
+}
+#Home { background-color:rgb(37, 37, 37); 
+padding-top: 20px;}
+#about { background-color:rgb(37, 37, 37); 
+padding-top: 20px;}
+#profil{  background-color: rgb(37, 37, 37);
+padding-top: 50px;
+}
+#kontak{ background-color:rgb(37, 37, 37);
+padding-top: 50px;}
+
+
+
+
+mark{
+    
+    cursor: pointer;
+}
+
+abbr{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+
+
+
+
+
+.akhir1{
+    background-color: rgb(0, 0, 0);
+    box-shadow: 7px 7px 30px 7px rgb(255, 255, 255);
+width: 100%;
+height: 400px;
+margin-top:50px;
+
+
+}
+
+.penutup{
+    color:white;
+   font-size: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+   padding-top: 150px;
+   margin-left: 20px;
+  
+}
+
+
+.tgl {
+    color: white;
+    font-size: 18px;
+    padding-top: 15px;
+    margin-left: 20px;
+    
+    
+}
+
+.logoo{
+    color: white;
+    margin: 80px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+  
+}
+
+
+
+small{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body { font-family: sans-serif; margin: 0; }
+
+.loader {
+  width:415px;
+  height: 410px;
+  display: block;
+  padding-left: 21px;
+  margin-left: -30px;
+  position: relative;
+  background: #000000;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 30px  rgb(255, 255, 255);
+  border-radius: 0px 50px 50px 0px;
+}
+
+
+
+  
+.loader{
+    float:left ;
+    margin-right:30px;
+    margin-bottom: 25px;
+}
+
+
+
+.bagportfolio,small{
+    color: white;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+}
+
+
+
+
+
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin: 30px;
+}
+
+input{
+    width: 80%;
+    height:12px;
+    background-color: white;
+}
+
+.name{
+    margin:2px 2px 2px 10px;
+   margin-top: -10px;
+}
+
+
+
+
+
+
+.loader1 {
+  width:215px;
+  height: 215px;
+  padding-left: 21px;
+  margin-left: 1020px;
+  position: relative;
+  background: rgb(0, 0, 0);
+  box-sizing: border-box;
+  box-shadow: 7px 7px 50px  rgb(255, 255, 255);
+  border-radius: 50px 0px 0px 50px;
+}
+
+
+
+  
+.loader1{
+    margin-bottom: 25px;
+}
+
+.penjelasanhobi,small{
+    padding-top: 20px;
+}
+
+
+.bagian2{
+    color: white;
+    margin-left: 1100px;
+}
+
+
+
+.spinner {
+  width: 80px;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  border: 8px solid rgb(0, 0, 0);
+  border-right-color: rgb(255, 255, 255);
+  animation: l2  3s infinite linear;
+}
+
+.spinnerr {
+  width: 80px;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  border: 8px solid rgb(0, 0, 0);
+  border-right-color: rgb(255, 255, 255);
+  animation: l2 4s infinite linear;
+}
+
+.spinnerrr {
+  width: 80px;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  border: 8px solid rgb(0, 0, 0);
+  border-right-color: rgb(255, 255, 255);
+  animation: l2 5s infinite linear;
+}
+
+.spinner,.spinnerr,.spinnerrr{
+    margin-top: 15px;
+}
+@keyframes l2 {to{transform: rotate(1turn)}}
+
+
+
+.isian{
+    width: 140px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 10px;
+}
+
+.isiann{
+    width: 100px;
+    background-color: rgb(0, 183, 255);
+    height:3px;
+}
+
+.hobi{
+    color: white;
+    margin-left: 100px;
+}
+
+
+.penjelasanhobi{
+    color: white;
+    text-align: right;
+   padding-left: 10px;
+
+
+}
+}
+
+
+
+
+
+
+
+
+
+
+/* --- MEDIA QUERY (TABLET & MOBILE) --- */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Tampilkan hamburger di layar kecil */
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0; /* Hilangkan tengah */
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg); /* Animasi X atas */
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg); /* Animasi X bawah */
+    }
+
+    /* Menu变成竖列 dan disembunyikan */
+    .nav-links {
+        position: absolute;
+        top: 100%; /* Di bawah navbar */
+        left: -100%; /* Semula di luar layar kiri */
+        flex-direction: column;
+        background-color: #000000;
+        width: 70%;
+        text-align: center;
+        transition: 0.3s;
+        padding: 20px 0;
+        height: 594px;
+        
+    }
+
+    .nav-links.active {
+        left: 0; /* Munculkan menu ke layar */
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+}

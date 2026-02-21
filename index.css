@@ -1,0 +1,845 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+}
+
+/* Styling Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    background-color: transparent  ;
+    background-color: #000000; /* Warna background gelap */
+    color: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 7px 15px 0 rgb(255, 255, 255);
+   
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+/* Styling Menu Links (Desktop) */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
+    
+}
+
+.nav-links li a:hover {
+    color: #979393; /* Warna saat kursor di atas menu */
+}
+
+/* Styling Hamburger Icon (Hidden di Desktop) */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+label,input{
+    display: block;
+    width: 80%;
+    padding:1px;
+    box-sizing: border-box;
+    font-size: 12px;
+    margin-left: 20px;
+    
+    
+    
+    
+}
+
+
+
+form{          /* bagian semua form/registrasi */
+    width: 200px;
+    height: 255px;
+    border: 2px solid ;
+    padding: 10px;
+    margin: auto;
+    border-radius: 30px ;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: transparent ;
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(10px);
+    transition: 1s;
+    padding-bottom: 100px;
+    
+}
+
+h3{
+    padding: 20px;
+    text-align: center;
+    font-size: 17px;
+}
+
+label{
+    margin-top: 15px;
+}
+
+button{
+    width: 50%;
+    margin-top: 30px;
+    margin-left:25%;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: white;
+    color: black;
+    border: none;
+    text-align: center;
+}
+
+
+button:hover{
+    background-color: rgb(90, 87, 87);
+    color: white;
+}
+
+
+
+
+form {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: all 0.5s ease;
+}
+
+form h2 {
+  color: white;
+  font-size: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+form::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    0deg, 
+    transparent, 
+    transparent 30%, 
+    rgba(255, 255, 255, 0.3)
+  );
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+form:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgb(255, 255, 255);
+  transition: 1s ease;
+}
+
+form:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%);
+}
+
+
+
+
+form{
+    margin-top: 130px;
+    margin-bottom: 120px;
+    text-align: justify;
+   
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 80px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+  font-weight: 900;
+    
+}
+
+
+h2{
+    margin: 20px 20px 20px 20px;
+    padding-top: 100px;
+    font-size: 100px;
+    float: left;
+    color: white;
+
+}
+
+.div1{
+    margin-top: -50px;
+}
+
+
+
+
+
+
+.main{
+    color: white;
+    margin: 20px;
+   
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section {
+    height: 650px; /* Setiap section setinggi layar */
+    padding: 20px;
+    
+    
+}
+#about { background-color:rgb(37, 37, 37); }
+#profil{ background-color: transparent ;
+    background-color: rgb(37, 37, 37);;
+
+}
+#kontak{ background-color:rgb(37, 37, 37); }
+
+
+
+mark{
+    
+    cursor: pointer;
+}
+
+abbr{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+
+
+
+
+
+.akhir1{
+    background-color: rgb(0, 0, 0);
+    box-shadow: 7px 7px 30px 7px rgb(255, 255, 255);
+width: 100%;
+height: 400px;
+margin-top:50px;
+
+
+}
+
+.penutup{
+    color:white;
+   font-size: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+   padding-top: 150px;
+   margin-left: 20px;
+  
+}
+
+
+.tgl {
+    color: white;
+    font-size: 18px;
+    padding-top: 15px;
+    margin-left: 20px;
+    
+    
+}
+
+.logoo{
+    color: white;
+    margin: 80px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+  
+}
+
+
+
+
+
+.HM{
+    font-size: 25px;
+}
+
+
+
+
+.loader {
+  width:  215px  ;
+  height: 215px;
+  display: block;
+  padding-left: 21px;
+  margin-left: -30px;
+  position: relative;
+  background: #111;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 30px  rgb(255, 255, 255);
+  border-radius: 0px 50px 50px 0px; 
+}
+
+.loader{
+    float:left ;
+    margin-right:30px;
+    margin-bottom: 25px;
+}
+
+
+
+.bagportfolio,small{
+    color: white;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 760px) {
+    body {
+        font-size: 18px;
+        background-color: rgb(0, 0, 0);
+
+    }
+
+   
+}
+
+@media screen and (min-width: 1440px) {
+   body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+}
+
+/* Styling Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    background-color: transparent  ;
+    background-color: #000000; /* Warna background gelap */
+    color: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 7px 15px 0 rgb(255, 255, 255);
+   
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+/* Styling Menu Links (Desktop) */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
+    
+}
+
+.nav-links li a:hover {
+    color: #979393; /* Warna saat kursor di atas menu */
+}
+
+/* Styling Hamburger Icon (Hidden di Desktop) */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+label,input{
+    display: block;
+    width: 80%;
+    padding:1px;
+    box-sizing: border-box;
+    font-size: 12px;
+    margin-left: 20px;
+    
+    
+    
+    
+}
+
+
+
+form{          /* bagian semua form/registrasi */
+    width: 200px;
+    height: 255px;
+    border: 2px solid ;
+    padding: 10px;
+    margin: auto;
+    border-radius: 30px ;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: transparent ;
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(10px);
+    transition: 1s;
+    padding-bottom: 100px;
+    
+}
+
+h3{
+    padding: 20px;
+    text-align: center;
+    font-size: 17px;
+}
+
+label{
+    margin-top: 15px;
+}
+
+button{
+    width: 50%;
+    margin-top: 30px;
+    margin-left:25%;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: white;
+    color: black;
+    border: none;
+    text-align: center;
+}
+
+
+button:hover{
+    background-color: rgb(90, 87, 87);
+    color: white;
+}
+
+
+
+
+form {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: all 0.5s ease;
+}
+
+form h2 {
+  color: white;
+  font-size: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+form::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    0deg, 
+    transparent, 
+    transparent 30%, 
+    rgba(255, 255, 255, 0.3)
+  );
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+form:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgb(255, 255, 255);
+  transition: 1s ease;
+}
+
+form:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%);
+}
+
+
+
+
+form{
+    margin-top: 130px;
+    margin-bottom: 120px;
+    text-align: justify;
+   
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 80px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+  font-weight: 900;
+    
+}
+
+
+h2{
+    margin: 20px 20px 20px 20px;
+    padding-top: 100px;
+    font-size: 100px;
+    float: left;
+    color: white;
+
+}
+
+.div1{
+    margin-top: -50px;
+}
+
+
+
+
+
+
+.main{
+    color: white;
+    margin: 20px;
+   
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section {
+    height: 650px; /* Setiap section setinggi layar */
+    padding: 20px;
+    
+    
+}
+#about { background-color:rgb(37, 37, 37); }
+#profil{ background-color: transparent ;
+    background-color: rgb(37, 37, 37);;
+
+}
+#kontak{ background-color:rgb(37, 37, 37); }
+
+
+
+mark{
+    
+    cursor: pointer;
+}
+
+abbr{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+
+
+
+
+
+.akhir1{
+    background-color: rgb(0, 0, 0);
+    box-shadow: 7px 7px 30px 7px rgb(255, 255, 255);
+width: 100%;
+height: 400px;
+margin-top:50px;
+
+
+}
+
+.penutup{
+    color:white;
+   font-size: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+   padding-top: 150px;
+   margin-left: 20px;
+  
+}
+
+
+.tgl {
+    color: white;
+    font-size: 18px;
+    padding-top: 15px;
+    margin-left: 20px;
+    
+    
+}
+
+.logoo{
+    color: white;
+    margin: 80px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+  
+}
+
+
+
+
+
+.HM{
+    font-size: 25px;
+}
+
+
+
+
+.loader {
+  width:  215px  ;
+  height: 215px;
+  display: block;
+  padding-left: 21px;
+  margin-left: -30px;
+  position: relative;
+  background: #111;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 30px  rgb(255, 255, 255);
+  border-radius: 0px 50px 50px 0px; 
+}
+
+.loader{
+    float:left ;
+    margin-right:30px;
+    margin-bottom: 25px;
+}
+
+
+
+.bagportfolio,small{
+    color: white;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+}
+
+
+
+    
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- MEDIA QUERY (TABLET & MOBILE) --- */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Tampilkan hamburger di layar kecil */
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0; /* Hilangkan tengah */
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg); /* Animasi X atas */
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg); /* Animasi X bawah */
+    }
+
+    /* Menu变成竖列 dan disembunyikan */
+    .nav-links {
+        position: absolute;
+        top: 100%; /* Di bawah navbar */
+        left: -100%; /* Semula di luar layar kiri */
+        flex-direction: column;
+        background-color: #000000;
+        width: 50%;
+        text-align: center;
+        transition: 0.3s;
+        padding: 20px 0;
+        height: 594px;
+        
+    }
+
+    .nav-links.active {
+        left: 0; /* Munculkan menu ke layar */
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+}
