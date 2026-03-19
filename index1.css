@@ -1,19 +1,37 @@
 /* Reset dasar */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+ 
+
+@media (max-width: 480px) {
+html{
+    scroll-behavior: smooth;
+      overflow-x: hidden;
+    scrollbar-width: thin; /* Membuat scrollbar menjadi tipis */
+    scrollbar-color: #ffffff #ffffff; /* Warna thumb dan track */
+
+}
+
+
 
 body{
-    background-image: url(ai-generated-7628305_1920.jpg);
+    background-image: url(fotosatuan1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 600px;
     z-index: 9000;
-    
-    
+}
+
+
+video{
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
 }
 
 
@@ -24,7 +42,7 @@ body{
     align-items: center;
     backdrop-filter: blur(10px);
     background-color: transparent  ;
-    background-color: #000000; /* Warna background gelap */
+    background-color: darkorange; /* Warna background gelap */
     color: white;
     padding: 1rem 2rem;
     position: sticky;
@@ -32,7 +50,7 @@ body{
     width: 100%;
     top: 0;
     z-index: 9000;
-    box-shadow: 0 7px 15px 0 rgb(255, 255, 255);
+    box-shadow: 0 7px 5px 0 rgb(63, 63, 63);
    
 }
 
@@ -101,21 +119,40 @@ h2{
 }
 
 
+.HM{
+    font-size: 40px;    
+}
+
+.judulporto{
+    font-size: 50px;
+    text-decoration: 2px underline  darkorange;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
 
 
 section {
     height: 620px; /* Setiap section setinggi layar */
+    width: 100%;
     padding: 20px;
 }
-#Home { background-color:rgb(37, 37, 37); }
-
-#about { background-color:rgb(37, 37, 37); }
-#profil{
-    background-color: rgb(37, 37, 37);
-
+#Home { background-color:rgb(0, 0, 0); 
+width: 100%;
 }
-#galery { background-color:rgb(37, 37, 37); }
-#kontak{ background-color:rgb(37, 37, 37);}
+
+#about { background-color:rgb(0, 0, 0); 
+width: 100%;
+}
+#profil{background-color: rgb(0, 0, 0);
+width: 100%;
+}
+#galery { background-color:rgb(0, 0, 0); 
+width: 100%;
+}
+#kontak{ background-color:rgb(0, 0, 0);
+width: 100%;
+}
 
 
 
@@ -130,54 +167,6 @@ abbr{
    
 }
 
-
-
-
-
-
-.akhir1{
-    background-color: rgb(0, 0, 0);
-    box-shadow: 7px 7px 30px 7px rgb(255, 255, 255);
-width: 100%;
-height: 400px;
-margin-top:50px;
-
-
-}
-
-.penutup{
-    color:white;
-   font-size: 20px;
-   font-family: Arial, Helvetica, sans-serif;
-   padding-top: 150px;
-   margin-left: 20px;
-  
-}
-
-
-.tgl {
-    color: white;
-    font-size: 18px;
-    padding-top: 15px;
-    margin-left: 20px;
-    
-    
-}
-
-.logoo{
-    color: white;
-    margin: 80px auto;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    text-align: center;
-  
-}
-
-
-
-small{
-    font-family: Arial, Helvetica, sans-serif;
-}
 
 
 
@@ -201,10 +190,10 @@ body { font-family: sans-serif; margin: 0; }
   padding-left: 21px;
   margin-left: -30px;
   position: relative;
-  background: #000000;
+  background: #ffffff;
   box-sizing: border-box;
-  box-shadow: 7px 7px 30px  rgb(255, 255, 255);
-  border-radius: 0px 50px 50px 0px;
+  box-shadow: 7px 7px 30px darkorange;
+  border-radius: 50px 50px 50px 0px;
 }
 
 
@@ -252,32 +241,6 @@ input{
 
 
 
-.loader1 {
-  width:215px;
-  height: 215px;
-  display: block;
-  padding-left: 21px;
-  margin-left: 50px;
-  position: relative;
-  background: rgb(0, 0, 0);
-  box-sizing: border-box;
-  box-shadow: 7px 7px 50px  rgb(255, 255, 255);
-  border-radius: 50px 0px 0px 50px;
-}
-
-
-
-  
-.loader1{
-    margin-bottom: 25px;
-}
-
-
-.bagian2{
-    color: white;
-    margin-left: 175px;
-}
-
 
 
 
@@ -285,8 +248,8 @@ input{
   width: 70px;
   aspect-ratio: 1;
   border-radius: 50%;
-  border: 8px solid rgb(0, 0, 0);
-  border-right-color: rgb(255, 255, 255);
+  border: 8px solid rgb(255, 255, 255);
+  border-right-color: darkorange;
   animation: l2  3s infinite linear;
 }
 
@@ -294,8 +257,8 @@ input{
   width: 70px;
   aspect-ratio: 1;
   border-radius: 50%;
-  border: 8px solid rgb(0, 0, 0);
-  border-right-color: rgb(255, 255, 255);
+  border: 8px solid rgb(255, 255, 255);
+  border-right-color:darkorange;
   animation: l2 4s infinite linear;
 }
 
@@ -303,8 +266,8 @@ input{
   width: 70px;
   aspect-ratio: 1;
   border-radius: 50%;
-  border: 8px solid rgb(0, 0, 0);
-  border-right-color: rgb(255, 255, 255);
+  border: 8px solid rgb(255, 255, 255);
+  border-right-color: darkorange;
   animation: l2 5s infinite linear;
 }
 
@@ -322,9 +285,13 @@ input{
     margin-left: 10px;
 }
 
+
+
+
+
 .isiann{
     width: 100px;
-    background-color: rgb(0, 183, 255);
+    background-color: darkorange;
     height:3px;
 }
 
@@ -335,67 +302,190 @@ input{
 
 
 .penjelasanhobi{
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: right;
     padding-top: 20px;
     padding-right: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width: 760px) {
-    body {
-        font-size: 18px;
-        background-color: rgb(0, 0, 0);
-
-    }
-
-   
+.small1{
+    color: rgb(0, 0, 0);
+    font-weight: 100;
 }
 
-@media screen and (min-width: 1240px) {
-  html{
-    scroll-behavior: smooth;
-  }
+
+
+#galerya{
+    background-color: #000000;
+}
+
+.loader10 {
+  width:215px;
+  height: 215px;
+  display: block;
+  padding-left: 21px;
+  margin-left: -30px;
+  position: relative;
+  background: #ffffff;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 30px darkorange;
+  border-radius: 5px 50px 50px 50px;
+}
+
+
+
   
-    body{
-    background-image: url(ai-generated-7628305_1920.jpg);
+.loader10{
+    float:left ;
+    margin-right:30px;
+    margin-bottom: 25px;
+}
+
+
+.loader100 {
+  width:215px;
+  height: 215px;
+  display: block;
+  padding-left: 21px;
+  margin-left: 58px;
+  position: relative;
+  background: #ffffff;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 30px darkorange;
+  border-radius: 50px 5px 50px 50px;
+  
+}
+
+
+
+  
+.loader100{
+    float:left ;
+    margin-right:30px;
+    margin-bottom: 25px;
+}
+
+
+
+
+.bagian11{
+    padding-left: 130px;
+}
+
+
+
+
+.pengalaman{
+    margin-left: 15px;
+}
+
+
+
+
+
+.akhir1{
+    background-color: rgb(0, 0, 0);
+    box-shadow: 7px 7px 30px 7px rgb(255, 255, 255);
+width: 100%;
+height: 400px;
+margin: auto;
+margin-top: 30px;
+font-family: 'Courier New', Courier, monospace;
+
+}
+
+.penutup{
+    color:white;
+   font-size: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+   padding-top: 100px;
+   margin-left: 20px;
+
+}
+
+
+.tgl {
+    color: white;
+    font-size: 18px;
+    padding-top: 10px;
+    margin-left: 20px;
+    
+    
+    
+}
+
+.logoo{
+    color: white;
+    margin: 80px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+     margin-top: 130px;
+}
+
+
+.marvel{
+    color: white;
+}
+
+
+
+
+
+.puisi{
+    color: white;
+    text-align: left ;
+    margin-top: 50px;
+    font-size: 15px;
+}
+
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+html{
+    scroll-behavior: smooth;
+      overflow-x: hidden;
+    scrollbar-width: thin; /* Membuat scrollbar menjadi tipis */
+    scrollbar-color: #ffffff #ffffff; /* Warna thumb dan track */
+
+}
+
+
+
+body{
+    background-image: url(fotosatuan1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    z-index: 1000;
-    
-    
+    background-attachment: fixed;
+    height: 600px;
+    z-index: 9000;
 }
 
-   
+
+video{
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+}
+
+
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     backdrop-filter: blur(10px);
     background-color: transparent  ;
-    background-color: #000000; /* Warna background gelap */
+    background-color: darkorange; /* Warna background gelap */
     color: white;
     padding: 1rem 2rem;
     position: sticky;
-    top: 0;
     position: fixed;
-    z-index: 9000px;
     width: 100%;
-    box-shadow: 0 7px 15px 0 rgb(255, 255, 255);
+    top: 0;
+    z-index: 9000;
+    box-shadow: 0 7px 5px 0 rgb(63, 63, 63);
    
 }
 
@@ -444,49 +534,60 @@ input{
 
 
 
-
-
-
-
 h1{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     margin-top: 80px;
-    color: rgb(255, 255, 255);
     margin-bottom: 50px;
-    font-size: 60px;
-    
+    color: rgb(255, 255, 255);
+    font-size: 25px;
 }
 
+
+h2{
+    margin: 20px 20px 20px 20px;
+    padding-top: 100px;
+    font-size: 100px;
+    float: left;
+    color: white;
+
+}
+
+
+.HM{
+    font-size: 40px;    
+}
 
 .judulporto{
     font-size: 50px;
+    text-decoration: 2px underline  darkorange;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-[data-aos=fade-right].loader{
- animation-delay: 4s;
-}
-
-
 
 
 
 
 section {
     height: 620px; /* Setiap section setinggi layar */
+    width: 100%;
     padding: 20px;
-        
 }
-#Home { background-color:rgb(37, 37, 37); 
-padding-top: 20px;}
-#about { background-color:rgb(37, 37, 37); 
-padding-top: 20px;}
-#profil{  background-color: rgb(37, 37, 37);
-padding-top: 50px;
+#Home { background-color:rgb(0, 0, 0); 
+width: 100%;
 }
-#kontak{ background-color:rgb(37, 37, 37);
-padding-top: 50px;}
 
+#about { background-color:rgb(0, 0, 0); 
+width: 100%;
+}
+#profil{background-color: rgb(0, 0, 0);
+width: 100%;
+}
+#galery { background-color:rgb(0, 0, 0); 
+width: 100%;
+}
+#kontak{ background-color:rgb(0, 0, 0);
+width: 100%;
+}
 
 
 
@@ -506,54 +607,6 @@ abbr{
 
 
 
-.akhir1{
-    background-color: rgb(0, 0, 0);
-    box-shadow: 7px 7px 30px 7px rgb(255, 255, 255);
-width: 100%;
-height: 400px;
-margin-top:50px;
-
-
-}
-
-.penutup{
-    color:white;
-   font-size: 20px;
-   font-family: Arial, Helvetica, sans-serif;
-   padding-top: 150px;
-   margin-left: 20px;
-  
-}
-
-
-.tgl {
-    color: white;
-    font-size: 18px;
-    padding-top: 15px;
-    margin-left: 20px;
-    
-    
-}
-
-.logoo{
-    color: white;
-    margin: 80px auto;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    text-align: center;
-  
-}
-
-
-
-small{
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-
-
-
-
 
 
 
@@ -566,16 +619,16 @@ small{
 body { font-family: sans-serif; margin: 0; }
 
 .loader {
-  width:415px;
-  height: 410px;
+  width:215px;
+  height: 215px;
   display: block;
   padding-left: 21px;
   margin-left: -30px;
   position: relative;
-  background: #000000;
+  background: #ffffff;
   box-sizing: border-box;
-  box-shadow: 7px 7px 30px  rgb(255, 255, 255);
-  border-radius: 0px 50px 50px 0px;
+  box-shadow: 7px 7px 30px darkorange;
+  border-radius: 50px 50px 50px 0px;
 }
 
 
@@ -593,7 +646,7 @@ body { font-family: sans-serif; margin: 0; }
     color: white;
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 
@@ -609,7 +662,7 @@ img{
 
 input{
     width: 80%;
-    height:12px;
+    height:10px;
     background-color: white;
 }
 
@@ -623,61 +676,33 @@ input{
 
 
 
-.loader1 {
-  width:215px;
-  height: 215px;
-  padding-left: 21px;
-  margin-left: 1020px;
-  position: relative;
-  background: rgb(0, 0, 0);
-  box-sizing: border-box;
-  box-shadow: 7px 7px 50px  rgb(255, 255, 255);
-  border-radius: 50px 0px 0px 50px;
-}
-
-
-
-  
-.loader1{
-    margin-bottom: 25px;
-}
-
-.penjelasanhobi,small{
-    padding-top: 20px;
-}
-
-
-.bagian2{
-    color: white;
-    margin-left: 1100px;
-}
 
 
 
 .spinner {
-  width: 80px;
+  width: 70px;
   aspect-ratio: 1;
-  border-radius: 100%;
-  border: 8px solid rgb(0, 0, 0);
-  border-right-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  border: 8px solid rgb(255, 255, 255);
+  border-right-color: darkorange;
   animation: l2  3s infinite linear;
 }
 
 .spinnerr {
-  width: 80px;
+  width: 70px;
   aspect-ratio: 1;
-  border-radius: 100%;
-  border: 8px solid rgb(0, 0, 0);
-  border-right-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  border: 8px solid rgb(255, 255, 255);
+  border-right-color:darkorange;
   animation: l2 4s infinite linear;
 }
 
 .spinnerrr {
-  width: 80px;
+  width: 70px;
   aspect-ratio: 1;
-  border-radius: 100%;
-  border: 8px solid rgb(0, 0, 0);
-  border-right-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  border: 8px solid rgb(255, 255, 255);
+  border-right-color: darkorange;
   animation: l2 5s infinite linear;
 }
 
@@ -695,9 +720,13 @@ input{
     margin-left: 10px;
 }
 
+
+
+
+
 .isiann{
     width: 100px;
-    background-color: rgb(0, 183, 255);
+    background-color: darkorange;
     height:3px;
 }
 
@@ -708,12 +737,308 @@ input{
 
 
 .penjelasanhobi{
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: right;
-   padding-left: 10px;
+    padding-top: 20px;
+    padding-right: 10px;
+}
+
+.small1{
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+}
+
+
+
+#galerya{
+    background-color: #000000;
+}
+
+.loader10 {
+  width:215px;
+  height: 215px;
+  display: block;
+  padding-left: 21px;
+  margin-left: -30px;
+  position: relative;
+  background: #ffffff;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 30px darkorange;
+  border-radius: 5px 50px 50px 50px;
+}
+
+
+
+  
+.loader10{
+    float:left ;
+    margin-right:30px;
+    margin-bottom: 25px;
+}
+
+
+.loader100 {
+  width:215px;
+  height: 215px;
+  display: block;
+  padding-left: 21px;
+  margin-left: 58px;
+  position: relative;
+  background: #ffffff;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 30px darkorange;
+  border-radius: 50px 5px 50px 50px;
+}
+
+
+
+  
+.loader100{
+    float:right ;
+    margin-right:30px;
+    margin-bottom: 25px;
+}
+
+
+
+
+.bagian11{
+    padding-left: 300px;
+}
+
+
+
+
+.pengalaman{
+    margin-left: 15px;
+}
+
+
+
+
+
+.akhir1{
+    background-color: rgb(0, 0, 0);
+    box-shadow: 7px 7px 30px 7px rgb(255, 255, 255);
+width: 100%;
+height: 400px;
+margin: auto;
+margin-top: 30px;
+font-family: 'Courier New', Courier, monospace;
+
+}
+
+.penutup{
+    color:white;
+   font-size: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+   padding-top: 100px;
+   margin-left: 20px;
+
+}
+
+
+.tgl {
+    color: white;
+    font-size: 18px;
+    padding-top: 10px;
+    margin-left: 20px;
+    
+    
+    
+}
+
+.logoo{
+    color: white;
+    margin: 80px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+     margin-top: 130px;
+}
+
+
+.marvel{
+    color: white;
+}
+
+
+
+
+
+.puisi{
+    color: white;
+    text-align: left ;
+    margin-top: 50px;
+    font-size: 15px;
+}
 
 
 }
+
+
+
+
+
+
+@media (min-width: 1201px) {
+html{
+    scroll-behavior: smooth;
+      overflow-x: hidden;
+    scrollbar-width: thin; /* Membuat scrollbar menjadi tipis */
+    scrollbar-color: #ffffff #ffffff; /* Warna thumb dan track */
+
+}
+
+
+
+body{
+    background-image: url(fotosatuan1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 600px;
+    z-index: 9000;
+}
+
+
+video{
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    background-color: transparent  ;
+    background-color: darkorange; /* Warna background gelap */
+    color: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9000;
+    box-shadow: 0 7px 5px 0 rgb(63, 63, 63);
+   
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+/* Styling Menu Links (Desktop) */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
+    
+}
+
+.nav-links li a:hover {
+    color: #979393; /* Warna saat kursor di atas menu */
+}
+
+/* Styling Hamburger Icon (Hidden di Desktop) */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+
+
+h2{
+    margin: 20px 20px 20px 20px;
+    padding-top: 100px;
+    font-size: 100px;
+    float: left;
+    color: white;
+
+}
+
+
+.HM{
+    font-size: 40px;    
+}
+
+.judulporto{
+    font-size: 50px;
+    text-decoration: 2px underline  darkorange;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+section {
+    height: 620px; /* Setiap section setinggi layar */
+    width: 100%;
+    padding: 20px;
+}
+#Home { background-color:rgb(0, 0, 0); 
+width: 100%;
+}
+
+#about { background-color:rgb(0, 0, 0); 
+width: 100%;
+}
+#profil{background-color: rgb(0, 0, 0);
+width: 100%;
+}
+#galery { background-color:rgb(0, 0, 0); 
+width: 100%;
+}
+#kontak{ background-color:rgb(0, 0, 0);
+width: 100%;
+}
+
+
+
+mark{
+    
+    cursor: pointer;
+}
+
+abbr{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+   
 }
 
 
@@ -725,7 +1050,280 @@ input{
 
 
 
-/* --- MEDIA QUERY (TABLET & MOBILE) --- */
+
+
+
+
+
+body { font-family: sans-serif; margin: 0; }
+
+.loader {
+  width:215px;
+  height: 215px;
+  display: block;
+  padding-left: 21px;
+  margin-left: -30px;
+  position: relative;
+  background: #ffffff;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 30px darkorange;
+  border-radius: 50px 50px 50px 0px;
+}
+
+
+
+  
+.loader{
+    float:left ;
+    margin-right:30px;
+    margin-bottom: 25px;
+}
+
+
+
+.bagportfolio,small{
+    color: white;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+}
+
+
+
+
+
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin: 30px;
+}
+
+input{
+    width: 80%;
+    height:10px;
+    background-color: white;
+}
+
+.name{
+    margin:2px 2px 2px 10px;
+   margin-top: -10px;
+}
+
+
+
+
+
+
+
+
+
+.spinner {
+  width: 70px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid rgb(255, 255, 255);
+  border-right-color: darkorange;
+  animation: l2  3s infinite linear;
+}
+
+.spinnerr {
+  width: 70px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid rgb(255, 255, 255);
+  border-right-color:darkorange;
+  animation: l2 4s infinite linear;
+}
+
+.spinnerrr {
+  width: 70px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid rgb(255, 255, 255);
+  border-right-color: darkorange;
+  animation: l2 5s infinite linear;
+}
+
+.spinner,.spinnerr,.spinnerrr{
+    margin-top: 15px;
+}
+@keyframes l2 {to{transform: rotate(1turn)}}
+
+
+
+.isian{
+    width: 140px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 10px;
+}
+
+
+
+
+
+.isiann{
+    width: 100px;
+    background-color: darkorange;
+    height:3px;
+}
+
+.hobi{
+    color: white;
+    margin-left: 100px;
+}
+
+
+.penjelasanhobi{
+    color: rgb(0, 0, 0);
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 10px;
+}
+
+.small1{
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+}
+
+
+
+#galerya{
+    background-color: #000000;
+}
+
+.loader10 {
+  width:215px;
+  height: 215px;
+  display: block;
+  padding-left: 21px;
+  margin-left: -30px;
+  position: relative;
+  background: #ffffff;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 30px darkorange;
+  border-radius: 5px 50px 50px 50px;
+}
+
+
+
+  
+.loader10{
+    float:left ;
+    margin-right:30px;
+    margin-bottom: 25px;
+}
+
+
+.loader100 {
+  width:215px;
+  height: 215px;
+  display: block;
+  padding-left: 21px;
+  margin-left: 58px;
+  position: relative;
+  background: #ffffff;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 30px darkorange;
+  border-radius: 50px 5px 50px 50px;
+}
+
+
+
+  
+.loader100{
+    float:right;
+    margin-right:30px;
+    margin-bottom: 25px;
+}
+
+
+
+
+.bagian11{
+    padding-left: 130px;
+}
+
+
+
+
+.pengalaman{
+    margin-left: 15px;
+}
+
+
+
+
+
+.akhir1{
+    background-color: rgb(0, 0, 0);
+    box-shadow: 7px 7px 30px 7px rgb(255, 255, 255);
+width: 100%;
+height: 400px;
+margin: auto;
+margin-top: 30px;
+font-family: 'Courier New', Courier, monospace;
+
+}
+
+.penutup{
+    color:white;
+   font-size: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+   padding-top: 100px;
+   margin-left: 20px;
+
+}
+
+
+.tgl {
+    color: white;
+    font-size: 18px;
+    padding-top: 10px;
+    margin-left: 20px;
+    
+    
+    
+}
+
+.logoo{
+    color: white;
+    margin: 80px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+     margin-top: 130px;
+}
+
+
+.marvel{
+    color: white;
+}
+
+
+
+
+
+.puisi{
+    color: white;
+    text-align: left ;
+    margin-top: 50px;
+    font-size: 15px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 768px) {
     .hamburger {
         display: block; /* Tampilkan hamburger di layar kecil */
@@ -749,13 +1347,14 @@ input{
         top: 100%; /* Di bawah navbar */
         left: -100%; /* Semula di luar layar kiri */
         flex-direction: column;
-        background-color: #000000;
-        width: 70%;
-        text-align: center;
+        background-color: #252525;
+        width: 75%;
+        text-align: 50px left;
         transition: 0.3s;
         padding: 20px 0;
-        height: 594px;
-        
+        height: 1000%;
+        border-right: 2px  solid rgb(39, 39, 39);
+        padding-left: 20px;
     }
 
     .nav-links.active {

@@ -5,10 +5,25 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+      overflow-x: auto;
+    scrollbar-width: thin; /* Membuat scrollbar menjadi tipis */
+    scrollbar-color: #ffffff #f1f1f1; /* Warna thumb dan track */
+}
+
+
+
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #000000;
+   background-image: url(fotosatuan1.jpg);
+   background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
 }
+
+
 
 /* Styling Navbar */
 .navbar {
@@ -17,7 +32,7 @@ body {
     align-items: center;
     backdrop-filter: blur(10px);
     background-color: transparent  ;
-    background-color: #000000; /* Warna background gelap */
+    background-color: darkorange;/* Warna background gelap */
     color: white;
     padding: 1rem 2rem;
     position: sticky;
@@ -88,7 +103,7 @@ label,input{
     padding:1px;
     box-sizing: border-box;
     font-size: 12px;
-    margin-left: 20px;
+    margin-left: 19px;
     
     
     
@@ -116,8 +131,12 @@ form{          /* bagian semua form/registrasi */
 
 h3{
     padding: 20px;
+    margin-top: -10px;
+    border-radius:0px 0px 30px 30px;
+    border: solid 1px rgb(255, 255, 255);
     text-align: center;
     font-size: 17px;
+    background-color: rgb(0, 0, 0);
 }
 
 label{
@@ -134,11 +153,14 @@ button{
     color: black;
     border: none;
     text-align: center;
+    line-height: 15px;
 }
 
 
 button:hover{
-    background-color: rgb(90, 87, 87);
+    width: 50%;
+    line-height: 15px;
+    background-color: rgb(0, 0, 0);
     color: white;
 }
 
@@ -273,7 +295,7 @@ h2{
 
 
 section {
-    height: 650px; /* Setiap section setinggi layar */
+    height: 600px; /* Setiap section setinggi layar */
     padding: 20px;
     
     
@@ -308,8 +330,9 @@ abbr{
     box-shadow: 7px 7px 30px 7px rgb(255, 255, 255);
 width: 100%;
 height: 400px;
-margin-top:50px;
-
+margin: auto;
+margin-top: 40px;
+font-family: 'Courier New', Courier, monospace;
 
 }
 
@@ -317,17 +340,18 @@ margin-top:50px;
     color:white;
    font-size: 20px;
    font-family: Arial, Helvetica, sans-serif;
-   padding-top: 150px;
+   padding-top: 100px;
    margin-left: 20px;
-  
+
 }
 
 
 .tgl {
     color: white;
     font-size: 18px;
-    padding-top: 15px;
+    padding-top: 10px;
     margin-left: 20px;
+    
     
     
 }
@@ -338,7 +362,7 @@ margin-top:50px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     text-align: center;
-  
+     margin-top: 50px;
 }
 
 
@@ -351,39 +375,9 @@ margin-top:50px;
 
 
 
-
-.loader {
-  width:  215px  ;
-  height: 215px;
-  display: block;
-  padding-left: 21px;
-  margin-left: -30px;
-  position: relative;
-  background: #111;
-  box-sizing: border-box;
-  box-shadow: 7px 7px 30px  rgb(255, 255, 255);
-  border-radius: 0px 50px 50px 0px; 
+p{
+    font-size: 20px;
 }
-
-.loader{
-    float:left ;
-    margin-right:30px;
-    margin-bottom: 25px;
-}
-
-
-
-.bagportfolio,small{
-    color: white;
-    text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 50px;
-}
-
-
-
-
-
 
 
 
@@ -398,14 +392,88 @@ margin-top:50px;
 
 
 @media screen and (min-width: 760px) {
-    body {
-        font-size: 18px;
-        background-color: rgb(0, 0, 0);
+    
+       * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+
+}
+
+/* Styling Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    background-color: transparent  ;
+    background-color: #000000; /* Warna background gelap */
+    color: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 7px 15px 0 rgb(255, 255, 255);
+   
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+/* Styling Menu Links (Desktop) */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
+    
+}
+
+.nav-links li a:hover {
+    color: #979393; /* Warna saat kursor di atas menu */
+}
+
+/* Styling Hamburger Icon (Hidden di Desktop) */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
 
     }
 
-   
-}
+
 
 @media screen and (min-width: 1440px) {
    body {
@@ -827,12 +895,13 @@ margin-top:50px;
         left: -100%; /* Semula di luar layar kiri */
         flex-direction: column;
         background-color: #000000;
-        width: 50%;
-        text-align: center;
+        width: 75%;
+        text-align: 50px left;
         transition: 0.3s;
         padding: 20px 0;
-        height: 594px;
-        
+        height: 1000%;
+        border-right: 2px  solid white;
+        padding-left: 20px;
     }
 
     .nav-links.active {

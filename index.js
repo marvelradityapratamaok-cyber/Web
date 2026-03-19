@@ -14,3 +14,9 @@ document.querySelectorAll(".nav-links li a").forEach(n => n.addEventListener("cl
 }));
 
 
+  function playAudio() {
+  var audio = document.getElementById();
+  audio.play(myAudio); // Memutar suara
+}
+
+
