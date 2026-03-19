@@ -5,9 +5,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+
  
 
 @media (max-width: 480px) {
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html{
     scroll-behavior: smooth;
       overflow-x: hidden;
@@ -20,11 +28,11 @@ html{
 
 body{
     background-image: url(fotosatuan1.jpg);
+    width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 600px;
-    z-index: 9000;
+    
 }
 
 
@@ -32,11 +40,13 @@ video{
     background-repeat: no-repeat;
     width: 100%;
     height: 200px;
+    overflow-x: hidden;
 }
 
 
 
 .navbar {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,11 +57,10 @@ video{
     padding: 1rem 2rem;
     position: sticky;
     position: fixed;
-    width: 100%;
     top: 0;
-    z-index: 9000;
+    z-index: 900;
     box-shadow: 0 7px 5px 0 rgb(63, 63, 63);
-   
+    position: fixed;
 }
 
 .logo {
@@ -66,7 +75,8 @@ video{
     display: flex;
     list-style: none;
     gap: 20px;
-    
+    overflow-x: hidden;
+
 }
 
 .nav-links li a {
@@ -136,22 +146,24 @@ section {
     height: 620px; /* Setiap section setinggi layar */
     width: 100%;
     padding: 20px;
+    overflow-x: hidden;
+   
 }
 #Home { background-color:rgb(0, 0, 0); 
-width: 100%;
+overflow-x: hidden;
 }
 
 #about { background-color:rgb(0, 0, 0); 
-width: 100%;
+overflow-x: hidden;
 }
 #profil{background-color: rgb(0, 0, 0);
-width: 100%;
+overflow-x: hidden;
 }
 #galery { background-color:rgb(0, 0, 0); 
-width: 100%;
+overflow-x: hidden;
 }
 #kontak{ background-color:rgb(0, 0, 0);
-width: 100%;
+overflow-x: hidden;
 }
 
 
@@ -181,7 +193,7 @@ abbr{
 
 
 
-body { font-family: sans-serif; margin: 0; }
+
 
 .loader {
   width:215px;
@@ -347,13 +359,12 @@ input{
   height: 215px;
   display: block;
   padding-left: 21px;
-  margin-left: 58px;
+  margin-left: 50px;
   position: relative;
   background: #ffffff;
   box-sizing: border-box;
   box-shadow: 7px 7px 30px darkorange;
   border-radius: 50px 5px 50px 50px;
-  
 }
 
 
@@ -437,12 +448,20 @@ font-family: 'Courier New', Courier, monospace;
     text-align: left ;
     margin-top: 50px;
     font-size: 15px;
+    padding: 0;
 }
 
 }
 
 
 @media (min-width: 481px) and (max-width: 768px) {
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html{
     scroll-behavior: smooth;
       overflow-x: hidden;
@@ -882,6 +901,13 @@ font-family: 'Courier New', Courier, monospace;
 
 
 @media (min-width: 1201px) {
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html{
     scroll-behavior: smooth;
       overflow-x: hidden;
@@ -906,6 +932,7 @@ video{
     background-repeat: no-repeat;
     width: 100%;
     height: 200px;
+    overflow-x: hidden;
 }
 
 
@@ -1355,6 +1382,7 @@ font-family: 'Courier New', Courier, monospace;
         height: 1000%;
         border-right: 2px  solid rgb(39, 39, 39);
         padding-left: 20px;
+        height: 9000%;
     }
 
     .nav-links.active {
