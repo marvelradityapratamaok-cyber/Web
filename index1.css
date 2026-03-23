@@ -146,24 +146,23 @@ section {
     height: 620px; /* Setiap section setinggi layar */
     width: 100%;
     padding: 20px;
-    overflow-x: hidden;
-   
+    overflow-y:hidden ;
 }
 #Home { background-color:rgb(0, 0, 0); 
-overflow-x: hidden;
+
 }
 
 #about { background-color:rgb(0, 0, 0); 
-overflow-x: hidden;
+
 }
 #profil{background-color: rgb(0, 0, 0);
-overflow-x: hidden;
+
 }
 #galery { background-color:rgb(0, 0, 0); 
-overflow-x: hidden;
+
 }
 #kontak{ background-color:rgb(0, 0, 0);
-overflow-x: hidden;
+
 }
 
 
@@ -224,6 +223,8 @@ abbr{
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 50px;
+    
+    
 }
 
 
@@ -329,6 +330,7 @@ input{
 
 #galerya{
     background-color: #000000;
+    
 }
 
 .loader10 {
@@ -351,6 +353,10 @@ input{
     float:left ;
     margin-right:30px;
     margin-bottom: 25px;
+}
+
+.name10{
+    margin-left:10px;
 }
 
 
@@ -388,6 +394,7 @@ input{
 
 .pengalaman{
     margin-left: 15px;
+    
 }
 
 
@@ -431,12 +438,13 @@ font-family: 'Courier New', Courier, monospace;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     text-align: center;
-     margin-top: 130px;
+     margin-top: 180px;
 }
 
 
 .marvel{
     color: white;
+    font-size: 20px;
 }
 
 
@@ -445,10 +453,15 @@ font-family: 'Courier New', Courier, monospace;
 
 .puisi{
     color: white;
-    text-align: left ;
+    text-align: center ;
     margin-top: 50px;
     font-size: 15px;
     padding: 0;
+}
+
+
+.lis{
+    list-style: none;
 }
 
 }
@@ -665,7 +678,9 @@ body { font-family: sans-serif; margin: 0; }
     color: white;
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 50px;
+    margin-top: 40px;
+    display: inline-block;
+    
 }
 
 
@@ -795,6 +810,10 @@ input{
     margin-bottom: 25px;
 }
 
+.name10{
+    margin-left: 10px;
+}
+
 
 .loader100 {
   width:215px;
@@ -842,7 +861,7 @@ input{
 width: 100%;
 height: 400px;
 margin: auto;
-margin-top: 30px;
+margin-top: 50px;
 font-family: 'Courier New', Courier, monospace;
 
 }
@@ -851,8 +870,9 @@ font-family: 'Courier New', Courier, monospace;
     color:white;
    font-size: 20px;
    font-family: Arial, Helvetica, sans-serif;
-   padding-top: 100px;
+   padding-top: 150px;
    margin-left: 20px;
+   padding-right: 20px;
 
 }
 
@@ -860,7 +880,7 @@ font-family: 'Courier New', Courier, monospace;
 .tgl {
     color: white;
     font-size: 18px;
-    padding-top: 10px;
+    padding-top: -100px;
     margin-left: 20px;
     
     
@@ -887,7 +907,7 @@ font-family: 'Courier New', Courier, monospace;
 
 .puisi{
     color: white;
-    text-align: left ;
+    text-align: center ;
     margin-top: 50px;
     font-size: 15px;
 }
@@ -897,7 +917,10 @@ font-family: 'Courier New', Courier, monospace;
 
 
 
-
+.lis{
+   
+    list-style: none;
+}
 
 
 @media (min-width: 1201px) {
@@ -1243,6 +1266,11 @@ input{
 }
 
 
+.name10{
+    margin-left: 10px;
+}
+
+
 .loader100 {
   width:215px;
   height: 215px;
@@ -1326,6 +1354,8 @@ font-family: 'Courier New', Courier, monospace;
 
 .marvel{
     color: white;
+    font-size: 30px;
+    text-align: center;
 }
 
 
@@ -1334,7 +1364,7 @@ font-family: 'Courier New', Courier, monospace;
 
 .puisi{
     color: white;
-    text-align: left ;
+    text-align: center ;
     margin-top: 50px;
     font-size: 15px;
 }
@@ -1342,6 +1372,9 @@ font-family: 'Courier New', Courier, monospace;
 
 }
 
+.lis{
+   list-style: none;
+}
 
 
 
@@ -1374,15 +1407,15 @@ font-family: 'Courier New', Courier, monospace;
         top: 100%; /* Di bawah navbar */
         left: -100%; /* Semula di luar layar kiri */
         flex-direction: column;
-        background-color: #252525;
+        background-color: #000000;
         width: 75%;
         text-align: 50px left;
         transition: 0.3s;
         padding: 20px 0;
         height: 1000%;
-        border-right: 2px  solid rgb(39, 39, 39);
+        border-right: 2px  solid white;
         padding-left: 20px;
-        height: 9000%;
+        height: 1200%;
     }
 
     .nav-links.active {
