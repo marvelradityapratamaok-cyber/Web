@@ -97,11 +97,14 @@ video{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center; 
     color: white;
+    margin-top: 375px;
+    overflow-x: hidden;
 }
 
 .layar1{
     background-color: rgb(43, 42, 42);
     margin-top: -55px;
+    overflow-x: hidden;
     
 }
 
@@ -112,18 +115,21 @@ video{
 
 .container {
     margin: 20px;
+    
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+    overflow-x: hidden;
 }
 
 .grida{
     display: grid;
     grid-template-columns: repeat(1, 4fr);
     gap: 30px;
+    
 }
 
 
@@ -245,6 +251,398 @@ font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
     text-align: center;
      margin-top: 180px;
+
+}
+
+
+.nikmatii{
+    font-size: 55px;
+    text-align: center;
+    color: white;
+    margin-top: -500px;
+    
+}
+
+
+
+
+
+
+
+.carousel{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    margin: 2em ;
+    display: flex;
+    gap: 3em;
+    scroll-behavior: smooth;
+    position: relative;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+
+.carousel::scroll-button(right), .carousel::scroll-button(left){
+content: '>';
+border: none;
+background-color: rgb(255, 255, 255);
+font-family: consolas;
+font-size: 3rem;
+color: rgb(0, 0, 0);
+height: 60px;
+width: 60px;
+border-radius: 50% ;
+padding-bottom: .1em;
+cursor: pointer;
+position: absolute;
+top: auto;
+right: 0;
+
+
+}
+
+.carousel::scroll-button(left) {
+content: '<';
+position: relative;
+top: auto;
+left: 0;
+
+}
+
+.carousel::scroll-button(right):disabled, .carousel::scroll-button(left):disabled {
+opacity: 0.5;
+cursor: auto;
+
+}
+
+
+.pilihan{
+    overflow-x: hidden;
+}
+
+
+.cardd {
+    background:  rgb(255, 255, 255);
+    border-radius: 10px;
+    text-align: center;
+    transition: all 1s;
+    scroll-snap-align: start;
+    box-shadow: 0 7px 5px 0 rgb(0, 0, 0);
+     margin-bottom: 10px;
+     
+}
+
+.cardd:hover{
+    background:  rgb(255, 255, 255);
+    border-radius: 10px;
+    text-align: center;
+    transition: all 1s;
+    scroll-snap-align: start;
+    box-shadow: 0 7px 5px 0 rgb(255, 153, 0);
+     margin-bottom: 10px;
+     
+}
+
+
+
+.imgwan{
+    border-radius: 10px;
+    height: 200px;
+    width: 300px;
+}
+
+
+h3{
+    color: rgb(0, 0, 0);
+    
+   
+}
+
+
+
+
+
+.cardd a {
+    margin-top: auto;
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 8px 15px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    
+}
+
+.cardd a:hover {
+    background-color: rgb(41, 39, 39);
+    color: white;
+     
+}
+
+
+
+
+}
+
+
+
+@media (min-width: 1201px){
+html{
+    scroll-behavior: smooth;
+      overflow-x: hidden;
+    scrollbar-width: thin; /* Membuat scrollbar menjadi tipis */
+    scrollbar-color: #ffffff #ffffff; /* Warna thumb dan track */
+      padding: 0;
+      margin: 0;
+}
+
+
+
+  body{
+    background-color: rgb(0, 0, 0);
+  }
+
+
+video{
+    width: 100%;
+    
+}
+
+
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    background-color: transparent  ;
+    background-color: darkorange; /* Warna background gelap */
+    color: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9000;
+    box-shadow: 0 7px 5px 0 rgb(63, 63, 63);
+   
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+/* Styling Menu Links (Desktop) */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
+    
+}
+
+.nav-links li a:hover {
+    color: #979393; /* Warna saat kursor di atas menu */
+}
+
+/* Styling Hamburger Icon (Hidden di Desktop) */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+.judul{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center; 
+    color: white;
+    margin-top: 450px;
+}
+
+.layar1{
+    background-color: rgb(43, 42, 42);
+    margin-top: -20px;
+    
+}
+
+.Daftarkarya{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.container {
+    margin: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 30px;
+    overflow-x: hidden;
+}
+
+.grida{
+    display: grid;
+    grid-template-columns: repeat(1, 4fr);
+    gap: 30px;
+}
+
+
+
+.card {
+    background:  rgb(255, 255, 255);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 8px rgb(255, 255, 255);
+    transition: all 1s;
+    overflow-x: hidden;
+}
+
+.card:hover {
+    background: rgb(189, 189, 189);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 15px rgb(65, 64, 64);
+    transition: all  1s;
+    overflow-x: hidden;
+}
+
+h3{
+    color: rgb(0, 0, 0);
+}
+
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    
+}
+
+
+.card h3 {
+    margin: 10px;
+
+}
+
+.card a {
+    margin-top: auto;
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 8px 15px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.card a:hover {
+    background-color: rgb(41, 39, 39);
+    color: white;
+     
+}
+
+footer {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-top: 200px;
+    background-color: rgb(0, 0, 0);
+}
+
+
+h2{
+    margin-top: 50px;
+}
+
+
+
+
+
+
+#kontak{ background-color:rgb(0, 0, 0);
+width: 100%;
+height: 80vh;
+}
+
+
+
+
+.akhir1{
+    background-color: rgb(0, 0, 0);
+    box-shadow: 7px 7px 30px 7px rgb(255, 255, 255);
+width: 95%;
+height: 400px;
+margin: auto;
+margin-top: 100px;
+font-family: 'Courier New', Courier, monospace;
+
+}
+
+.penutup{
+    color:white;
+   font-size: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+   padding-top: 100px;
+   margin-left: 20px;
+
+}
+
+
+.tgl {
+    color: white;
+    font-size: 18px;
+    padding-top: 10px;
+    margin-left: 20px;
+    
+    
+    
+}
+
+.logoo{
+    color: white;
+    margin: 80px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+     margin-top: 180px;
+}
+
+
+.nikmatii{
+    font-size: 55px;
+    text-align: center;
+    color: white;
+    margin-top: -500px;
+    
 }
 
 
@@ -254,7 +652,109 @@ font-family: 'Courier New', Courier, monospace;
 
 
 
+.carousel{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    margin: 3em auto;
+    display: flex;
+    gap: 3em;
+    scroll-behavior: smooth;
+    position: relative;
+    scroll-snap-type: x mandatory;
 }
+
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+
+.carousel::scroll-button(right), .carousel::scroll-button(left){
+content: '>';
+border: none;
+background-color: rgb(0, 0, 0);
+font-family: consolas;
+font-size: 3rem;
+color: white;
+height: 60px;
+width: 60px;
+border-radius: 50% ;
+padding-bottom: .1em;
+cursor: pointer;
+position: absolute;
+top: auto;
+right: 0;
+
+
+}
+
+.carousel::scroll-button(left) {
+content: '<';
+position: relative;
+top: 20%;
+left: 0;
+
+}
+
+.carousel::scroll-button(right):disabled, .carousel::scroll-button(left):disabled {
+opacity: 0.5;
+cursor: auto;
+
+
+}
+
+
+
+
+
+.cardd {
+    background:  rgb(61, 61, 61);
+    border-radius: 10px;
+    text-align: center;
+    transition: all 1s;
+    scroll-snap-align: start;
+  
+}
+
+.imgwan{
+    border-radius: 10px;
+    height: 200px;
+    width: 200px;
+}
+
+
+h3{
+    color: rgb(255, 255, 255);
+    background-color: rgb(61, 61, 61);
+   
+}
+
+
+
+
+
+.cardd a {
+    margin-top: auto;
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 8px 15px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cardd a:hover {
+    background-color: rgb(41, 39, 39);
+    color: white;
+     
+}
+
+
+
+}
+
+
+
 
 
 
@@ -350,6 +850,7 @@ video{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center; 
     color: white;
+    margin-top: 435px;
 }
 
 .layar1{
@@ -371,6 +872,7 @@ video{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+    overflow-x: hidden;
 }
 
 .grida{
@@ -388,6 +890,7 @@ video{
     text-align: center;
     box-shadow: 0 0 8px rgb(255, 255, 255);
     transition: all 1s;
+    overflow-x: hidden;
 }
 
 .card:hover {
@@ -397,6 +900,7 @@ video{
     text-align: center;
     box-shadow: 0 0 15px rgb(65, 64, 64);
     transition: all  1s;
+    overflow-x: hidden;
 }
 
 h3{
@@ -428,7 +932,7 @@ h3{
     border-radius: 5px;
 }
 
-.card a:hover {
+.cardd a:hover {
     background-color: rgb(41, 39, 39);
     color: white;
      
@@ -500,9 +1004,130 @@ font-family: 'Courier New', Courier, monospace;
      margin-top: 180px;
 }
 
+
+.nikmatii{
+    font-size: 55px;
+    text-align: center;
+    color: white;
+    margin-top: -500px;
+    
 }
 
 
+
+
+
+.carousel{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    margin: 3em auto ;
+    display: flex;
+    gap: 3em;
+    scroll-behavior: smooth;
+    position: relative;
+    scroll-snap-type: x mandatory;
+    overflow-x: hidden;
+}
+
+.carousel::-webkit-scrollbar{
+    display: none;
+    overflow-x: hidden;
+}
+
+.carousel::scroll-button(right), .carousel::scroll-button(left){
+content: '>';
+border: none;
+background-color: rgb(0, 0, 0);
+font-family: consolas;
+font-size: 3rem;
+color: white;
+height: 60px;
+width: 60px;
+border-radius: 50% ;
+padding-bottom: .1em;
+cursor: pointer;
+position: absolute;
+top: auto;
+right: 0;
+
+
+
+}
+
+.carousel::scroll-button(left) {
+content: '<';
+position: relative;
+top: 20%;
+left: 0;
+
+}
+
+.carousel::scroll-button(right):disabled, .carousel::scroll-button(left):disabled {
+opacity: 0.5;
+cursor: auto;
+
+
+}
+
+
+
+
+
+.cardd {
+    background:  rgb(61, 61, 61);
+    border-radius: 10px;
+    text-align: center;
+    transition: all 1s;
+    scroll-snap-align: start;
+  
+}
+
+.imgwan{
+    border-radius: 10px;
+    height: 200px;
+    width: 220px;
+}
+
+
+h3{
+    color: rgb(255, 255, 255);
+    background-color: rgb(61, 61, 61);
+   
+}
+
+
+
+
+
+.cardd a {
+    margin-top: auto;
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 8px 15px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cardd a:hover {
+    background-color: rgb(41, 39, 39);
+    color: white;
+     
+}
+
+
+
+
+
+
+
+
+
+
+
+}
 
 
 
