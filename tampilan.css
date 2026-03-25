@@ -384,9 +384,9 @@ h3{
 }
 
 
-
-
 }
+
+
 
 
 
@@ -658,7 +658,7 @@ font-family: 'Courier New', Courier, monospace;
     overflow-x: hidden;
     margin: 3em auto;
     display: flex;
-    gap: 3em;
+    gap: 4em;
     scroll-behavior: smooth;
     position: relative;
     scroll-snap-type: x mandatory;
@@ -1116,6 +1116,19 @@ h3{
     color: white;
      
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
