@@ -31,13 +31,15 @@ body {
     align-items: center;
     backdrop-filter: blur(10px);
     background-color: transparent  ;
-    background-color: darkorange;/* Warna background gelap */
+    background-color: rgba(255, 255, 255, 0); /* Warna background gelap */
     color: white;
     padding: 1rem 2rem;
     position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
-    z-index: 1000;
-    box-shadow: 0 7px 15px 0 rgb(255, 255, 255);
+    z-index: 9000;
+   border-bottom:2px solid #ffffff;
    
 }
 
@@ -82,7 +84,6 @@ body {
     background-color: white;
     transition: all 0.3s ease-in-out;
 }
-
 
 
 
