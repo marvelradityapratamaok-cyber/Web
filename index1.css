@@ -1,15 +1,4 @@
 /* Reset dasar */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
- 
-
-@media (max-width: 480px) {
-
 * {
     margin: 0;
     padding: 0;
@@ -18,955 +7,32 @@
 
 html{
     scroll-behavior: smooth;
-      overflow-x: hidden;
-    scrollbar-width: thin; /* Membuat scrollbar menjadi tipis */
-    scrollbar-color: #ffffff #ffffff; /* Warna thumb dan track */
-
-}
-
-
-
-body{
-    background-image: url(fotosatuan1.jpg);
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    
-}
-
-
-video{
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 200px;
-    overflow-x: hidden;
-}
-
-
-
-.navbar {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    backdrop-filter: blur(10px);
-    background-color: transparent  ;
-    background-color: darkorange; /* Warna background gelap */
-    color: white;
-    padding: 1rem 2rem;
-    position: sticky;
-    position: fixed;
-    top: 0;
-    z-index: 900;
-    box-shadow: 0 7px 5px 0 rgb(63, 63, 63);
-    position: fixed;
-}
-
-.logo {
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-}
-
-/* Styling Menu Links (Desktop) */
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    overflow-x: hidden;
-
-}
-
-.nav-links li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1rem;
-    transition: color 0.3s;
-    
-}
-
-.nav-links li a:hover {
-    color: #979393; /* Warna saat kursor di atas menu */
-}
-
-/* Styling Hamburger Icon (Hidden di Desktop) */
-.hamburger {
-    display: none;
-    cursor: pointer;
-}
-
-.bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    background-color: white;
-    transition: all 0.3s ease-in-out;
-}
-
-
-
-
-h1{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    margin-top: 80px;
-    margin-bottom: 50px;
-    color: rgb(255, 255, 255);
-    font-size: 25px;
-}
-
-
-h2{
-    margin: 20px 20px 20px 20px;
-    padding-top: 100px;
-    font-size: 100px;
-    float: left;
-    color: white;
-
-}
-
-
-.HM{
-    font-size: 40px;    
-}
-
-.judulporto{
-    font-size: 50px;
-    text-decoration: 2px underline  darkorange;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-
-
-
-section {
-    height: 620px; /* Setiap section setinggi layar */
-    width: 100%;
-    padding: 20px;
-    overflow-y:hidden ;
-}
-#Home { background-color:rgb(0, 0, 0); 
-
-}
-
-#about { background-color:rgb(0, 0, 0); 
-
-}
-#profil{background-color: rgb(0, 0, 0);
-
-}
-#galery { background-color:rgb(0, 0, 0); 
-
-}
-#kontak{ background-color:rgb(0, 0, 0);
-
-}
-
-
-
-mark{
-    
-    cursor: pointer;
-}
-
-abbr{
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-   
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.loader {
-  width:215px;
-  height: 215px;
-  display: block;
-  padding-left: 21px;
-  margin-left: -30px;
-  position: relative;
-  background: #ffffff;
-  box-sizing: border-box;
-  box-shadow: 7px 7px 30px darkorange;
-  border-radius: 50px 50px 50px 0px;
-}
-
-
-
-  
-.loader{
-    float:left ;
-    margin-right:30px;
-    margin-bottom: 25px;
-}
-
-
-
-.bagportfolio,small{
-    color: white;
-    text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 50px;
-    
-    
-}
-
-
-
-
-
-img{
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    margin: 30px;
-}
-
-input{
-    width: 80%;
-    height:10px;
-    background-color: white;
-}
-
-.name{
-    margin:2px 2px 2px 10px;
-   margin-top: -10px;
-}
-
-
-
-
-
-
-
-
-
-.spinner {
-  width: 70px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  border: 8px solid rgb(255, 255, 255);
-  border-right-color: darkorange;
-  animation: l2  3s infinite linear;
-}
-
-.spinnerr {
-  width: 70px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  border: 8px solid rgb(255, 255, 255);
-  border-right-color:darkorange;
-  animation: l2 4s infinite linear;
-}
-
-.spinnerrr {
-  width: 70px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  border: 8px solid rgb(255, 255, 255);
-  border-right-color: darkorange;
-  animation: l2 5s infinite linear;
-}
-
-.spinner,.spinnerr,.spinnerrr{
-    margin-top: 15px;
-}
-@keyframes l2 {to{transform: rotate(1turn)}}
-
-
-
-.isian{
-    width: 140px;
-    height: 3px;
-    background-color: rgb(255, 255, 255);
-    margin-left: 10px;
-}
-
-
-
-
-
-.isiann{
-    width: 100px;
-    background-color: darkorange;
-    height:3px;
-}
-
-.hobi{
-    color: white;
-    margin-left: 100px;
-}
-
-
-.penjelasanhobi{
-    color: rgb(0, 0, 0);
-    text-align: right;
-    padding-top: 20px;
-    padding-right: 10px;
-}
-
-.small1{
-    color: rgb(0, 0, 0);
-    font-weight: 100;
-}
-
-
-
-#galerya{
-    background-color: #000000;
-    
-}
-
-.loader10 {
-  width:215px;
-  height: 215px;
-  display: block;
-  padding-left: 21px;
-  margin-left: -30px;
-  position: relative;
-  background: #ffffff;
-  box-sizing: border-box;
-  box-shadow: 7px 7px 30px darkorange;
-  border-radius: 5px 50px 50px 50px;
-}
-
-
-
-  
-.loader10{
-    float:left ;
-    margin-right:30px;
-    margin-bottom: 25px;
-}
-
-.name10{
-    margin-left:10px;
-}
-
-
-.loader100 {
-  width:215px;
-  height: 215px;
-  display: block;
-  padding-left: 21px;
-  margin-left: 50px;
-  position: relative;
-  background: #ffffff;
-  box-sizing: border-box;
-  box-shadow: 7px 7px 30px darkorange;
-  border-radius: 50px 5px 50px 50px;
-}
-
-
-
-  
-.loader100{
-    float:left ;
-    margin-right:30px;
-    margin-bottom: 25px;
-}
-
-
-
-
-.bagian11{
-    padding-left: 130px;
-}
-
-
-
-
-.pengalaman{
-    margin-left: 15px;
-    
-}
-
-
-
-
-
-.akhir1{
     background-color: rgb(0, 0, 0);
-    box-shadow: 7px 7px 30px 7px rgb(255, 255, 255);
-width: 100%;
-height: 400px;
-margin: auto;
-margin-top: 30px;
-font-family: 'Courier New', Courier, monospace;
-
-}
-
-.penutup{
-    color:white;
-   font-size: 20px;
-   font-family: Arial, Helvetica, sans-serif;
-   padding-top: 100px;
-   margin-left: 20px;
-
-}
-
-
-.tgl {
-    color: white;
-    font-size: 18px;
-    padding-top: 10px;
-    margin-left: 20px;
-    
-    
-    
-}
-
-.logoo{
-    color: white;
-    margin: 80px auto;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    text-align: center;
-     margin-top: 180px;
-}
-
-
-.marvel{
-    color: white;
-    font-size: 20px;
-}
-
-
-
-
-
-.puisi{
-    color: white;
-    text-align: center ;
-    margin-top: 50px;
-    font-size: 15px;
-    padding: 0;
-}
-
-
-.lis{
-    list-style: none;
-}
-
+     overflow-x: hidden;
+     overflow-y: hidden;
 }
 
 
 @media (min-width: 481px) and (max-width: 768px) {
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html{
-    scroll-behavior: smooth;
-      overflow-x: hidden;
-    scrollbar-width: thin; /* Membuat scrollbar menjadi tipis */
-    scrollbar-color: #ffffff #ffffff; /* Warna thumb dan track */
-
-}
-
-
-
-body{
-    background-image: url(fotosatuan1.jpg);
-    background-size: cover;
+body {
+    font-family: 'Arial', sans-serif;
+   background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 600px;
-    z-index: 9000;
-}
-
-
-video{
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 200px;
-}
-
-
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    backdrop-filter: blur(10px);
-    background-color: transparent  ;
-    background-color: darkorange; /* Warna background gelap */
-    color: white;
-    padding: 1rem 2rem;
-    position: sticky;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 9000;
-    box-shadow: 0 7px 5px 0 rgb(63, 63, 63);
-   
-}
-
-.logo {
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-}
-
-/* Styling Menu Links (Desktop) */
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    
-}
-
-.nav-links li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1rem;
-    transition: color 0.3s;
-    
-}
-
-.nav-links li a:hover {
-    color: #979393; /* Warna saat kursor di atas menu */
-}
-
-/* Styling Hamburger Icon (Hidden di Desktop) */
-.hamburger {
-    display: none;
-    cursor: pointer;
-}
-
-.bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    background-color: white;
-    transition: all 0.3s ease-in-out;
-}
-
-
-
-
-h1{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    margin-top: 80px;
-    margin-bottom: 50px;
-    color: rgb(255, 255, 255);
-    font-size: 25px;
-}
-
-
-h2{
-    margin: 20px 20px 20px 20px;
-    padding-top: 100px;
-    font-size: 100px;
-    float: left;
-    color: white;
-
-}
-
-
-.HM{
-    font-size: 40px;    
-}
-
-.judulporto{
-    font-size: 50px;
-    text-decoration: 2px underline  darkorange;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-
-
-
-section {
-    height: 620px; /* Setiap section setinggi layar */
-    width: 100%;
-    padding: 20px;
-}
-#Home { background-color:rgb(0, 0, 0); 
-width: 100%;
-}
-
-#about { background-color:rgb(0, 0, 0); 
-width: 100%;
-}
-#profil{background-color: rgb(0, 0, 0);
-width: 100%;
-}
-#galery { background-color:rgb(0, 0, 0); 
-width: 100%;
-}
-#kontak{ background-color:rgb(0, 0, 0);
-width: 100%;
-}
-
-
-
-mark{
-    
-    cursor: pointer;
-}
-
-abbr{
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-   
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-body { font-family: sans-serif; margin: 0; }
-
-.loader {
-  width:215px;
-  height: 215px;
-  display: block;
-  padding-left: 21px;
-  margin-left: -30px;
-  position: relative;
-  background: #ffffff;
-  box-sizing: border-box;
-  box-shadow: 7px 7px 30px darkorange;
-  border-radius: 50px 50px 50px 0px;
-}
-
-
-
-  
-.loader{
-    float:left ;
-    margin-right:30px;
-    margin-bottom: 25px;
-}
-
-
-
-.bagportfolio,small{
-    color: white;
-    text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 40px;
-    display: inline-block;
-    
-}
-
-
-
-
-
-img{
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    margin: 30px;
-}
-
-input{
-    width: 80%;
-    height:10px;
-    background-color: white;
-}
-
-.name{
-    margin:2px 2px 2px 10px;
-   margin-top: -10px;
-}
-
-
-
-
-
-
-
-
-
-.spinner {
-  width: 70px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  border: 8px solid rgb(255, 255, 255);
-  border-right-color: darkorange;
-  animation: l2  3s infinite linear;
-}
-
-.spinnerr {
-  width: 70px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  border: 8px solid rgb(255, 255, 255);
-  border-right-color:darkorange;
-  animation: l2 4s infinite linear;
-}
-
-.spinnerrr {
-  width: 70px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  border: 8px solid rgb(255, 255, 255);
-  border-right-color: darkorange;
-  animation: l2 5s infinite linear;
-}
-
-.spinner,.spinnerr,.spinnerrr{
-    margin-top: 15px;
-}
-@keyframes l2 {to{transform: rotate(1turn)}}
-
-
-
-.isian{
-    width: 140px;
-    height: 3px;
-    background-color: rgb(255, 255, 255);
-    margin-left: 10px;
-}
-
-
-
-
-
-.isiann{
-    width: 100px;
-    background-color: darkorange;
-    height:3px;
-}
-
-.hobi{
-    color: white;
-    margin-left: 100px;
-}
-
-
-.penjelasanhobi{
-    color: rgb(0, 0, 0);
-    text-align: right;
-    padding-top: 20px;
-    padding-right: 10px;
-}
-
-.small1{
-    color: rgb(0, 0, 0);
-    font-weight: 100;
-}
-
-
-
-#galerya{
-    background-color: #000000;
-}
-
-.loader10 {
-  width:215px;
-  height: 215px;
-  display: block;
-  padding-left: 21px;
-  margin-left: -30px;
-  position: relative;
-  background: #ffffff;
-  box-sizing: border-box;
-  box-shadow: 7px 7px 30px darkorange;
-  border-radius: 5px 50px 50px 50px;
-}
-
-
-
-  
-.loader10{
-    float:left ;
-    margin-right:30px;
-    margin-bottom: 25px;
-}
-
-.name10{
-    margin-left: 10px;
-}
-
-
-.loader100 {
-  width:215px;
-  height: 215px;
-  display: block;
-  padding-left: 21px;
-  margin-left: 58px;
-  position: relative;
-  background: #ffffff;
-  box-sizing: border-box;
-  box-shadow: 7px 7px 30px darkorange;
-  border-radius: 50px 5px 50px 50px;
-}
-
-
-
-  
-.loader100{
-    float:right ;
-    margin-right:30px;
-    margin-bottom: 25px;
-}
-
-
-
-
-.bagian11{
-    padding-left: 300px;
-}
-
-
-
-
-.pengalaman{
-    margin-left: 15px;
-}
-
-
-
-
-
-.akhir1{
-    background-color: rgb(0, 0, 0);
-    box-shadow: 7px 7px 30px 7px rgb(255, 255, 255);
-width: 100%;
-height: 400px;
-margin: auto;
-margin-top: 50px;
-font-family: 'Courier New', Courier, monospace;
-
-}
-
-.penutup{
-    color:white;
-   font-size: 20px;
-   font-family: Arial, Helvetica, sans-serif;
-   padding-top: 150px;
-   margin-left: 20px;
-   padding-right: 20px;
-
-}
-
-
-.tgl {
-    color: white;
-    font-size: 18px;
-    padding-top: -100px;
-    margin-left: 20px;
-    
-    
-    
-}
-
-.logoo{
-    color: white;
-    margin: 80px auto;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    text-align: center;
-     margin-top: 130px;
-}
-
-
-.marvel{
-    color: white;
-}
-
-
-
-
-
-.puisi{
-    color: white;
-    text-align: center ;
-    margin-top: 50px;
-    font-size: 15px;
-}
-
-
-}
-
-
-
-.lis{
-   
-    list-style: none;
-}
-
-
-@media (min-width: 1201px) {
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html{
-    scroll-behavior: smooth;
-      overflow-x: hidden;
-    scrollbar-width: thin; /* Membuat scrollbar menjadi tipis */
-    scrollbar-color: #ffffff #ffffff; /* Warna thumb dan track */
-
-}
-
-
-
-body{
-    background-image: url(fotosatuan1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 600px;
-    z-index: 9000;
-}
-
-
-video{
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 200px;
     overflow-x: hidden;
+   
 }
 
 
 
+/* Styling Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     backdrop-filter: blur(10px);
     background-color: transparent  ;
-    background-color: rgba(255, 255, 255, 0); /* Warna background gelap */
+    background-color: rgba(0, 0, 0, 0); /* Warna background gelap */
     color: white;
     padding: 1rem 2rem;
     position: sticky;
@@ -1024,357 +90,1644 @@ video{
 
 
 
-h1{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    margin-top: 80px;
-    margin-bottom: 50px;
-    color: rgb(255, 255, 255);
-    font-size: 25px;
+
+
+
+
+body {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  font-size: 9vmin;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  margin: 1rem 0 1rem 2rem;
+  
+}
+
+/* Typewriter effect 1 */
+@keyframes typing {
+  0.0000%, 27.3488% { content: ""; }
+  1.1395%, 26.2093% { content: "d"; }
+  2.2791%, 25.0698% { content: "de"; }
+  3.4186%, 23.9302% { content: "dev"; }
+  4.5581%, 22.7907% { content: "deve"; }
+  5.6977%, 21.6512% { content: "devel"; }
+  6.8372%, 20.5116% { content: "develo"; }
+  7.9767%, 19.3721% { content: "develop"; }
+  9.1163%, 18.2326% { content: "develope"; }
+  10.2558%, 17.0930% { content: "developer"; }
+
+  30.7674%, 51.2791% { content: ""; }
+  31.9070%, 50.1395% { content: "w"; }
+  33.0465%, 49.0000% { content: "wr"; }
+  34.1860%, 47.8605% { content: "wri"; }
+  35.3256%, 46.7209% { content: "writ"; }
+  36.4651%, 45.5814% { content: "write"; }
+  37.6047%, 44.4419% { content: "writer"; }
+
+  54.6977%, 75.2093% { content: ""; }
+  55.8372%, 74.0698% { content: "r"; }
+  56.9767%, 72.9302% { content: "re"; }
+  58.1163%, 71.7907% { content: "rea"; }
+  59.2558%, 70.6512% { content: "read"; }
+  60.3953%, 69.5116% { content: "reade"; }
+  61.5349%, 68.3721% { content: "reader"; }
+
+  78.6279%, 96.8605% { content: ""; }
+  79.7674%, 95.7209% { content: "h"; }
+  80.9070%, 94.5814% { content: "hu"; }
+  82.0465%, 93.4419% { content: "hum"; }
+  83.1860%, 92.3023% { content: "huma"; }
+  84.3256%, 91.1628% { content: "human"; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.typewriter {
+  --caret: currentcolor;
+}
+
+.typewriter::before {
+  content: "";
+  animation: typing 13.5s infinite;
+}
+
+.typewriter::after {
+  content: "";
+  border-right: 1px solid var(--caret);
+  animation: blink 0.5s linear infinite;
 }
 
 
-h2{
-    margin: 20px 20px 20px 20px;
-    padding-top: 100px;
-    font-size: 100px;
-    float: left;
-    color: white;
 
+
+
+
+@media (prefers-reduced-motion) {
+  .typewriter::after {
+    animation: none;
+  }
+  
+  @keyframes sequencePopup {
+    0%, 100% { content: "developer"; }
+    25% { content: "writer"; }
+    50% { content: "reader"; }
+    75% { content: "human"; }
+  }
+
+  .typewriter::before {
+    content: "developer";
+    animation: sequencePopup 12s linear infinite;
+  }
+}
+
+/**/
+
+
+
+ 
+
+
+
+
+
+
+.button--piyo{
+    --main_color : #f4cf47 ;
+    --sub_color1 : #f4e19c ;
+    --sub_color2 : #ff8108 ;
+    --base_color : #000 ;
+    --border_radius1 : 60px 60px 40px 40px / 48px 48px 30px 30px ;
+    --border_radius2 : 70px 70px 40px 40px / 48px 48px 30px 30px ;
+    --border_radius3 : 40px 40px 40px 40px / 48px 48px 30px 30px ;
+}
+.button--hoo{
+    --main_color : #4993ff ;
+    --sub_color1 : #385082 ;
+    --sub_color2 : #fff58f ;
+    --sub_color3 : #fff ;
+    --base_color : #FFF ;
+    --border_radius1 : 50px 50px 50px 50px / 40px 40px 40px 40px ;
+    --border_radius2 : 60px 60px 50px 50px / 40px 40px 40px 40px ;
+    --border_radius3 : 40px 40px 50px 50px / 60px 60px 40px 40px ;
+    --border_radius3 : 50px 50px 45px 45px / 40px 40px 60px 60px ;
+}
+.button--pen{
+    --main_color : #4d4d4d ;
+    --sub_color1 : #FFF ;
+    --sub_color2 : #e9b800 ;
+    --base_color : #e9b800 ;
+    --border_radius1 : 60px 60px 40px 40px / 48px 48px 30px 30px ;
+    --border_radius2 : 70px 70px 40px 40px / 48px 48px 30px 30px ;
+    --border_radius3 : 40px 40px 40px 40px / 48px 48px 30px 30px ;
+}
+.button{
+    position : relative ;
+    display : flex ;
+    justify-content : center ;
+    align-items : center ;
+    width : 280px ;
+    height : 80px ;
+    box-sizing : border-box ;
+    text-decoration : none ;
+    border : solid 3px #000 ;
+    border-radius : 40px ;
+    background : var(--main_color) ;
+    font-family: 'Fredoka One', cursive;
+}
+.button::before{
+    content : '' ;
+    position : absolute ;
+    z-index : 2 ;
+    top : 0 ;
+    right : 20px ;
+    bottom : 0 ;
+    margin : auto 0 ;
+    width : 24px ;
+    height : 24px ;
+    background : var(--base_color) ; 
+    transition : all ease .2s ;
+}
+.button__wrapper{
+    display : flex ;
+    justify-content : center ;
+    align-items : center ;
+    position : relative ;
+    z-index : 1 ; 
+    width : 100% ;
+    height : 100% ;
+    border-radius : 40px ;
+    overflow : hidden ;
+}
+.button__wrapper::before,
+.button__wrapper::after{
+    transition : all .5s ease ;
+}
+.characterBox{
+    position : absolute ;
+    top : -54px ;
+    left : 0 ;
+    right : 0 ;
+    margin : 0 auto ;
+    display : flex ;
+    justify-content : space-between ;
+    align-items : flex-end ;
+    width : 180px ;
+    height : 56px ;
+}
+.button__text{
+    position : relative ;
+    z-index : 3 ;
+    font-size : 32px ;
+    letter-spacing : 4px ;
+    color : var(--base_color) ;
+    transition : all .3s ease ;
+}
+.character{
+    position : relative ;
+    width : 56px ;
+    height : 36px ;
+    box-sizing : border-box ;
+    border : solid 3px #000 ;
+    background : var(--main_color) ;
+    border-radius : var(--border_radius1) ;
+    animation : sleep 1s ease infinite alternate ;
+}
+.character::before{
+    content : '' ;
+    position : absolute ;
+    top : -12px ;
+    left : 22px ;
+    width : 12px ;
+    height : 12px ;
+    background : #000 ;
+    clip-path : path('M10.23,3.32c-3.54,.63-5.72,2.51-7.02,4.23-.33-1.58-.34-3.54,.93-5.12,.52-.65,.41-1.59-.24-2.11C3.24-.19,2.29-.08,1.77,.57c-3.82,4.77-.31,11.11-.13,11.42,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0-.01-.02,2.49,.04,2.52,0,.1-.14,1.54-4.82,6.59-5.71,.82-.14,1.37-.92,1.22-1.74s-.94-1.36-1.75-1.21Z') ;
+}
+.character__face{
+    position : absolute ;
+    z-index : 2 ;
+    top : 15px ;
+    left : 0 ;
+    right : 0 ;
+    margin : 0 auto ;
+    width : 12px ;
+    height : 6px ;
+    background : var(--sub_color2) ;
+    border-radius : 50% 50% 50% 50% / 78% 78% 22% 22% ;
+    transition : .2s ;
+}
+.character__face::before,
+.character__face::after{
+    content : '' ;
+    position : absolute ;
+    top : -4px ;
+    width : 8px ;
+    height : 2px ;
+    border-radius : 4px ;
+    background : #000 ;
+}
+.character__face::before{
+    left : -5px ;
+}
+.character__face::after{
+    right : -5px ;
+}
+.button--hoo .character__face::before,
+.button--hoo .character__face::after{
+    background : #fff ;
+}
+.button--hoo .charactor__face2{
+    position : absolute ;
+    z-index : 1 ;
+    top : 8px ;
+    left : 0 ;
+    right : 0 ;
+    margin : auto ;
+    width : 14px ;
+    height : 10px ;
+    background : #385082 ;
+    animation : face_hoo 1s ease infinite alternate ;
+}
+.button--hoo .charactor__face2::before,
+.button--hoo .charactor__face2::after{
+    content : '' ;
+    position : absolute ;
+    top : -1px ;
+    width : 20px ;
+    height : 10px ;
+    box-sizing : border-box ;
+    border-radius : 50% ;
+    border : solid 3px #385082 ;
+    background : #000 ;
+}
+.button--hoo .charactor__face2::before{
+    left : -12px ;
+}
+.button--hoo .charactor__face2::after{
+    right : -12px ;
+}
+.button--hoo .charactor__body{
+    position : absolute ;
+    bottom : 0 ;
+    left : 0 ;
+    right : 0 ;
+    margin : 0 auto ;
+    width : 0 ;
+    height : 0 ;
+    border-top : solid 2px #385082 ;
+    border-left : solid 7px transparent ;
+    border-right : solid 7px transparent ;
+    border-bottom : solid 0 transparent ;
+    animation : body_hoo 1s ease infinite alternate ;
+}
+.button--hoo .charactor__body::before,
+.button--hoo .charactor__body::after{
+    content : '' ;
+    position : absolute ;
+    top : -4px ;
+    width : 0 ;
+    height : 0 ;
+    border-top : solid 2px #385082 ;
+    border-left : solid 7px transparent ;
+    border-right : solid 7px transparent ;
+    border-bottom : solid 0 transparent ;
+}
+.button--hoo .charactor__body::before{
+    left : -17px ;
+}
+.button--hoo .charactor__body::after{
+    right : -17px ;
+}
+
+.button--pen .charactor__face2{
+    position : absolute ;
+    z-index : 1 ;
+    bottom : 0 ;
+    left : 0 ;
+    right : 0 ;
+    margin : auto ;
+    width : 30px ;
+    height : 10px ;
+    border-radius : 50% ;
+    background : #fff ;
+    animation : face_pen 1s ease infinite alternate ;
+}
+.button--pen .charactor__face2::before,
+.button--pen .charactor__face2::after{
+    content : '' ;
+    position : absolute ;
+    top : -8px ;
+    width : 17px ;
+    height : 10px ;
+    border-radius : 50% ;
+    background : #fff ;
+}
+.button--pen .charactor__face2::before{
+    left : -4px ;
+}
+.button--pen .charactor__face2::after{
+    right : -4px ;
+}
+
+.button--piyo::before{
+    clip-path : path('M24,12.02c0-1.09-.75-1.71-.81-1.77L11.17,.45c-.91-.74-2.21-.56-2.91,.42-.69,.97-.52,2.37,.39,3.11l7.12,5.81-13.7-.02h0C.93,9.77,0,10.76,0,11.99c0,1.23,.93,2.22,2.07,2.22l13.7,.02-7.13,5.78c-.91,.74-1.09,2.13-.4,3.11,.41,.58,1.03,.88,1.65,.88,.44,0,.88-.15,1.25-.45l12.04-9.76c.07-.06,.82-.67,.82-1.77Z') ;
+}
+.button--hoo::before{
+    clip-path : path('M21.93,9.8h-3.33S11.5,.79,11.5,.79c-.74-.94-2.05-1.05-2.92-.26-.88,.79-.99,2.19-.25,3.13l4.84,6.13-11.09-.02C.95,9.73,0,10.76,0,11.99c0,1.23,.93,2.22,2.07,2.22l11.09,.02-4.86,6.12c-.74,.93-.63,2.33,.24,3.13,.39,.35,.87,.53,1.34,.53,.59,0,1.17-.27,1.58-.78l7.13-8.99h3.32s0,0,0,0c1.14,0,2.07-.99,2.07-2.22,0-1.23-.93-2.22-2.07-2.22Z') ;
+}
+.button--pen::before{
+    clip-path : path('M23.36,10.63L6.18,.13c-.93-.57-1.85,.81-1.39,2.06l1.44,3.91c.3,.81,.01,1.81-.6,2.1L.72,10.58c-.96,.47-.96,2.37,0,2.83l4.91,2.38c.62,.3,.9,1.29,.6,2.1l-1.44,3.91c-.46,1.26,.46,2.63,1.39,2.06L23.36,13.37c.86-.53,.86-2.22,0-2.75Z') ;
+}
+.button--piyo .button__wrapper::before,
+.button--piyo .button__wrapper::after{
+    content : '' ;
+    position : absolute ;
+    bottom : 0 ;
+    width : 130px ;
+    height : 38px ;
+    background : var(--sub_color1) ;
+    clip-path : path('M13.77,37.35L.25,16.6c-.87-1.33,.69-2.91,2-2.02l12.67,8.59c.81,.55,1.91,.14,2.18-.81l2.62-9.33c.39-1.4,2.34-1.42,2.76-.02l3.6,11.99c.33,1.11,1.74,1.4,2.47,.52L49.38,.52c.87-1.04,2.53-.42,2.53,.95V23.7c0,1.13,1.2,1.83,2.16,1.26l12.75-7.51c.85-.5,1.94,0,2.13,.98l1.5,7.6c.2,1.03,1.37,1.51,2.22,.92l17.74-12.3c1.09-.75,2.52,.25,2.21,1.55l-2.44,10.2c-.26,1.09,.74,2.06,1.8,1.75l30.8-9.04c1.37-.4,2.42,1.26,1.49,2.36l-9.07,10.66c-.83,.98-.1,2.49,1.17,2.42l12.12-.68c1.6-.09,2.12,2.15,.65,2.8l-2.73,1.21c-.18,.08-.38,.12-.58,.12H14.97c-.48,0-.93-.25-1.2-.65Z') ;
+}
+.button--piyo .button__wrapper::before{
+    left : 0 ;
+}
+.button--piyo .button__wrapper::after{
+    right : 0 ;
+    transform : rotateY(180deg) ;
+}
+.button--hoo .button__wrapper::before,
+.button--hoo .button__wrapper::after{
+    content : '' ;
+    position : absolute ;
+    width : 80px ;
+    height : 100px ;
+    background : var(--sub_color1) ;
+    clip-path : path('M75.96,41.27l-42.76,11.17V0H0V100H33.2v-28.75l45.07-23.97c3.38-1.8,1.39-6.98-2.31-6.01Z') ;
+}
+.button--hoo .button__wrapper::before{
+    left : 6px ;
+    bottom : 0 ;
+}
+.button--hoo .button__wrapper::after{
+    right : 8px ;
+    bottom : -10px ;
+    transform : rotateY(180deg) ;
+}
+.button--pen .button__wrapper::before,
+.button--pen .button__wrapper::after{
+    content : '' ;
+    position : absolute ;
+    width : 110px ;
+    height : 60px ;
+    background : var(--sub_color1) ;
+    clip-path : path('M9.12,14.14L43.15,.5c1.61-.86,3.57-.59,4.9,.68l19.55,14.31c.42,.4,.76,.89,.99,1.42l3.45,13.09c.89,2.06,3.18,3.09,5.28,2.37l11.76-4.86c1.56-.54,3.29-.11,4.43,1.1l11.93,12.39c.48,.51,.84,1.12,1.03,1.8l3.35,11.62c.8,2.79-1.25,5.58-4.1,5.58H4.27c-2.71,0-4.73-2.54-4.18-5.24L6.92,17.11c.26-1.28,1.07-2.37,2.2-2.97Z') ;
+}
+.button--pen .button__wrapper::before{
+    left : -16px ;
+    bottom : -10px ;
+}
+.button--pen .button__wrapper::after{
+    right : -8px ;
+    bottom : -20px ;
+    transform : rotateY(180deg) ;
+}
+.button:hover .button__wrapper::before{
+    transform : translateX(-12px) ;
+}
+.button:hover .button__wrapper::after{
+    transform : rotateY(180deg) translateX(-12px) ;
+}
+.button:hover .button__text{
+    letter-spacing : 6px ;
+}
+.button:hover::before{
+    right : 14px ;
+}
+.button:hover .wakeup{
+    animation : wakeup .2s ease ;
+    animation-fill-mode : forwards ;
+}
+.button:hover .wakeup .character__face{
+    top : 20px ;
+}
+.button:hover .wakeup .character__face::before,
+.button:hover .wakeup .character__face::after{
+    animation : eye 5s linear infinite ;
+}
+.button:hover .wakeup:nth-child(2) .character__face::before,
+.button:hover .wakeup:nth-child(2) .character__face::after{
+    animation : eye_2 5s linear infinite ;
+}
+.button--hoo:hover .wakeup .charactor__face2::before,
+.button--hoo:hover .wakeup .charactor__face2::after{
+    height : 20px ;
+}
+.button--hoo:hover .wakeup .charactor__body{
+    animation : body_hoo_wakeup .2s ease ;
+    animation-fill-mode : forwards ;
+    border-top : solid 6px #385082 ;
+}
+.button--hoo:hover .wakeup .charactor__body::before,
+.button--hoo:hover .wakeup .charactor__body::after{
+    top : -12px ;
+    border-top : solid 5px #385082 ;
+}
+.button--pen:hover .wakeup .charactor__face2{
+    animation : face_pen_wakeup .2s ease ;
+    animation-fill-mode : forwards ;
+}
+.button--pen:hover .wakeup .charactor__face2::before,
+.button--pen:hover .wakeup .charactor__face2::after{
+    top : -12px ;
+    height : 18px ;
+}
+@keyframes sleep{
+    0%  {
+        height : 36px ;
+        border-radius : var(--border_radius1) ;
+    }
+    100%{
+        height : 32px ;
+        border-radius : var(--border_radius2) ;
+    }
+}
+@keyframes wakeup{
+    0%  {
+        height : 32px ;
+        border-radius : var(--border_radius2) ;
+    }
+    100%{
+        height : 56px ;
+        border-radius : var(--border_radius3) ;
+    }
+}
+@keyframes eye {
+    0%{
+        top : -6px ;
+        width : 6px ;
+        height : 6px ;
+    }
+    30%{
+        top : -6px ;
+        width : 6px ;
+        height : 6px ;
+    }
+    32%{
+        top : -4px ;
+        width : 8px ;
+        height : 2px ;
+    }
+    34%{
+        top : -6px ;
+        width : 6px ;
+        height : 6px ;
+    }
+    70%{
+        top : -6px ;
+        width : 6px ;
+        height : 6px ;
+    }
+    72%{
+        top : -4px ;
+        width : 8px ;
+        height : 2px ;
+    }
+    74%{
+        top : -6px ;
+        width : 6px ;
+        height : 6px ;
+    }
+    76%{
+        top : -4px ;
+        width : 8px ;
+        height : 2px ;
+    }
+    78%{
+        top : -6px ;
+        width : 6px ;
+        height : 6px ;
+    }
+    100%{
+        top : -6px ;
+        width : 6px ;
+        height : 6px ;
+    }
+}
+@keyframes eye_2 {
+    0%{
+        top : -6px ;
+        width : 6px ;
+        height : 6px ;
+    }
+    10%{
+        transform : translateX(0);
+    }
+    12%{
+        transform : translateX(3px);
+    }
+    20%{
+        top : -6px ;
+        width : 6px ;
+        height : 6px ;
+    }
+    22%{
+        top : -4px ;
+        width : 8px ;
+        height : 2px ;
+    }
+    24%{
+        top : -6px ;
+        width : 6px ;
+        height : 6px ;
+    }
+    25%{
+        transform : translateX(3px);
+    }
+    27%{
+        transform : translateX(0);
+    }
+    74%{
+        top : -6px ;
+        width : 6px ;
+        height : 6px ;
+        transform : translateX(0);
+    }
+    76%{
+        top : -4px ;
+        width : 8px ;
+        height : 2px ;
+        transform : translateX(3px);
+    }
+    78%{
+        top : -6px ;
+        width : 6px ;
+        height : 6px ;
+    }
+    80%{
+        top : -4px ;
+        width : 8px ;
+        height : 2px ;
+    }
+    82%{
+        top : -6px ;
+        width : 6px ;
+        height : 6px ;
+    }
+    85%{
+        transform : translateX(3px);
+    }
+    87%{
+        transform : translateX(0);
+    }
+    100%{
+        top : -6px ;
+        width : 6px ;
+        height : 6px ;
+        transform : translateX(0);
+    }
+}
+@keyframes body_hoo{
+    0%  {
+        bottom : 2px ;
+    }
+    100%{
+        bottom : 0 ;
+    }
+}
+@keyframes body_hoo_wakeup{
+    0%  {
+        bottom : 2px ;
+    }
+    100%{
+        bottom : 6px ;
+    }
+}
+@keyframes face_pen{
+    0%  {
+        height : 14px ;
+    }
+    100%{
+        height : 10px ;
+    }
+}
+@keyframes face_pen_wakeup{
+    0%  {
+        height : 14px ;
+    }
+    100%{
+        height : 28px ;
+    }
 }
 
 
-.HM{
-    font-size: 40px;    
-}
-
-.judulporto{
-    font-size: 50px;
-    text-decoration: 2px underline  darkorange;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
 
 
 
-section {
-    height: 620px; /* Setiap section setinggi layar */
-    width: 100%;
-    padding: 20px;
-}
-#Home { background-color:rgb(0, 0, 0); 
-width: 100%;
-}
 
-#about { background-color:rgb(0, 0, 0); 
-width: 100%;
-}
-#profil{background-color: rgb(0, 0, 0);
-width: 100%;
-}
-#galery { background-color:rgb(0, 0, 0); 
-width: 100%;
-}
-#kontak{ background-color:rgb(0, 0, 0);
-width: 100%;
-}
-
-
-
-mark{
+/* 本体と関係ないスタイル */
+.container{
+    width : 100% ;
+   margin-top: 50px;
+    display : flex ;
+    flex-direction : column ;
+    justify-content : center ;
+    align-items : center ;
     
-    cursor: pointer;
+}
+.button:not(:last-child){
+    margin-bottom : 80px ;
 }
 
-abbr{
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
+.sample{
+  width : 56px ;
+  height : 56px ;
+  background : orange ;
+  margin-bottom : 80px ;
+  border-radius : 40px 60px / 30px 50px ;
+  border-radius :  40px / 48px 48px 30px 30px;
+}
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+section .wave {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #4973ff;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+section .wave span {
+  content: "";
+  position: absolute;
+  width: 325vh;
+  height: 325vh;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  background: #000;
+}
+.content {
+  position: relative;
+  z-index: 1;
+  font-size: 4em;
+  letter-spacing: 2px;
+  color: #fff;
+}
+section .wave span:nth-child(1) {
+  border-radius: 45%;
+  background: rgba(20, 20, 20, 1);
+  animation: animate 5s linear infinite;
+}
+
+section .wave span:nth-child(2) {
+  border-radius: 40%;
+  background: rgba(20, 20, 20, 0.5);
+  animation: animate 10s linear infinite;
+}
+section .wave span:nth-child(3) {
+  border-radius: 42.5%;
+  background: rgba(20, 20, 20, 0.5);
+  animation: animate 15s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
+}
+
+
+
+
+    }
+
+@media (max-width: 480px){
+body {
+    font-family: 'Arial', sans-serif;
+   background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
    
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-body { font-family: sans-serif; margin: 0; }
-
-.loader {
-  width:215px;
-  height: 215px;
-  display: block;
-  padding-left: 21px;
-  margin-left: -30px;
-  position: relative;
-  background: #ffffff;
-  box-sizing: border-box;
-  box-shadow: 7px 7px 30px darkorange;
-  border-radius: 50px 50px 50px 0px;
-}
-
-
-
-  
-.loader{
-    float:left ;
-    margin-right:30px;
-    margin-bottom: 25px;
-}
-
-
-
-.bagportfolio,small{
+/* Styling Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    background-color: transparent  ;
+    background-color: rgba(0, 0, 0, 0); /* Warna background gelap */
     color: white;
-    text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 50px;
+    padding: 1rem 2rem;
+    position: sticky;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9000;
+   border-bottom:2px solid #ffffff;
+   
 }
 
-
-
-
-
-img{
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    margin: 30px;
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
 }
 
-input{
-    width: 80%;
-    height:10px;
-    background-color: white;
+/* Styling Menu Links (Desktop) */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    
 }
 
-.name{
-    margin:2px 2px 2px 10px;
-   margin-top: -10px;
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
+    
 }
 
-
-
-
-
-
-
-
-
-.spinner {
-  width: 70px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  border: 8px solid rgb(255, 255, 255);
-  border-right-color: darkorange;
-  animation: l2  3s infinite linear;
+.nav-links li a:hover {
+    color: #979393; /* Warna saat kursor di atas menu */
 }
 
-.spinnerr {
-  width: 70px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  border: 8px solid rgb(255, 255, 255);
-  border-right-color:darkorange;
-  animation: l2 4s infinite linear;
+/* Styling Hamburger Icon (Hidden di Desktop) */
+.hamburger {
+    display: none;
+    cursor: pointer;
 }
 
-.spinnerrr {
-  width: 70px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  border: 8px solid rgb(255, 255, 255);
-  border-right-color: darkorange;
-  animation: l2 5s infinite linear;
-}
-
-.spinner,.spinnerr,.spinnerrr{
-    margin-top: 15px;
-}
-@keyframes l2 {to{transform: rotate(1turn)}}
-
-
-
-.isian{
-    width: 140px;
+.bar {
+    display: block;
+    width: 25px;
     height: 3px;
-    background-color: rgb(255, 255, 255);
-    margin-left: 10px;
+    margin: 5px auto;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
 }
 
 
 
 
 
-.isiann{
-    width: 100px;
-    background-color: darkorange;
-    height:3px;
-}
 
-.hobi{
-    color: white;
-    margin-left: 100px;
-}
-
-
-.penjelasanhobi{
-    color: rgb(0, 0, 0);
-    text-align: right;
-    padding-top: 20px;
-    padding-right: 10px;
-}
-
-.small1{
-    color: rgb(0, 0, 0);
-    font-weight: 100;
-}
-
-
-
-#galerya{
-    background-color: #000000;
-}
-
-.loader10 {
-  width:215px;
-  height: 215px;
-  display: block;
-  padding-left: 21px;
-  margin-left: -30px;
-  position: relative;
-  background: #ffffff;
-  box-sizing: border-box;
-  box-shadow: 7px 7px 30px darkorange;
-  border-radius: 5px 50px 50px 50px;
-}
-
-
-
+h1 {
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
   
-.loader10{
-    float:left ;
-    margin-right:30px;
-    margin-bottom: 25px;
-}
-
-
-.name10{
-    margin-left: 10px;
-}
-
-
-.loader100 {
-  width:215px;
-  height: 215px;
-  display: block;
-  padding-left: 21px;
-  margin-left: 58px;
-  position: relative;
-  background: #ffffff;
-  box-sizing: border-box;
-  box-shadow: 7px 7px 30px darkorange;
-  border-radius: 50px 5px 50px 50px;
-}
-
-
-
+  padding: 0px;
+  margin-top: -150px;
   
-.loader100{
-    float:right;
-    margin-right:30px;
-    margin-bottom: 25px;
+}
+
+/* Typewriter effect 1 */
+@keyframes typing {
+  0.0000%, 27.3488% { content: ""; }
+  1.1395%, 26.2093% { content: "d"; }
+  2.2791%, 25.0698% { content: "de"; }
+  3.4186%, 23.9302% { content: "dev"; }
+  4.5581%, 22.7907% { content: "deve"; }
+  5.6977%, 21.6512% { content: "devel"; }
+  6.8372%, 20.5116% { content: "develo"; }
+  7.9767%, 19.3721% { content: "develop"; }
+  9.1163%, 18.2326% { content: "develope"; }
+  10.2558%, 17.0930% { content: "developer"; }
+
+  30.7674%, 51.2791% { content: ""; }
+  31.9070%, 50.1395% { content: "w"; }
+  33.0465%, 49.0000% { content: "wr"; }
+  34.1860%, 47.8605% { content: "wri"; }
+  35.3256%, 46.7209% { content: "writ"; }
+  36.4651%, 45.5814% { content: "write"; }
+  37.6047%, 44.4419% { content: "writer"; }
+
+  54.6977%, 75.2093% { content: ""; }
+  55.8372%, 74.0698% { content: "r"; }
+  56.9767%, 72.9302% { content: "re"; }
+  58.1163%, 71.7907% { content: "rea"; }
+  59.2558%, 70.6512% { content: "read"; }
+  60.3953%, 69.5116% { content: "reade"; }
+  61.5349%, 68.3721% { content: "reader"; }
+
+  78.6279%, 96.8605% { content: ""; }
+  79.7674%, 95.7209% { content: "h"; }
+  80.9070%, 94.5814% { content: "hu"; }
+  82.0465%, 93.4419% { content: "hum"; }
+  83.1860%, 92.3023% { content: "huma"; }
+  84.3256%, 91.1628% { content: "human"; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.typewriter {
+  --caret: currentcolor;
+}
+
+.typewriter::before {
+  content: "";
+  animation: typing 13.5s infinite;
+}
+
+.typewriter::after {
+  content: "";
+  border-right: 1px solid var(--caret);
+  animation: blink 0.5s linear infinite;
 }
 
 
 
 
-.bagian11{
-    padding-left: 130px;
+
+
+@media (prefers-reduced-motion) {
+  .typewriter::after {
+    animation: none;
+  }
+  
+  @keyframes sequencePopup {
+    0%, 100% { content: "developer"; }
+    25% { content: "writer"; }
+    50% { content: "reader"; }
+    75% { content: "human"; }
+  }
+
+  .typewriter::before {
+    content: "developer";
+    animation: sequencePopup 12s linear infinite;
+  }
+}
+
+/**/
+
+
+
+ 
+
+
+
+
+
+
+.button--piyo{
+    --main_color : #f4cf47 ;
+    --sub_color1 : #f4e19c ;
+    --sub_color2 : #ff8108 ;
+    --base_color : #000 ;
+    --border_radius1 : 60px 60px 40px 40px / 48px 48px 30px 30px ;
+    --border_radius2 : 70px 70px 40px 40px / 48px 48px 30px 30px ;
+    --border_radius3 : 40px 40px 40px 40px / 48px 48px 30px 30px ;
+}
+.button--hoo{
+    --main_color : #4993ff ;
+    --sub_color1 : #385082 ;
+    --sub_color2 : #fff58f ;
+    --sub_color3 : #fff ;
+    --base_color : #FFF ;
+    --border_radius1 : 50px 50px 50px 50px / 40px 40px 40px 40px ;
+    --border_radius2 : 60px 60px 50px 50px / 40px 40px 40px 40px ;
+    --border_radius3 : 40px 40px 50px 50px / 60px 60px 40px 40px ;
+    --border_radius3 : 50px 50px 45px 45px / 40px 40px 60px 60px ;
+}
+.button--pen{
+    --main_color : #4d4d4d ;
+    --sub_color1 : #FFF ;
+    --sub_color2 : #e9b800 ;
+    --base_color : #e9b800 ;
+    --border_radius1 : 60px 60px 40px 40px / 48px 48px 30px 30px ;
+    --border_radius2 : 70px 70px 40px 40px / 48px 48px 30px 30px ;
+    --border_radius3 : 40px 40px 40px 40px / 48px 48px 30px 30px ;
+}
+.button{
+    position : relative ;
+    display : flex ;
+    justify-content : center ;
+    align-items : center ;
+    width : 280px ;
+    height : 80px ;
+    box-sizing : border-box ;
+    text-decoration : none ;
+    border : solid 3px #000 ;
+    border-radius : 40px ;
+    background : var(--main_color) ;
+    font-family: 'Fredoka One', cursive;
+}
+.button::before{
+    content : '' ;
+    position : absolute ;
+    z-index : 2 ;
+    top : 0 ;
+    right : 20px ;
+    bottom : 0 ;
+    margin : auto 0 ;
+    width : 24px ;
+    height : 24px ;
+    background : var(--base_color) ; 
+    transition : all ease .2s ;
+}
+.button__wrapper{
+    display : flex ;
+    justify-content : center ;
+    align-items : center ;
+    position : relative ;
+    z-index : 1 ; 
+    width : 100% ;
+    height : 100% ;
+    border-radius : 40px ;
+    overflow : hidden ;
+}
+.button__wrapper::before,
+.button__wrapper::after{
+    transition : all .5s ease ;
+}
+.characterBox{
+    position : absolute ;
+    top : -54px ;
+    left : 0 ;
+    right : 0 ;
+    margin : 0 auto ;
+    display : flex ;
+    justify-content : space-between ;
+    align-items : flex-end ;
+    width : 180px ;
+    height : 56px ;
+}
+.button__text{
+    position : relative ;
+    z-index : 3 ;
+    font-size : 32px ;
+    letter-spacing : 4px ;
+    color : var(--base_color) ;
+    transition : all .3s ease ;
+}
+.character{
+    position : relative ;
+    width : 56px ;
+    height : 36px ;
+    box-sizing : border-box ;
+    border : solid 3px #000 ;
+    background : var(--main_color) ;
+    border-radius : var(--border_radius1) ;
+    animation : sleep 1s ease infinite alternate ;
+}
+.character::before{
+    content : '' ;
+    position : absolute ;
+    top : -12px ;
+    left : 22px ;
+    width : 12px ;
+    height : 12px ;
+    background : #000 ;
+    clip-path : path('M10.23,3.32c-3.54,.63-5.72,2.51-7.02,4.23-.33-1.58-.34-3.54,.93-5.12,.52-.65,.41-1.59-.24-2.11C3.24-.19,2.29-.08,1.77,.57c-3.82,4.77-.31,11.11-.13,11.42,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0-.01-.02,2.49,.04,2.52,0,.1-.14,1.54-4.82,6.59-5.71,.82-.14,1.37-.92,1.22-1.74s-.94-1.36-1.75-1.21Z') ;
+}
+.character__face{
+    position : absolute ;
+    z-index : 2 ;
+    top : 15px ;
+    left : 0 ;
+    right : 0 ;
+    margin : 0 auto ;
+    width : 12px ;
+    height : 6px ;
+    background : var(--sub_color2) ;
+    border-radius : 50% 50% 50% 50% / 78% 78% 22% 22% ;
+    transition : .2s ;
+}
+.character__face::before,
+.character__face::after{
+    content : '' ;
+    position : absolute ;
+    top : -4px ;
+    width : 8px ;
+    height : 2px ;
+    border-radius : 4px ;
+    background : #000 ;
+}
+.character__face::before{
+    left : -5px ;
+}
+.character__face::after{
+    right : -5px ;
+}
+.button--hoo .character__face::before,
+.button--hoo .character__face::after{
+    background : #fff ;
+}
+.button--hoo .charactor__face2{
+    position : absolute ;
+    z-index : 1 ;
+    top : 8px ;
+    left : 0 ;
+    right : 0 ;
+    margin : auto ;
+    width : 14px ;
+    height : 10px ;
+    background : #385082 ;
+    animation : face_hoo 1s ease infinite alternate ;
+}
+.button--hoo .charactor__face2::before,
+.button--hoo .charactor__face2::after{
+    content : '' ;
+    position : absolute ;
+    top : -1px ;
+    width : 20px ;
+    height : 10px ;
+    box-sizing : border-box ;
+    border-radius : 50% ;
+    border : solid 3px #385082 ;
+    background : #000 ;
+}
+.button--hoo .charactor__face2::before{
+    left : -12px ;
+}
+.button--hoo .charactor__face2::after{
+    right : -12px ;
+}
+.button--hoo .charactor__body{
+    position : absolute ;
+    bottom : 0 ;
+    left : 0 ;
+    right : 0 ;
+    margin : 0 auto ;
+    width : 0 ;
+    height : 0 ;
+    border-top : solid 2px #385082 ;
+    border-left : solid 7px transparent ;
+    border-right : solid 7px transparent ;
+    border-bottom : solid 0 transparent ;
+    animation : body_hoo 1s ease infinite alternate ;
+}
+.button--hoo .charactor__body::before,
+.button--hoo .charactor__body::after{
+    content : '' ;
+    position : absolute ;
+    top : -4px ;
+    width : 0 ;
+    height : 0 ;
+    border-top : solid 2px #385082 ;
+    border-left : solid 7px transparent ;
+    border-right : solid 7px transparent ;
+    border-bottom : solid 0 transparent ;
+}
+.button--hoo .charactor__body::before{
+    left : -17px ;
+}
+.button--hoo .charactor__body::after{
+    right : -17px ;
+}
+
+.button--pen .charactor__face2{
+    position : absolute ;
+    z-index : 1 ;
+    bottom : 0 ;
+    left : 0 ;
+    right : 0 ;
+    margin : auto ;
+    width : 30px ;
+    height : 10px ;
+    border-radius : 50% ;
+    background : #fff ;
+    animation : face_pen 1s ease infinite alternate ;
+}
+.button--pen .charactor__face2::before,
+.button--pen .charactor__face2::after{
+    content : '' ;
+    position : absolute ;
+    top : -8px ;
+    width : 17px ;
+    height : 10px ;
+    border-radius : 50% ;
+    background : #fff ;
+}
+.button--pen .charactor__face2::before{
+    left : -4px ;
+}
+.button--pen .charactor__face2::after{
+    right : -4px ;
+}
+
+.button--piyo::before{
+    clip-path : path('M24,12.02c0-1.09-.75-1.71-.81-1.77L11.17,.45c-.91-.74-2.21-.56-2.91,.42-.69,.97-.52,2.37,.39,3.11l7.12,5.81-13.7-.02h0C.93,9.77,0,10.76,0,11.99c0,1.23,.93,2.22,2.07,2.22l13.7,.02-7.13,5.78c-.91,.74-1.09,2.13-.4,3.11,.41,.58,1.03,.88,1.65,.88,.44,0,.88-.15,1.25-.45l12.04-9.76c.07-.06,.82-.67,.82-1.77Z') ;
+}
+.button--hoo::before{
+    clip-path : path('M21.93,9.8h-3.33S11.5,.79,11.5,.79c-.74-.94-2.05-1.05-2.92-.26-.88,.79-.99,2.19-.25,3.13l4.84,6.13-11.09-.02C.95,9.73,0,10.76,0,11.99c0,1.23,.93,2.22,2.07,2.22l11.09,.02-4.86,6.12c-.74,.93-.63,2.33,.24,3.13,.39,.35,.87,.53,1.34,.53,.59,0,1.17-.27,1.58-.78l7.13-8.99h3.32s0,0,0,0c1.14,0,2.07-.99,2.07-2.22,0-1.23-.93-2.22-2.07-2.22Z') ;
+}
+.button--pen::before{
+    clip-path : path('M23.36,10.63L6.18,.13c-.93-.57-1.85,.81-1.39,2.06l1.44,3.91c.3,.81,.01,1.81-.6,2.1L.72,10.58c-.96,.47-.96,2.37,0,2.83l4.91,2.38c.62,.3,.9,1.29,.6,2.1l-1.44,3.91c-.46,1.26,.46,2.63,1.39,2.06L23.36,13.37c.86-.53,.86-2.22,0-2.75Z') ;
+}
+.button--piyo .button__wrapper::before,
+.button--piyo .button__wrapper::after{
+    content : '' ;
+    position : absolute ;
+    bottom : 0 ;
+    width : 130px ;
+    height : 38px ;
+    background : var(--sub_color1) ;
+    clip-path : path('M13.77,37.35L.25,16.6c-.87-1.33,.69-2.91,2-2.02l12.67,8.59c.81,.55,1.91,.14,2.18-.81l2.62-9.33c.39-1.4,2.34-1.42,2.76-.02l3.6,11.99c.33,1.11,1.74,1.4,2.47,.52L49.38,.52c.87-1.04,2.53-.42,2.53,.95V23.7c0,1.13,1.2,1.83,2.16,1.26l12.75-7.51c.85-.5,1.94,0,2.13,.98l1.5,7.6c.2,1.03,1.37,1.51,2.22,.92l17.74-12.3c1.09-.75,2.52,.25,2.21,1.55l-2.44,10.2c-.26,1.09,.74,2.06,1.8,1.75l30.8-9.04c1.37-.4,2.42,1.26,1.49,2.36l-9.07,10.66c-.83,.98-.1,2.49,1.17,2.42l12.12-.68c1.6-.09,2.12,2.15,.65,2.8l-2.73,1.21c-.18,.08-.38,.12-.58,.12H14.97c-.48,0-.93-.25-1.2-.65Z') ;
+}
+.button--piyo .button__wrapper::before{
+    left : 0 ;
+}
+.button--piyo .button__wrapper::after{
+    right : 0 ;
+    transform : rotateY(180deg) ;
+}
+.button--hoo .button__wrapper::before,
+.button--hoo .button__wrapper::after{
+    content : '' ;
+    position : absolute ;
+    width : 80px ;
+    height : 100px ;
+    background : var(--sub_color1) ;
+    clip-path : path('M75.96,41.27l-42.76,11.17V0H0V100H33.2v-28.75l45.07-23.97c3.38-1.8,1.39-6.98-2.31-6.01Z') ;
+}
+.button--hoo .button__wrapper::before{
+    left : 6px ;
+    bottom : 0 ;
+}
+.button--hoo .button__wrapper::after{
+    right : 8px ;
+    bottom : -10px ;
+    transform : rotateY(180deg) ;
+}
+.button--pen .button__wrapper::before,
+.button--pen .button__wrapper::after{
+    content : '' ;
+    position : absolute ;
+    width : 110px ;
+    height : 60px ;
+    background : var(--sub_color1) ;
+    clip-path : path('M9.12,14.14L43.15,.5c1.61-.86,3.57-.59,4.9,.68l19.55,14.31c.42,.4,.76,.89,.99,1.42l3.45,13.09c.89,2.06,3.18,3.09,5.28,2.37l11.76-4.86c1.56-.54,3.29-.11,4.43,1.1l11.93,12.39c.48,.51,.84,1.12,1.03,1.8l3.35,11.62c.8,2.79-1.25,5.58-4.1,5.58H4.27c-2.71,0-4.73-2.54-4.18-5.24L6.92,17.11c.26-1.28,1.07-2.37,2.2-2.97Z') ;
+}
+.button--pen .button__wrapper::before{
+    left : -16px ;
+    bottom : -10px ;
+}
+.button--pen .button__wrapper::after{
+    right : -8px ;
+    bottom : -20px ;
+    transform : rotateY(180deg) ;
+}
+.button:hover .button__wrapper::before{
+    transform : translateX(-12px) ;
+}
+.button:hover .button__wrapper::after{
+    transform : rotateY(180deg) translateX(-12px) ;
+}
+.button:hover .button__text{
+    letter-spacing : 6px ;
+}
+.button:hover::before{
+    right : 14px ;
+}
+.button:hover .wakeup{
+    animation : wakeup .2s ease ;
+    animation-fill-mode : forwards ;
+}
+.button:hover .wakeup .character__face{
+    top : 20px ;
+}
+.button:hover .wakeup .character__face::before,
+.button:hover .wakeup .character__face::after{
+    animation : eye 5s linear infinite ;
+}
+.button:hover .wakeup:nth-child(2) .character__face::before,
+.button:hover .wakeup:nth-child(2) .character__face::after{
+    animation : eye_2 5s linear infinite ;
+}
+.button--hoo:hover .wakeup .charactor__face2::before,
+.button--hoo:hover .wakeup .charactor__face2::after{
+    height : 20px ;
+}
+.button--hoo:hover .wakeup .charactor__body{
+    animation : body_hoo_wakeup .2s ease ;
+    animation-fill-mode : forwards ;
+    border-top : solid 6px #385082 ;
+}
+.button--hoo:hover .wakeup .charactor__body::before,
+.button--hoo:hover .wakeup .charactor__body::after{
+    top : -12px ;
+    border-top : solid 5px #385082 ;
+}
+.button--pen:hover .wakeup .charactor__face2{
+    animation : face_pen_wakeup .2s ease ;
+    animation-fill-mode : forwards ;
+}
+.button--pen:hover .wakeup .charactor__face2::before,
+.button--pen:hover .wakeup .charactor__face2::after{
+    top : -12px ;
+    height : 18px ;
+}
+@keyframes sleep{
+    0%  {
+        height : 36px ;
+        border-radius : var(--border_radius1) ;
+    }
+    100%{
+        height : 32px ;
+        border-radius : var(--border_radius2) ;
+    }
+}
+@keyframes wakeup{
+    0%  {
+        height : 32px ;
+        border-radius : var(--border_radius2) ;
+    }
+    100%{
+        height : 56px ;
+        border-radius : var(--border_radius3) ;
+    }
+}
+@keyframes eye {
+    0%{
+        top : -6px ;
+        width : 6px ;
+        height : 6px ;
+    }
+    30%{
+        top : -6px ;
+        width : 6px ;
+        height : 6px ;
+    }
+    32%{
+        top : -4px ;
+        width : 8px ;
+        height : 2px ;
+    }
+    34%{
+        top : -6px ;
+        width : 6px ;
+        height : 6px ;
+    }
+    70%{
+        top : -6px ;
+        width : 6px ;
+        height : 6px ;
+    }
+    72%{
+        top : -4px ;
+        width : 8px ;
+        height : 2px ;
+    }
+    74%{
+        top : -6px ;
+        width : 6px ;
+        height : 6px ;
+    }
+    76%{
+        top : -4px ;
+        width : 8px ;
+        height : 2px ;
+    }
+    78%{
+        top : -6px ;
+        width : 6px ;
+        height : 6px ;
+    }
+    100%{
+        top : -6px ;
+        width : 6px ;
+        height : 6px ;
+    }
+}
+@keyframes eye_2 {
+    0%{
+        top : -6px ;
+        width : 6px ;
+        height : 6px ;
+    }
+    10%{
+        transform : translateX(0);
+    }
+    12%{
+        transform : translateX(3px);
+    }
+    20%{
+        top : -6px ;
+        width : 6px ;
+        height : 6px ;
+    }
+    22%{
+        top : -4px ;
+        width : 8px ;
+        height : 2px ;
+    }
+    24%{
+        top : -6px ;
+        width : 6px ;
+        height : 6px ;
+    }
+    25%{
+        transform : translateX(3px);
+    }
+    27%{
+        transform : translateX(0);
+    }
+    74%{
+        top : -6px ;
+        width : 6px ;
+        height : 6px ;
+        transform : translateX(0);
+    }
+    76%{
+        top : -4px ;
+        width : 8px ;
+        height : 2px ;
+        transform : translateX(3px);
+    }
+    78%{
+        top : -6px ;
+        width : 6px ;
+        height : 6px ;
+    }
+    80%{
+        top : -4px ;
+        width : 8px ;
+        height : 2px ;
+    }
+    82%{
+        top : -6px ;
+        width : 6px ;
+        height : 6px ;
+    }
+    85%{
+        transform : translateX(3px);
+    }
+    87%{
+        transform : translateX(0);
+    }
+    100%{
+        top : -6px ;
+        width : 6px ;
+        height : 6px ;
+        transform : translateX(0);
+    }
+}
+@keyframes body_hoo{
+    0%  {
+        bottom : 2px ;
+    }
+    100%{
+        bottom : 0 ;
+    }
+}
+@keyframes body_hoo_wakeup{
+    0%  {
+        bottom : 2px ;
+    }
+    100%{
+        bottom : 6px ;
+    }
+}
+@keyframes face_pen{
+    0%  {
+        height : 14px ;
+    }
+    100%{
+        height : 10px ;
+    }
+}
+@keyframes face_pen_wakeup{
+    0%  {
+        height : 14px ;
+    }
+    100%{
+        height : 28px ;
+    }
 }
 
 
 
 
-.pengalaman{
-    margin-left: 15px;
+
+
+
+/* 本体と関係ないスタイル */
+.container{
+    width : 100% ;
+   margin-top: 50%;
+    display : flex ;
+    flex-direction : column ;
+    justify-content : center ;
+    align-items : center ;
+position: fixed;
+}
+.button:not(:last-child){
+    margin-bottom : 80px ;
+}
+
+.sample{
+  width : 56px ;
+  height : 56px ;
+  background : orange ;
+  margin-bottom : 80px ;
+  border-radius : 40px 60px / 30px 50px ;
+  border-radius :  40px / 48px 48px 30px 30px;
 }
 
 
 
 
 
-.akhir1{
-    background-color: rgb(0, 0, 0);
-    box-shadow: 7px 7px 30px 7px rgb(255, 255, 255);
-width: 100%;
-height: 400px;
-margin: auto;
-margin-top: 30px;
-font-family: 'Courier New', Courier, monospace;
 
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+section .wave {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #4973ff;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+section .wave span {
+  content: "";
+  position: absolute;
+  width: 325vh;
+  height: 325vh;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  background: #000;
+}
+.contenttt {
+  position: relative;
+  z-index: 1;
+  font-size: 2em;
+  letter-spacing: 2px;
+  color: #fff;
+  margin-left: -99px;
+  
+}
+section .wave span:nth-child(1) {
+  border-radius: 45%;
+  background: rgb(44, 44, 44);
+  animation: animate 5s linear infinite;
 }
 
-.penutup{
-    color:white;
-   font-size: 20px;
-   font-family: Arial, Helvetica, sans-serif;
-   padding-top: 100px;
-   margin-left: 20px;
+section .wave span:nth-child(2) {
+  border-radius: 40%;
+  background: rgba(0, 0, 0, 0.63);
+  animation: animate 10s linear infinite;
+}
+section .wave span:nth-child(3) {
+  border-radius: 42.5%;
+  background: rgba(0, 0, 0, 0.5);
+  animation: animate 15s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
+}
 
+.jarak{
+    margin-top: 10px;
+}
+
+    }
+
+
+
+@media (min-width: 1201px){
+
+body {
+    font-family: 'Arial', sans-serif;
+   background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+   
 }
 
 
-.tgl {
+
+/* Styling Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    background-color: transparent  ;
+    background-color: rgba(0, 0, 0, 0); /* Warna background gelap */
     color: white;
-    font-size: 18px;
-    padding-top: 10px;
-    margin-left: 20px;
+    padding: 1rem 2rem;
+    position: sticky;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9000;
+   border-bottom:2px solid #ffffff;
+   
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+/* Styling Menu Links (Desktop) */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
     
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
     
-    
 }
 
-.logoo{
-    color: white;
-    margin: 80px auto;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    text-align: center;
-     margin-top: 130px;
+.nav-links li a:hover {
+    color: #979393; /* Warna saat kursor di atas menu */
 }
 
-
-.marvel{
-    color: white;
-    font-size: 30px;
-    text-align: center;
+/* Styling Hamburger Icon (Hidden di Desktop) */
+.hamburger {
+    display: none;
+    cursor: pointer;
 }
 
-
-
-
-
-.puisi{
-    color: white;
-    text-align: center ;
-    margin-top: 50px;
-    font-size: 15px;
-}
-
-
-}
-
-.lis{
-   list-style: none;
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
 }
 
 
@@ -1382,9 +1735,759 @@ font-family: 'Courier New', Courier, monospace;
 
 
 
+h1 {
+  font-size: 80px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  padding: 0px;
+  margin-top: -150px;
+  
+}
+
+/* Typewriter effect 1 */
+@keyframes typing {
+  0.0000%, 27.3488% { content: ""; }
+  1.1395%, 26.2093% { content: "d"; }
+  2.2791%, 25.0698% { content: "de"; }
+  3.4186%, 23.9302% { content: "dev"; }
+  4.5581%, 22.7907% { content: "deve"; }
+  5.6977%, 21.6512% { content: "devel"; }
+  6.8372%, 20.5116% { content: "develo"; }
+  7.9767%, 19.3721% { content: "develop"; }
+  9.1163%, 18.2326% { content: "develope"; }
+  10.2558%, 17.0930% { content: "developer"; }
+
+  30.7674%, 51.2791% { content: ""; }
+  31.9070%, 50.1395% { content: "w"; }
+  33.0465%, 49.0000% { content: "wr"; }
+  34.1860%, 47.8605% { content: "wri"; }
+  35.3256%, 46.7209% { content: "writ"; }
+  36.4651%, 45.5814% { content: "write"; }
+  37.6047%, 44.4419% { content: "writer"; }
+
+  54.6977%, 75.2093% { content: ""; }
+  55.8372%, 74.0698% { content: "r"; }
+  56.9767%, 72.9302% { content: "re"; }
+  58.1163%, 71.7907% { content: "rea"; }
+  59.2558%, 70.6512% { content: "read"; }
+  60.3953%, 69.5116% { content: "reade"; }
+  61.5349%, 68.3721% { content: "reader"; }
+
+  78.6279%, 96.8605% { content: ""; }
+  79.7674%, 95.7209% { content: "h"; }
+  80.9070%, 94.5814% { content: "hu"; }
+  82.0465%, 93.4419% { content: "hum"; }
+  83.1860%, 92.3023% { content: "huma"; }
+  84.3256%, 91.1628% { content: "human"; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.typewriter {
+  --caret: currentcolor;
+}
+
+.typewriter::before {
+  content: "";
+  animation: typing 13.5s infinite;
+}
+
+.typewriter::after {
+  content: "";
+  border-right: 1px solid var(--caret);
+  animation: blink 0.5s linear infinite;
+}
 
 
 
+
+
+
+@media (prefers-reduced-motion) {
+  .typewriter::after {
+    animation: none;
+  }
+  
+  @keyframes sequencePopup {
+    0%, 100% { content: "developer"; }
+    25% { content: "writer"; }
+    50% { content: "reader"; }
+    75% { content: "human"; }
+  }
+
+  .typewriter::before {
+    content: "developer";
+    animation: sequencePopup 12s linear infinite;
+  }
+}
+
+/**/
+
+
+
+ 
+
+
+
+
+
+
+.button--piyo{
+    --main_color : #f4cf47 ;
+    --sub_color1 : #f4e19c ;
+    --sub_color2 : #ff8108 ;
+    --base_color : #000 ;
+    --border_radius1 : 60px 60px 40px 40px / 48px 48px 30px 30px ;
+    --border_radius2 : 70px 70px 40px 40px / 48px 48px 30px 30px ;
+    --border_radius3 : 40px 40px 40px 40px / 48px 48px 30px 30px ;
+}
+.button--hoo{
+    --main_color : #4993ff ;
+    --sub_color1 : #385082 ;
+    --sub_color2 : #fff58f ;
+    --sub_color3 : #fff ;
+    --base_color : #FFF ;
+    --border_radius1 : 50px 50px 50px 50px / 40px 40px 40px 40px ;
+    --border_radius2 : 60px 60px 50px 50px / 40px 40px 40px 40px ;
+    --border_radius3 : 40px 40px 50px 50px / 60px 60px 40px 40px ;
+    --border_radius3 : 50px 50px 45px 45px / 40px 40px 60px 60px ;
+}
+.button--pen{
+    --main_color : #4d4d4d ;
+    --sub_color1 : #FFF ;
+    --sub_color2 : #e9b800 ;
+    --base_color : #e9b800 ;
+    --border_radius1 : 60px 60px 40px 40px / 48px 48px 30px 30px ;
+    --border_radius2 : 70px 70px 40px 40px / 48px 48px 30px 30px ;
+    --border_radius3 : 40px 40px 40px 40px / 48px 48px 30px 30px ;
+}
+.button{
+    position : relative ;
+    display : flex ;
+    justify-content : center ;
+    align-items : center ;
+    width : 280px ;
+    height : 80px ;
+    box-sizing : border-box ;
+    text-decoration : none ;
+    border : solid 3px #000 ;
+    border-radius : 40px ;
+    background : var(--main_color) ;
+    font-family: 'Fredoka One', cursive;
+}
+.button::before{
+    content : '' ;
+    position : absolute ;
+    z-index : 2 ;
+    top : 0 ;
+    right : 20px ;
+    bottom : 0 ;
+    margin : auto 0 ;
+    width : 24px ;
+    height : 24px ;
+    background : var(--base_color) ; 
+    transition : all ease .2s ;
+}
+.button__wrapper{
+    display : flex ;
+    justify-content : center ;
+    align-items : center ;
+    position : relative ;
+    z-index : 1 ; 
+    width : 100% ;
+    height : 100% ;
+    border-radius : 40px ;
+    overflow : hidden ;
+}
+.button__wrapper::before,
+.button__wrapper::after{
+    transition : all .5s ease ;
+}
+.characterBox{
+    position : absolute ;
+    top : -54px ;
+    left : 0 ;
+    right : 0 ;
+    margin : 0 auto ;
+    display : flex ;
+    justify-content : space-between ;
+    align-items : flex-end ;
+    width : 180px ;
+    height : 56px ;
+}
+.button__text{
+    position : relative ;
+    z-index : 3 ;
+    font-size : 32px ;
+    letter-spacing : 4px ;
+    color : var(--base_color) ;
+    transition : all .3s ease ;
+}
+.character{
+    position : relative ;
+    width : 56px ;
+    height : 36px ;
+    box-sizing : border-box ;
+    border : solid 3px #000 ;
+    background : var(--main_color) ;
+    border-radius : var(--border_radius1) ;
+    animation : sleep 1s ease infinite alternate ;
+}
+.character::before{
+    content : '' ;
+    position : absolute ;
+    top : -12px ;
+    left : 22px ;
+    width : 12px ;
+    height : 12px ;
+    background : #000 ;
+    clip-path : path('M10.23,3.32c-3.54,.63-5.72,2.51-7.02,4.23-.33-1.58-.34-3.54,.93-5.12,.52-.65,.41-1.59-.24-2.11C3.24-.19,2.29-.08,1.77,.57c-3.82,4.77-.31,11.11-.13,11.42,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0-.01-.02,2.49,.04,2.52,0,.1-.14,1.54-4.82,6.59-5.71,.82-.14,1.37-.92,1.22-1.74s-.94-1.36-1.75-1.21Z') ;
+}
+.character__face{
+    position : absolute ;
+    z-index : 2 ;
+    top : 15px ;
+    left : 0 ;
+    right : 0 ;
+    margin : 0 auto ;
+    width : 12px ;
+    height : 6px ;
+    background : var(--sub_color2) ;
+    border-radius : 50% 50% 50% 50% / 78% 78% 22% 22% ;
+    transition : .2s ;
+}
+.character__face::before,
+.character__face::after{
+    content : '' ;
+    position : absolute ;
+    top : -4px ;
+    width : 8px ;
+    height : 2px ;
+    border-radius : 4px ;
+    background : #000 ;
+}
+.character__face::before{
+    left : -5px ;
+}
+.character__face::after{
+    right : -5px ;
+}
+.button--hoo .character__face::before,
+.button--hoo .character__face::after{
+    background : #fff ;
+}
+.button--hoo .charactor__face2{
+    position : absolute ;
+    z-index : 1 ;
+    top : 8px ;
+    left : 0 ;
+    right : 0 ;
+    margin : auto ;
+    width : 14px ;
+    height : 10px ;
+    background : #385082 ;
+    animation : face_hoo 1s ease infinite alternate ;
+}
+.button--hoo .charactor__face2::before,
+.button--hoo .charactor__face2::after{
+    content : '' ;
+    position : absolute ;
+    top : -1px ;
+    width : 20px ;
+    height : 10px ;
+    box-sizing : border-box ;
+    border-radius : 50% ;
+    border : solid 3px #385082 ;
+    background : #000 ;
+}
+.button--hoo .charactor__face2::before{
+    left : -12px ;
+}
+.button--hoo .charactor__face2::after{
+    right : -12px ;
+}
+.button--hoo .charactor__body{
+    position : absolute ;
+    bottom : 0 ;
+    left : 0 ;
+    right : 0 ;
+    margin : 0 auto ;
+    width : 0 ;
+    height : 0 ;
+    border-top : solid 2px #385082 ;
+    border-left : solid 7px transparent ;
+    border-right : solid 7px transparent ;
+    border-bottom : solid 0 transparent ;
+    animation : body_hoo 1s ease infinite alternate ;
+}
+.button--hoo .charactor__body::before,
+.button--hoo .charactor__body::after{
+    content : '' ;
+    position : absolute ;
+    top : -4px ;
+    width : 0 ;
+    height : 0 ;
+    border-top : solid 2px #385082 ;
+    border-left : solid 7px transparent ;
+    border-right : solid 7px transparent ;
+    border-bottom : solid 0 transparent ;
+}
+.button--hoo .charactor__body::before{
+    left : -17px ;
+}
+.button--hoo .charactor__body::after{
+    right : -17px ;
+}
+
+.button--pen .charactor__face2{
+    position : absolute ;
+    z-index : 1 ;
+    bottom : 0 ;
+    left : 0 ;
+    right : 0 ;
+    margin : auto ;
+    width : 30px ;
+    height : 10px ;
+    border-radius : 50% ;
+    background : #fff ;
+    animation : face_pen 1s ease infinite alternate ;
+}
+.button--pen .charactor__face2::before,
+.button--pen .charactor__face2::after{
+    content : '' ;
+    position : absolute ;
+    top : -8px ;
+    width : 17px ;
+    height : 10px ;
+    border-radius : 50% ;
+    background : #fff ;
+}
+.button--pen .charactor__face2::before{
+    left : -4px ;
+}
+.button--pen .charactor__face2::after{
+    right : -4px ;
+}
+
+.button--piyo::before{
+    clip-path : path('M24,12.02c0-1.09-.75-1.71-.81-1.77L11.17,.45c-.91-.74-2.21-.56-2.91,.42-.69,.97-.52,2.37,.39,3.11l7.12,5.81-13.7-.02h0C.93,9.77,0,10.76,0,11.99c0,1.23,.93,2.22,2.07,2.22l13.7,.02-7.13,5.78c-.91,.74-1.09,2.13-.4,3.11,.41,.58,1.03,.88,1.65,.88,.44,0,.88-.15,1.25-.45l12.04-9.76c.07-.06,.82-.67,.82-1.77Z') ;
+}
+.button--hoo::before{
+    clip-path : path('M21.93,9.8h-3.33S11.5,.79,11.5,.79c-.74-.94-2.05-1.05-2.92-.26-.88,.79-.99,2.19-.25,3.13l4.84,6.13-11.09-.02C.95,9.73,0,10.76,0,11.99c0,1.23,.93,2.22,2.07,2.22l11.09,.02-4.86,6.12c-.74,.93-.63,2.33,.24,3.13,.39,.35,.87,.53,1.34,.53,.59,0,1.17-.27,1.58-.78l7.13-8.99h3.32s0,0,0,0c1.14,0,2.07-.99,2.07-2.22,0-1.23-.93-2.22-2.07-2.22Z') ;
+}
+.button--pen::before{
+    clip-path : path('M23.36,10.63L6.18,.13c-.93-.57-1.85,.81-1.39,2.06l1.44,3.91c.3,.81,.01,1.81-.6,2.1L.72,10.58c-.96,.47-.96,2.37,0,2.83l4.91,2.38c.62,.3,.9,1.29,.6,2.1l-1.44,3.91c-.46,1.26,.46,2.63,1.39,2.06L23.36,13.37c.86-.53,.86-2.22,0-2.75Z') ;
+}
+.button--piyo .button__wrapper::before,
+.button--piyo .button__wrapper::after{
+    content : '' ;
+    position : absolute ;
+    bottom : 0 ;
+    width : 130px ;
+    height : 38px ;
+    background : var(--sub_color1) ;
+    clip-path : path('M13.77,37.35L.25,16.6c-.87-1.33,.69-2.91,2-2.02l12.67,8.59c.81,.55,1.91,.14,2.18-.81l2.62-9.33c.39-1.4,2.34-1.42,2.76-.02l3.6,11.99c.33,1.11,1.74,1.4,2.47,.52L49.38,.52c.87-1.04,2.53-.42,2.53,.95V23.7c0,1.13,1.2,1.83,2.16,1.26l12.75-7.51c.85-.5,1.94,0,2.13,.98l1.5,7.6c.2,1.03,1.37,1.51,2.22,.92l17.74-12.3c1.09-.75,2.52,.25,2.21,1.55l-2.44,10.2c-.26,1.09,.74,2.06,1.8,1.75l30.8-9.04c1.37-.4,2.42,1.26,1.49,2.36l-9.07,10.66c-.83,.98-.1,2.49,1.17,2.42l12.12-.68c1.6-.09,2.12,2.15,.65,2.8l-2.73,1.21c-.18,.08-.38,.12-.58,.12H14.97c-.48,0-.93-.25-1.2-.65Z') ;
+}
+.button--piyo .button__wrapper::before{
+    left : 0 ;
+}
+.button--piyo .button__wrapper::after{
+    right : 0 ;
+    transform : rotateY(180deg) ;
+}
+.button--hoo .button__wrapper::before,
+.button--hoo .button__wrapper::after{
+    content : '' ;
+    position : absolute ;
+    width : 80px ;
+    height : 100px ;
+    background : var(--sub_color1) ;
+    clip-path : path('M75.96,41.27l-42.76,11.17V0H0V100H33.2v-28.75l45.07-23.97c3.38-1.8,1.39-6.98-2.31-6.01Z') ;
+}
+.button--hoo .button__wrapper::before{
+    left : 6px ;
+    bottom : 0 ;
+}
+.button--hoo .button__wrapper::after{
+    right : 8px ;
+    bottom : -10px ;
+    transform : rotateY(180deg) ;
+}
+.button--pen .button__wrapper::before,
+.button--pen .button__wrapper::after{
+    content : '' ;
+    position : absolute ;
+    width : 110px ;
+    height : 60px ;
+    background : var(--sub_color1) ;
+    clip-path : path('M9.12,14.14L43.15,.5c1.61-.86,3.57-.59,4.9,.68l19.55,14.31c.42,.4,.76,.89,.99,1.42l3.45,13.09c.89,2.06,3.18,3.09,5.28,2.37l11.76-4.86c1.56-.54,3.29-.11,4.43,1.1l11.93,12.39c.48,.51,.84,1.12,1.03,1.8l3.35,11.62c.8,2.79-1.25,5.58-4.1,5.58H4.27c-2.71,0-4.73-2.54-4.18-5.24L6.92,17.11c.26-1.28,1.07-2.37,2.2-2.97Z') ;
+}
+.button--pen .button__wrapper::before{
+    left : -16px ;
+    bottom : -10px ;
+}
+.button--pen .button__wrapper::after{
+    right : -8px ;
+    bottom : -20px ;
+    transform : rotateY(180deg) ;
+}
+.button:hover .button__wrapper::before{
+    transform : translateX(-12px) ;
+}
+.button:hover .button__wrapper::after{
+    transform : rotateY(180deg) translateX(-12px) ;
+}
+.button:hover .button__text{
+    letter-spacing : 6px ;
+}
+.button:hover::before{
+    right : 14px ;
+}
+.button:hover .wakeup{
+    animation : wakeup .2s ease ;
+    animation-fill-mode : forwards ;
+}
+.button:hover .wakeup .character__face{
+    top : 20px ;
+}
+.button:hover .wakeup .character__face::before,
+.button:hover .wakeup .character__face::after{
+    animation : eye 5s linear infinite ;
+}
+.button:hover .wakeup:nth-child(2) .character__face::before,
+.button:hover .wakeup:nth-child(2) .character__face::after{
+    animation : eye_2 5s linear infinite ;
+}
+.button--hoo:hover .wakeup .charactor__face2::before,
+.button--hoo:hover .wakeup .charactor__face2::after{
+    height : 20px ;
+}
+.button--hoo:hover .wakeup .charactor__body{
+    animation : body_hoo_wakeup .2s ease ;
+    animation-fill-mode : forwards ;
+    border-top : solid 6px #385082 ;
+}
+.button--hoo:hover .wakeup .charactor__body::before,
+.button--hoo:hover .wakeup .charactor__body::after{
+    top : -12px ;
+    border-top : solid 5px #385082 ;
+}
+.button--pen:hover .wakeup .charactor__face2{
+    animation : face_pen_wakeup .2s ease ;
+    animation-fill-mode : forwards ;
+}
+.button--pen:hover .wakeup .charactor__face2::before,
+.button--pen:hover .wakeup .charactor__face2::after{
+    top : -12px ;
+    height : 18px ;
+}
+@keyframes sleep{
+    0%  {
+        height : 36px ;
+        border-radius : var(--border_radius1) ;
+    }
+    100%{
+        height : 32px ;
+        border-radius : var(--border_radius2) ;
+    }
+}
+@keyframes wakeup{
+    0%  {
+        height : 32px ;
+        border-radius : var(--border_radius2) ;
+    }
+    100%{
+        height : 56px ;
+        border-radius : var(--border_radius3) ;
+    }
+}
+@keyframes eye {
+    0%{
+        top : -6px ;
+        width : 6px ;
+        height : 6px ;
+    }
+    30%{
+        top : -6px ;
+        width : 6px ;
+        height : 6px ;
+    }
+    32%{
+        top : -4px ;
+        width : 8px ;
+        height : 2px ;
+    }
+    34%{
+        top : -6px ;
+        width : 6px ;
+        height : 6px ;
+    }
+    70%{
+        top : -6px ;
+        width : 6px ;
+        height : 6px ;
+    }
+    72%{
+        top : -4px ;
+        width : 8px ;
+        height : 2px ;
+    }
+    74%{
+        top : -6px ;
+        width : 6px ;
+        height : 6px ;
+    }
+    76%{
+        top : -4px ;
+        width : 8px ;
+        height : 2px ;
+    }
+    78%{
+        top : -6px ;
+        width : 6px ;
+        height : 6px ;
+    }
+    100%{
+        top : -6px ;
+        width : 6px ;
+        height : 6px ;
+    }
+}
+@keyframes eye_2 {
+    0%{
+        top : -6px ;
+        width : 6px ;
+        height : 6px ;
+    }
+    10%{
+        transform : translateX(0);
+    }
+    12%{
+        transform : translateX(3px);
+    }
+    20%{
+        top : -6px ;
+        width : 6px ;
+        height : 6px ;
+    }
+    22%{
+        top : -4px ;
+        width : 8px ;
+        height : 2px ;
+    }
+    24%{
+        top : -6px ;
+        width : 6px ;
+        height : 6px ;
+    }
+    25%{
+        transform : translateX(3px);
+    }
+    27%{
+        transform : translateX(0);
+    }
+    74%{
+        top : -6px ;
+        width : 6px ;
+        height : 6px ;
+        transform : translateX(0);
+    }
+    76%{
+        top : -4px ;
+        width : 8px ;
+        height : 2px ;
+        transform : translateX(3px);
+    }
+    78%{
+        top : -6px ;
+        width : 6px ;
+        height : 6px ;
+    }
+    80%{
+        top : -4px ;
+        width : 8px ;
+        height : 2px ;
+    }
+    82%{
+        top : -6px ;
+        width : 6px ;
+        height : 6px ;
+    }
+    85%{
+        transform : translateX(3px);
+    }
+    87%{
+        transform : translateX(0);
+    }
+    100%{
+        top : -6px ;
+        width : 6px ;
+        height : 6px ;
+        transform : translateX(0);
+    }
+}
+@keyframes body_hoo{
+    0%  {
+        bottom : 2px ;
+    }
+    100%{
+        bottom : 0 ;
+    }
+}
+@keyframes body_hoo_wakeup{
+    0%  {
+        bottom : 2px ;
+    }
+    100%{
+        bottom : 6px ;
+    }
+}
+@keyframes face_pen{
+    0%  {
+        height : 14px ;
+    }
+    100%{
+        height : 10px ;
+    }
+}
+@keyframes face_pen_wakeup{
+    0%  {
+        height : 14px ;
+    }
+    100%{
+        height : 28px ;
+    }
+}
+
+
+
+
+
+br{
+    display: none;
+}
+
+/* 本体と関係ないスタイル */
+.container{
+    width : 100% ;
+   margin-top: 10%;
+    display : flex ;
+    flex-direction : column ;
+    justify-content : center ;
+    align-items : center ;
+position: fixed;
+}
+.button:not(:last-child){
+    margin-bottom : 80px ;
+}
+
+.sample{
+  width : 56px ;
+  height : 56px ;
+  background : orange ;
+  margin-bottom : 80px ;
+  border-radius : 40px 60px / 30px 50px ;
+  border-radius :  40px / 48px 48px 30px 30px;
+}
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+section .wave {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #4973ff;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+section .wave span {
+  content: "";
+  position: absolute;
+  width: 325vh;
+  height: 325vh;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  background: #000;
+}
+.contenttt {
+  position: relative;
+  z-index: 1;
+  font-size: 2em;
+  letter-spacing: 2px;
+  color: #fff;
+  
+  
+}
+section .wave span:nth-child(1) {
+  border-radius: 45%;
+  background: rgb(44, 44, 44);
+  animation: animate 5s linear infinite;
+}
+
+section .wave span:nth-child(2) {
+  border-radius: 40%;
+  background: rgba(0, 0, 0, 0.63);
+  animation: animate 10s linear infinite;
+}
+section .wave span:nth-child(3) {
+  border-radius: 42.5%;
+  background: rgba(0, 0, 0, 0.5);
+  animation: animate 15s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
+}
+
+.jarak{
+    margin-top: 10px;
+}
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+/* --- MEDIA QUERY (TABLET & MOBILE) --- */
 @media (max-width: 768px) {
     .hamburger {
         display: block; /* Tampilkan hamburger di layar kecil */
@@ -1426,4 +2529,27 @@ font-family: 'Courier New', Courier, monospace;
     .nav-links li {
         margin: 15px 0;
     }
+
+
+    .cursor-img {
+            position: absolute;
+            width: 50px; /* Atur ukuran gambar */
+            height: 5%;
+            pointer-events: none; /* Agar tidak menghalangi klik */
+            transition: transform 0.1s ease-out; /* Efek halus */
+            /* Efek beranak: gambar akan menghilang perlahan */
+            animation: fadeOut 0.5s forwards;
+        }
+
+
+
+
+        @keyframes fadeOut {
+            to {
+                opacity: 0;
+                transform: scale(0.5); /* Mengecil saat menghilang */
+            }
+        }
+
 }
+

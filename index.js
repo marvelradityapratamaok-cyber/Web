@@ -14,9 +14,13 @@ document.querySelectorAll(".nav-links li a").forEach(n => n.addEventListener("cl
 }));
 
 
-  function playAudio() {
-  var audio = document.getElementById();
-  audio.play(myAudio); // Memutar suara
-}
+   // 1. Ambil elemen h1
+        const judul = document.getElementById('judulBunyi');
+        
+        // 2. Buat objek audio (ganti 'suara.mp3' dengan nama file Anda)
+        const audio = new Audio('audio.wav');
 
-
+        // 3. Tambahkan event listener saat diklik
+        judul.addEventListener('click', function() {
+            audio.play(); // Mainkan suara
+        });

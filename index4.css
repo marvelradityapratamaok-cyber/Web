@@ -1,0 +1,1994 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html{
+    scroll-behavior: smooth;
+      overflow-x: hidden;
+    scrollbar-width: thin; /* Membuat scrollbar menjadi tipis */
+    scrollbar-color: #ffffff #ffffff; /* Warna thumb dan track */
+      padding: 0;
+      margin: 0;
+}
+
+@media (max-width: 480px) {
+
+  body{
+    background-color: rgb(0, 0, 0);
+  }
+
+
+video{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    background-color: transparent  ;
+    background-color: rgba(255, 255, 255, 0); /* Warna background gelap */
+    color: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9000;
+   border-bottom:2px solid #ffffff;
+   
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+/* Styling Menu Links (Desktop) */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
+    
+}
+
+.nav-links li a:hover {
+    color: #979393; /* Warna saat kursor di atas menu */
+}
+
+/* Styling Hamburger Icon (Hidden di Desktop) */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.judul{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center; 
+    color: white;
+    margin-top: 375px;
+    overflow-x: hidden;
+}
+
+.layar1{
+    background-color: rgb(43, 42, 42);
+    margin-top: -10px auto;
+    overflow-x: hidden;
+    
+}
+
+.Daftarkarya{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.container {
+    margin: 20px;
+    
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    overflow-x: hidden;
+}
+
+.grida{
+    display: grid;
+    grid-template-columns: repeat(1, 4fr);
+    gap: 30px;
+    
+}
+
+
+
+.card {
+    background:  rgb(255, 255, 255);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 8px rgb(255, 255, 255);
+    transition: all 1s;
+}
+
+.card:hover {
+    background: rgb(189, 189, 189);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 15px rgb(65, 64, 64);
+    transition: all  1s;
+}
+
+h3{
+    color: rgb(255, 255, 255);
+    
+}
+
+.judularticel{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    
+}
+
+
+.card h3 {
+    margin: 10px;
+
+}
+
+.card a {
+    margin-top: auto;
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 8px 15px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.card a:hover {
+    background-color: rgb(41, 39, 39);
+    color: white;
+     
+}
+
+footer {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-top: 200px;
+    background-color: rgb(0, 0, 0);
+}
+
+
+h2{
+    margin-top: 50px;
+}
+
+
+
+
+
+
+#kontak{ background-color:rgb(0, 0, 0);
+width: 100%;
+height: 80vh;
+}
+
+
+
+
+.akhir1{
+    background-color: rgb(0, 0, 0);
+    box-shadow: 7px 7px 30px 7px rgb(255, 255, 255);
+width: 95%;
+height: 400px;
+margin: auto;
+margin-top: 100px;
+font-family: 'Courier New', Courier, monospace;
+
+}
+
+.penutup{
+    color:white;
+   font-size: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+   padding-top: 100px;
+   margin-left: 20px;
+   padding: 5px;
+   padding-top: 100px;
+
+}
+
+
+.tgl {
+    color: white;
+    font-size: 18px;
+    padding-top: 10px;
+    margin-left: 20px;
+    
+    
+    
+}
+
+.logoo{
+    color: white;
+    margin: 80px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: center;
+     margin-top: 50px;
+     margin-left: 150px;
+
+}
+
+
+.nikmatii{
+    font-size: 55px;
+    text-align: center;
+    color: white;
+    margin-top: -500px;
+    
+}
+
+
+
+
+
+
+
+.carousel{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    margin: 4em ;
+    display: flex;
+    gap: 3em ;
+    scroll-behavior: smooth;
+    position: relative;
+    scroll-snap-type: x mandatory;
+    margin-top: 20px;
+}
+
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+
+.carousel::scroll-button(right), .carousel::scroll-button(left){
+content: '>';
+border: none;
+background-color: rgb(255, 255, 255);
+font-family: consolas;
+font-size: 3rem;
+color: rgb(0, 0, 0);
+height: 60px;
+width: 60px;
+border-radius: 50% ;
+padding-bottom: .1em;
+cursor: pointer;
+position: absolute;
+top: auto;
+right: 0;
+
+
+}
+
+.carousel::scroll-button(left) {
+content: '<';
+position: relative;
+top: auto;
+left: 0;
+
+}
+
+.carousel::scroll-button(right):disabled, .carousel::scroll-button(left):disabled {
+opacity: 0.5;
+cursor: auto;
+
+}
+
+
+.pilihan{
+    overflow-x: hidden;
+}
+
+
+.cardd {
+    background:  rgb(61, 61, 61);
+    border-radius: 10px;
+    text-align: center;
+    scroll-snap-align: start;
+    box-shadow: 0 7px 5px 0 rgb(255, 255, 255);
+     margin-bottom: 10px;
+     
+}
+
+.cardd:hover{
+    background:  rgb(61, 61, 61);
+    border-radius: 10px;
+    text-align: center;
+    scroll-snap-align: start;
+    box-shadow: 0 7px 5px 0 rgba(255, 255, 255, 0.534);
+     margin-bottom: 10px;
+     
+}
+
+
+
+.imgwan{
+    border-radius: 10px;
+    height: 200px;
+    width: 200px;
+}
+
+
+
+
+.judulartikel{
+    color: black;
+}
+
+
+
+.cardd a {
+    margin-top: auto;
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 8px 15px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    
+}
+
+.cardd a:hover {
+    background-color: rgb(41, 39, 39);
+    color: white;
+     
+}
+
+
+ 
+ 
+  .site-footer {
+    background-color: #363636; /* Warna background gelap */
+    color: #ffffff;
+    padding: 40px 0 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Agar responsif di layar kecil */
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.footer-col h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    border-bottom: 2px solid #ffffff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+}
+
+/* Sosmed Link */
+.social-links a {
+    color: #ffffff;
+    background-color: #4d4d4d;
+    padding: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.social-links a:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Bagian Copyright Bawah */
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #ffffff;
+    padding-top: 20px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.containerrr{
+    display: none;
+}
+
+}
+
+
+@media (min-width: 768px) and (orientation: landscape) {
+html{
+    scroll-behavior: smooth;
+      overflow-x: hidden;
+    scrollbar-width: thin; /* Membuat scrollbar menjadi tipis */
+    scrollbar-color: #ffffff #ffffff; /* Warna thumb dan track */
+      padding: 0;
+      margin: 0;
+}
+
+
+
+  body{
+    background-color: rgb(0, 0, 0);
+  }
+
+
+video{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    background-color: transparent  ;
+    background-color: rgba(255, 255, 255, 0); /* Warna background gelap */
+    color: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9000;
+   border-bottom:2px solid #ffffff;
+   
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+/* Styling Menu Links (Desktop) */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
+    
+}
+
+.nav-links li a:hover {
+    color: #979393; /* Warna saat kursor di atas menu */
+}
+
+/* Styling Hamburger Icon (Hidden di Desktop) */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.judul{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center; 
+    color: white;
+    margin-top: 375px;
+    overflow-x: hidden;
+}
+
+.layar1{
+    background-color: rgb(43, 42, 42);
+    margin-top: 55px;
+    overflow-x: hidden;
+    text-align: center;
+    
+}
+
+.Daftarkarya{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.container {
+    margin: 20px;
+    
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    overflow-x: hidden;
+}
+
+.grida{
+    display: grid;
+    grid-template-columns: repeat(1, 4fr);
+    gap: 30px;
+    
+}
+
+
+
+.card {
+    background:  rgb(255, 255, 255);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 8px rgb(255, 255, 255);
+    transition: all 1s;
+}
+
+.card:hover {
+    background: rgb(189, 189, 189);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 15px rgb(65, 64, 64);
+    transition: all  1s;
+}
+
+h3{
+    color: rgb(0, 0, 0);
+}
+
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    
+}
+
+
+.card h3 {
+    margin: 10px;
+
+}
+
+.card a {
+    margin-top: auto;
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 8px 15px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.card a:hover {
+    background-color: rgb(41, 39, 39);
+    color: white;
+     
+}
+
+footer {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-top: 200px;
+    background-color: rgb(0, 0, 0);
+}
+
+
+h2{
+    margin-top: 50px;
+}
+
+
+
+
+
+
+#kontak{ background-color:rgb(0, 0, 0);
+width: 100%;
+height: 80vh;
+}
+
+
+
+
+.akhir1{
+    background-color: rgb(0, 0, 0);
+    box-shadow: 7px 7px 30px 7px rgb(255, 255, 255);
+width: 95%;
+height: 400px;
+margin: auto;
+margin-top: 100px;
+font-family: 'Courier New', Courier, monospace;
+
+}
+
+.penutup{
+    color:white;
+   font-size: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+   padding-top: 100px;
+   margin-left: 20px;
+
+}
+
+
+.tgl {
+    color: white;
+    font-size: 18px;
+    padding-top: 10px;
+    margin-left: 20px;
+    
+    
+    
+}
+
+.logoo{
+    color: white;
+    margin: 80px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+     margin-top: 180px;
+
+}
+
+
+.nikmatii{
+    font-size: 55px;
+    text-align: center;
+    color: white;
+    margin-top: -500px;
+    
+}
+
+
+
+
+
+
+
+.carousel{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    margin: 3em ;
+    display: flex;
+    gap: 2em ;
+    scroll-behavior: smooth;
+    position: relative;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+
+.carousel::scroll-button(right), .carousel::scroll-button(left){
+content: '>';
+border: none;
+background-color: rgb(255, 255, 255);
+font-family: consolas;
+font-size: 3rem;
+color: rgb(0, 0, 0);
+height: 60px;
+width: 60px;
+border-radius: 50% ;
+padding-bottom: .1em;
+cursor: pointer;
+position: absolute;
+top: auto;
+right: 0;
+
+
+}
+
+.carousel::scroll-button(left) {
+content: '<';
+position: relative;
+top: auto;
+left: 0;
+
+}
+
+.carousel::scroll-button(right):disabled, .carousel::scroll-button(left):disabled {
+opacity: 0.5;
+cursor: auto;
+
+}
+
+
+.pilihan{
+    overflow-x: hidden;
+}
+
+
+.cardd {
+    background:  rgb(41, 39, 39);
+    border-radius: 10px;
+    text-align: center;
+    scroll-snap-align: start;
+    box-shadow: 0 7px 5px 0 rgb(0, 0, 0);
+     margin-bottom: 10px;
+     
+}
+
+.cardd:hover{
+    background:  rgb(41, 39, 39);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 7px 5px 0 rgb(255, 255, 255);
+     margin-bottom: 10px;
+     
+}
+
+
+
+.imgwan{
+    border-radius: 10px;
+    height: 200px;
+    width: 300px;
+}
+
+
+h3{
+    color: rgb(255, 255, 255);
+    
+}
+
+.judularticel{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.cardd a {
+    margin-top: auto;
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 8px 15px;
+    background-color: rgb(41, 39, 39);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    
+}
+
+.cardd a:hover {
+    background-color: rgb(41, 39, 39);
+    color: white;
+     
+}
+
+
+
+.site-footer {
+    background-color: #363636; /* Warna background gelap */
+    color: #ffffff;
+    padding: 40px 0 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Agar responsif di layar kecil */
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.footer-col h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    border-bottom: 2px solid #ffffff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+}
+
+/* Sosmed Link */
+.social-links a {
+    color: #ffffff;
+    background-color: #4d4d4d;
+    padding: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.social-links a:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Bagian Copyright Bawah */
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #ffffff;
+    padding-top: 20px;
+    color: #ffffff;
+    font-size: 14px;
+}
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1201px){
+html{
+    scroll-behavior: smooth;
+      overflow-x: hidden;
+    scrollbar-width: thin; /* Membuat scrollbar menjadi tipis */
+    scrollbar-color: #ffffff #ffffff; /* Warna thumb dan track */
+      padding: 0;
+      margin: 0;
+}
+
+
+
+  body{
+    background-color: rgb(0, 0, 0);
+  }
+
+
+video{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    background-color: transparent  ;
+    background-color: rgba(255, 255, 255, 0); /* Warna background gelap */
+    color: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9000;
+   border-bottom:2px solid #ffffff;
+   
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+/* Styling Menu Links (Desktop) */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
+    
+}
+
+.nav-links li a:hover {
+    color: #979393; /* Warna saat kursor di atas menu */
+}
+
+/* Styling Hamburger Icon (Hidden di Desktop) */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+.judul{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center; 
+    color: white;
+    margin-top: 450px;
+}
+
+.layar1{
+    background-color: rgb(43, 42, 42);
+    margin-top: -20px;
+    
+}
+
+.Daftarkarya{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.container {
+    margin: 100px;
+}
+
+.pilihan{margin-left: 2px;}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 30px;
+    overflow-x: hidden;
+}
+
+.grida{
+    display: grid;
+    grid-template-columns: repeat(1, 4fr);
+    gap: 30px;
+}
+
+
+
+.card {
+    background:  rgb(255, 255, 255);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 8px rgb(255, 255, 255);
+    transition: all 1s;
+    overflow-x: hidden;
+    cursor: pointer;
+}
+
+.card:hover {
+    background: rgb(189, 189, 189);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 15px rgb(65, 64, 64);
+    transition: all  1s;
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    
+}
+
+
+.card h3 {
+    margin: 10px;
+
+}
+
+.card a {
+    margin-top: auto;
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 8px 15px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.card a:hover {
+    background-color: rgb(41, 39, 39);
+    color: white;
+     
+}
+
+
+
+
+
+h2{
+    margin-top: 50px;
+}
+
+
+
+
+
+
+#kontak{ background-color:rgb(0, 0, 0);
+width: 100%;
+height: 80vh;
+}
+
+.containerrr{
+    margin: 200px;
+    float: left;
+}
+
+.akhir1{
+    background-color: rgb(0, 0, 0);
+    box-shadow: 7px 7px 30px 7px rgb(255, 255, 255);
+width: 45%;
+height: 440px;
+margin-right:40px ;
+margin-top: 200px;
+font-family: 'Courier New', Courier, monospace;
+padding: 20px;
+
+}
+
+.penutup{
+    color:white;
+   font-size: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+   padding-top: 100px;
+   margin-left: 20px;
+
+}
+
+
+.tgl {
+    color: white;
+    font-size: 18px;
+    padding-top: 10px;
+    margin-left: 20px;
+    
+    
+    
+}
+
+.logoo{
+    color: white;
+   
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: right ;
+    margin-right: 20px;
+     margin-top: 150px ;
+}
+
+
+.nikmatii{
+    font-size: 55px;
+    text-align: center;
+    color: white;
+    margin-top: -500px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+
+
+
+
+
+.carousel{
+    width: 100%;
+    height: 100%;
+    
+    margin: 3em auto;
+    display: flex;
+    gap: 4em;
+    scroll-behavior: smooth;
+    position: relative;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+
+.carousel::scroll-button(right), .carousel::scroll-button(left){
+content: '>';
+border: none;
+background-color: rgb(0, 0, 0);
+font-family: consolas;
+font-size: 3rem;
+color: white;
+height: 60px;
+width: 60px;
+border-radius: 50% ;
+padding-bottom: .1em;
+cursor: pointer;
+position: absolute;
+top: auto;
+right: 0;
+
+
+}
+
+.carousel::scroll-button(left) {
+content: '<';
+position: relative;
+top: 20%;
+left: 0;
+
+}
+
+.carousel::scroll-button(right):disabled, .carousel::scroll-button(left):disabled {
+opacity: 0.5;
+cursor: auto;
+
+
+}
+
+
+
+
+
+.cardd {
+    background:  rgb(61, 61, 61);
+    border-radius: 10px;
+    text-align: center;
+    transition: all 1s ease;
+    scroll-snap-align: start; 
+   box-shadow: 0 7px 5px 0 rgb(87, 87, 87);
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+
+.cardd:hover{
+    background:  rgb(61, 61, 61);
+    border-radius: 10px;
+    text-align: center;
+    transition: all 1s ease;
+    box-shadow: 0 7px 5px 0 rgb(255, 255, 255);
+     margin-bottom: 10px;
+     transform: translateY(-10px);
+   
+     
+}
+
+
+
+.imgwan{
+    border-radius: 10px;
+    height: 200px;
+    width: 200px;
+}
+
+
+h3{
+    color: rgb(255, 255, 255);
+    
+}
+
+.judularticel{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+.cardd a {
+    margin-top: auto;
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 8px 15px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cardd a:hover {
+    background-color: rgb(41, 39, 39);
+    color: white;
+     
+}
+
+ 
+        
+        .containerrr { width: 300px; margin: 0 100px; 
+            margin-top: 5px;
+        
+       
+        }
+
+        /* Styling Details */
+        details {
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            
+            
+        }
+
+        /* Saat details terbuka */
+        details[open] {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        /* Styling Summary (Judul) */
+        summary {
+            font-weight: bold;
+            cursor: pointer;
+            list-style: none; /* Sembunyikan panah default */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #000;
+        }
+
+        /* Kustomisasi Panah */
+        summary::after {
+            content: '+';
+            font-size: 1.2rem;
+            transition: transform 0.3s;
+        }
+
+        details[open] summary::after {
+            transform: rotate(45deg); /* Putar saat terbuka */
+        }
+
+        /* Konten di dalam Details */
+        details p {
+            margin: 15px 0 0;
+            color: #555;
+            line-height: 1.6;
+            border-top: 1px solid #eee;
+            padding-top: 10px;
+        }
+
+
+
+
+
+/* Styling untuk Footer */
+.site-footer {
+    background-color: #363636; /* Warna background gelap */
+    color: #ffffff;
+    padding: 40px 0 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Agar responsif di layar kecil */
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.footer-col h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    border-bottom: 2px solid #ffffff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+}
+
+/* Sosmed Link */
+.social-links a {
+    color: #ffffff;
+    background-color: #4d4d4d;
+    padding: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.social-links a:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Bagian Copyright Bawah */
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #ffffff;
+    padding-top: 20px;
+    color: #ffffff;
+    font-size: 14px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 481px) and (max-width: 768px){
+html{
+    scroll-behavior: smooth;
+      overflow-x: hidden;
+    scrollbar-width: thin; /* Membuat scrollbar menjadi tipis */
+    scrollbar-color: #ffffff #ffffff; /* Warna thumb dan track */
+      padding: 0;
+      margin: 0;
+}
+
+
+
+  body{
+    background-color: rgb(0, 0, 0);
+  }
+
+
+video{
+    width: 100%;
+    height: 400px;
+    margin-top: -50px;
+}
+
+
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    background-color: transparent  ;
+    background-color: rgba(255, 255, 255, 0); /* Warna background gelap */
+    color: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9000;
+   border-bottom:2px solid #ffffff;
+   
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+/* Styling Menu Links (Desktop) */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
+    
+}
+
+.nav-links li a:hover {
+    color: #979393; /* Warna saat kursor di atas menu */
+}
+
+/* Styling Hamburger Icon (Hidden di Desktop) */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+.judul{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center; 
+    color: white;
+    margin-top: 385px;
+}
+
+.layar1{
+    background-color: rgb(43, 42, 42);
+    margin-top: -20px;
+    
+}
+
+.Daftarkarya{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.container {
+    margin: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    overflow-x: hidden;
+}
+
+.grida{
+    display: grid;
+    grid-template-columns: repeat(1, 4fr);
+    gap: 30px;
+}
+
+
+
+.card {
+    background:  rgb(255, 255, 255);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 8px rgb(255, 255, 255);
+    transition: all 1s;
+    overflow-x: hidden;
+}
+
+.card:hover {
+    background: rgb(189, 189, 189);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 15px rgb(65, 64, 64);
+    transition: all  1s;
+    overflow-x: hidden;
+}
+
+h3{
+    color: rgb(255, 255, 255);
+    
+}
+
+.judularticel{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    
+}
+
+
+.card h3 {
+    margin: 10px;
+
+}
+
+.card a {
+    margin-top: auto;
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 8px 15px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+
+footer {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-top: 200px;
+    background-color: rgb(0, 0, 0);
+}
+
+
+h2{
+    margin-top: 50px;
+}
+
+
+
+
+
+
+#kontak{ background-color:rgb(0, 0, 0);
+width: 100%;
+height: 80vh;
+}
+
+
+
+
+.akhir1{
+    background-color: rgb(0, 0, 0);
+    box-shadow: 7px 7px 30px 7px rgb(255, 255, 255);
+width: 95%;
+height: 400px;
+margin: auto;
+margin-top: 100px;
+font-family: 'Courier New', Courier, monospace;
+
+}
+
+.penutup{
+    color:white;
+   font-size: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+   padding-top: 100px;
+   margin-left: 20px;
+
+}
+
+
+.tgl {
+    color: white;
+    font-size: 18px;
+    padding-top: 10px;
+    margin-left: 20px;
+    
+    
+    
+}
+
+.logoo{
+    color: white;
+    margin: 80px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+     margin-top: 180px;
+}
+
+
+.nikmatii{
+    font-size: 55px;
+    text-align: center;
+    color: white;
+    margin-top: -500px;
+    
+}
+
+
+
+
+
+.carousel{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    margin: 3em auto ;
+    display: flex;
+    gap: 3em;
+    scroll-behavior: smooth;
+    position: relative;
+    scroll-snap-type: x mandatory;
+    overflow-x: hidden;
+}
+
+.carousel::-webkit-scrollbar{
+    display: none;
+    overflow-x: hidden;
+}
+
+.carousel::scroll-button(right), .carousel::scroll-button(left){
+content: '>';
+border: none;
+background-color: rgb(0, 0, 0);
+font-family: consolas;
+font-size: 3rem;
+color: white;
+height: 60px;
+width: 60px;
+border-radius: 50% ;
+padding-bottom: .1em;
+cursor: pointer;
+position: absolute;
+top: auto;
+right: 0;
+
+
+
+}
+
+.carousel::scroll-button(left) {
+content: '<';
+position: relative;
+top: 20%;
+left: 0;
+
+}
+
+.carousel::scroll-button(right):disabled, .carousel::scroll-button(left):disabled {
+opacity: 0.5;
+cursor: auto;
+
+
+}
+
+
+
+
+
+.cardd {
+    background:  rgb(61, 61, 61);
+    border-radius: 10px;
+    text-align: center;
+    transition: all 1s;
+    scroll-snap-align: start;
+  
+}
+
+.cardd:hover{
+    background:  rgb(61, 61, 61);
+    border-radius: 10px;
+    text-align: center;
+    transition: all 1s;
+    scroll-snap-align: start;
+    box-shadow: 0 7px 5px 0 rgb(255, 255, 255);
+     margin-bottom: 10px;
+     
+}
+
+
+
+.imgwan{
+    border-radius: 10px;
+    height: 200px;
+    width: 220px;
+}
+
+
+h3{
+    color: rgb(255, 255, 255);
+   
+  
+}
+
+
+
+
+
+.cardd a {
+    margin-top: auto;
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 8px 15px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cardd a:hover {
+    background-color: rgb(41, 39, 39);
+    color: rgb(255, 255, 255);
+     
+}
+
+
+
+
+
+
+
+.site-footer {
+    background-color: #363636; /* Warna background gelap */
+    color: #ffffff;
+    padding: 40px 0 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Agar responsif di layar kecil */
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.footer-col h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    border-bottom: 2px solid #ffffff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+}
+
+/* Sosmed Link */
+.social-links a {
+    color: #ffffff;
+    background-color: #4d4d4d;
+    padding: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.social-links a:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Bagian Copyright Bawah */
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #ffffff;
+    padding-top: 20px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.containerrr{
+    display: none;
+}
+
+
+
+
+
+}
+
+
+
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Tampilkan hamburger di layar kecil */
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0; /* Hilangkan tengah */
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg); /* Animasi X atas */
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg); /* Animasi X bawah */
+    }
+
+    /* Menu变成竖列 dan disembunyikan */
+    .nav-links {
+        position: absolute;
+        top: 100%; /* Di bawah navbar */
+        left: -100%; /* Semula di luar layar kiri */
+        flex-direction: column;
+        background-color: #000000;
+        width: 75%;
+        text-align: 50px left;
+        transition: 0.3s;
+        padding: 20px 0;
+        height: 1000%;
+        border-right: 2px  solid white;
+        padding-left: 20px;
+        height: 1200%;
+    }
+
+    .nav-links.active {
+        left: 0; /* Munculkan menu ke layar */
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+}

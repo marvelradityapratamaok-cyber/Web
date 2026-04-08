@@ -1,0 +1,46 @@
+   body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            flex-direction: column;
+        }
+
+        /* Kontainer Loading Bar */
+        #progress-container {
+            width: 80%;
+            max-width: 400px;
+            background-color: #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        /* Bagian Bar yang Berjalan */
+        #progress-bar {
+            width: 0%;
+            height: 15px;
+            background-color: #007bff;
+            border-radius: 10px;
+            transition: width 0.1s linear; /* Animasi halus */
+        }
+
+        
+
+        #status {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        video{
+    width: 90%;
+    height: 30%;
+}
+
+
+
+

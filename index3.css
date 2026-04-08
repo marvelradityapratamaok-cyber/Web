@@ -1,0 +1,2274 @@
+/* Reset dasar */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.lis{
+   
+    list-style: none;
+}
+
+ 
+
+@media (max-width: 480px) {
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+      overflow-x: hidden;
+    scrollbar-width: thin; /* Membuat scrollbar menjadi tipis */
+    scrollbar-color: #ffffff #ffffff; /* Warna thumb dan track */
+    
+}
+
+
+
+body{
+    background-image: url(fotosatuan1.jpg);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+
+video{
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    overflow-x: hidden;
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    background-color: transparent  ;
+    background-color: rgba(255, 255, 255, 0); /* Warna background gelap */
+    color: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9000;
+   border-bottom:2px solid #ffffff;
+   
+}
+
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+/* Styling Menu Links (Desktop) */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    overflow-x: hidden;
+
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
+    
+}
+
+.nav-links li a:hover {
+    color: #979393; /* Warna saat kursor di atas menu */
+}
+
+/* Styling Hamburger Icon (Hidden di Desktop) */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+
+
+h2{
+    margin: 20px 20px 20px 20px;
+    padding-top: 100px;
+    font-size: 100px;
+    float: left;
+    color: white;
+
+}
+
+
+.HM{
+    font-size: 50px;    
+}
+
+.judulporto{
+    font-size: 50px;
+    text-decoration: 2px underline  rgb(255, 255, 254);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+section {
+    height: 620px; /* Setiap section setinggi layar */
+    width: 100%;
+    padding: 20px;
+    overflow-y:hidden ;
+}
+#Home { background-color:rgb(0, 0, 0); 
+
+}
+
+#about { background-color:rgb(0, 0, 0); 
+
+}
+#profil{background-color: rgb(0, 0, 0);
+
+}
+#galery { background-color:rgb(0, 0, 0); 
+height:680px ;
+}
+#kontak{ background-color:rgb(0, 0, 0);
+
+}
+
+#galerya{ background-color: #000000;
+    
+}
+
+
+
+mark{
+    
+    cursor: pointer;
+}
+
+abbr{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.loader {
+  width:215px;
+  height: 215px;
+  display: block;
+  padding-left: 21px;
+  margin-left: -30px;
+  position: relative;
+  background: #ffffff;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 30px rgb(255, 255, 255);
+  border-radius: 50px 50px 50px 0px;
+}
+
+
+
+  
+.loader{
+    
+    margin-right:30px;
+    margin-bottom: 25px;
+}
+
+.h44{
+    font-size: 13px;
+}
+
+.bagportfolio,small{
+    color: white;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+    
+    
+}
+
+
+
+
+
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin: 30px;
+}
+
+input{
+    width: 80%;
+    height:10px;
+    background-color: white;
+}
+
+.name{
+    margin:2px 2px 2px 10px;
+   margin-top: -10px;
+}
+
+
+
+
+
+
+
+
+
+.spinner {
+  width: 70px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid rgb(255, 255, 255);
+  border-right-color: darkgrey;
+  animation: l2  3s infinite linear;
+}
+
+.spinnerr {
+  width: 70px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid rgb(255, 255, 255);
+  border-right-color:darkgrey;
+  animation: l2 4s infinite linear;
+}
+
+.spinnerrr {
+  width: 70px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid rgb(255, 255, 255);
+  border-right-color: darkgrey;
+  animation: l2 5s infinite linear;
+}
+
+.spinner,.spinnerr,.spinnerrr{
+    margin-top: 15px;
+}
+@keyframes l2 {to{transform: rotate(1turn)}}
+
+
+
+.isian{
+    width: 140px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 10px;
+}
+
+
+
+
+
+.isiann{
+    width: 100px;
+    background-color: rgb(102, 102, 102);
+    height:3px;
+}
+
+.hobi{
+    color: white;
+    margin-left: 100px;
+}
+
+
+.penjelasanhobi{
+    color: rgb(0, 0, 0);
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 10px;
+    
+}
+
+.small1{
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+}
+
+
+
+
+.loader10 {
+  width:215px;
+  height: 215px;
+  display: block;
+  padding-left: 21px;
+  margin-left: -30px;
+  position: relative;
+  background: #ffffff;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 30px rgb(255, 255, 255);
+  border-radius: 5px 50px 50px 50px;
+}
+
+
+
+  
+.loader10{
+    float:left ;
+    margin-right:30px;
+    margin-bottom: 25px;
+}
+
+.name10{
+    margin-left:10px;
+}
+
+
+.loader100 {
+  width:215px;
+  height: 215px;
+  display: block;
+  padding-left: 21px;
+  margin-left: 50px;
+  position: relative;
+  background: #ffffff;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 30px rgb(255, 255, 255);
+  border-radius: 50px 5px 50px 50px;
+}
+
+
+
+  
+.loader100{
+    float:left ;
+    margin-right:30px;
+    margin-bottom: 25px;
+}
+
+
+
+
+.bagian11{
+    padding-left: 130px;
+}
+
+
+
+
+.pengalaman{
+    margin-left: 15px;
+    
+}
+
+
+
+
+
+.akhir1{
+    background-color: rgb(0, 0, 0);
+    box-shadow: 7px 7px 30px 7px rgb(255, 255, 255);
+width: 100%;
+height: 400px;
+margin: auto;
+margin-top: 210px;
+font-family: 'Courier New', Courier, monospace;
+padding: 8px;
+text-align: center;
+
+}
+
+.penutup{
+    color:white;
+   font-size: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+   padding-top: 100px;
+   
+
+}
+
+
+.tgl {
+    color: white;
+    font-size: 18px;
+    padding-top: 10px;
+    margin-left: 20px;
+    
+    
+    
+}
+
+.logoo{
+    color: white;
+    margin: 80px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: right;
+     margin-top: 50px;
+     margin-right: 20px;
+}
+
+
+.marvel{
+    color: white;
+    font-size: 20px;
+}
+
+
+
+
+
+.puisi{
+    color: white;
+    text-align: center ;
+    margin-top: 50px;
+    font-size: 15px;
+    padding: 0;
+}
+
+
+.lis{
+    list-style: none;
+}
+
+
+
+.site-footer {
+    background-color: #363636; /* Warna background gelap */
+    color: #ffffff;
+    padding: 40px 0 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Agar responsif di layar kecil */
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.footer-col h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    border-bottom: 2px solid #ffffff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+}
+
+/* Sosmed Link */
+.social-links a {
+    color: #ffffff;
+    background-color: #4d4d4d;
+    padding: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.social-links a:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Bagian Copyright Bawah */
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #ffffff;
+    padding-top: 20px;
+    color: #ffffff;
+    font-size: 14px;
+}
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+      overflow-x: hidden;
+    scrollbar-width: thin; /* Membuat scrollbar menjadi tipis */
+    scrollbar-color: #ffffff #ffffff; /* Warna thumb dan track */
+
+}
+
+
+
+body{
+    background-image: url(fotosatuan1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 600px;
+    z-index: 9000;
+   
+}
+
+
+video{
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    background-color: transparent  ;
+    background-color: rgba(255, 255, 255, 0); /* Warna background gelap */
+    color: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9000;
+   border-bottom:2px solid #ffffff;
+   
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+/* Styling Menu Links (Desktop) */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
+    
+}
+
+.nav-links li a:hover {
+    color: #979393; /* Warna saat kursor di atas menu */
+}
+
+/* Styling Hamburger Icon (Hidden di Desktop) */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+
+
+h2{
+    margin: 20px 20px 20px 20px;
+    padding-top: 100px;
+    font-size: 100px;
+    float: left;
+    color: white;
+
+}
+
+
+.HM{
+    font-size: 40px;    
+}
+
+.judulporto{
+    font-size: 50px;
+    text-decoration: 2px underline  rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+section {
+    height: 620px; /* Setiap section setinggi layar */
+    width: 100%;
+    padding: 20px;
+}
+#Home { background-color:rgb(0, 0, 0); 
+width: 100%;
+}
+
+#about { background-color:rgb(0, 0, 0); 
+width: 100%;
+}
+#profil{background-color: rgb(0, 0, 0);
+width: 100%;
+}
+#galery { background-color:rgb(0, 0, 0); 
+width: 100%;
+}
+#kontak{ background-color:rgb(0, 0, 0);
+width: 100%;
+}
+
+
+
+mark{
+    
+    cursor: pointer;
+}
+
+abbr{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body { font-family: sans-serif; margin: 0; }
+
+.loader {
+  width:215px;
+  height: 215px;
+  display: block;
+  padding-left: 21px;
+  margin-left: -30px;
+  position: relative;
+  background: #ffffff;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 30px rgb(255, 255, 255);
+  border-radius: 50px 50px 50px 0px;
+  
+}
+
+
+
+  
+.loader{
+    float:left ;
+    margin-right:30px;
+    margin-bottom: 25px;
+}
+
+
+
+.bagportfolio,small{
+    color: white;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 40px;
+    display: inline-block;
+    
+}
+
+
+
+
+
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin: 30px;
+}
+
+input{
+    width: 80%;
+    height:10px;
+    background-color: white;
+}
+
+.name{
+    margin:2px 2px 2px 10px;
+   margin-top: -10px;
+}
+
+
+
+
+
+
+
+
+
+.spinner {
+  width: 70px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid rgb(255, 255, 255);
+  border-right-color: darkgray;
+  animation: l2  3s infinite linear;
+}
+
+.spinnerr {
+  width: 70px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid rgb(255, 255, 255);
+  border-right-color:darkgray;
+  animation: l2 4s infinite linear;
+}
+
+.spinnerrr {
+  width: 70px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid rgb(255, 255, 255);
+  border-right-color: darkgray;
+  animation: l2 5s infinite linear;
+}
+
+.spinner,.spinnerr,.spinnerrr{
+    margin-top: 15px;
+}
+@keyframes l2 {to{transform: rotate(1turn)}}
+
+
+
+.isian{
+    width: 140px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 10px;
+}
+
+
+
+
+
+.isiann{
+    width: 100px;
+    background-color: rgb(255, 255, 255);
+    height:3px;
+}
+
+.hobi{
+    color: white;
+    margin-left: 100px;
+}
+
+
+.penjelasanhobi{
+    color: rgb(0, 0, 0);
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 10px;
+}
+
+.small1{
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+}
+
+
+
+#galerya{
+    background-color: #000000;
+}
+
+.loader10 {
+  width:215px;
+  height: 215px;
+  display: block;
+  padding-left: 21px;
+  margin-left: -30px;
+  position: relative;
+  background: #ffffff;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 30px rgb(255, 255, 255);
+  border-radius: 5px 50px 50px 50px;
+}
+
+
+
+  
+.loader10{
+    float:left ;
+    margin-right:30px;
+    margin-bottom: 25px;
+}
+
+.name10{
+    margin-left: 10px;
+}
+
+
+.loader100 {
+  width:215px;
+  height: 215px;
+  display: block;
+  padding-left: 21px;
+  margin-left: 58px;
+  position: relative;
+  background: #ffffff;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 30px rgb(255, 255, 255);
+  border-radius: 50px 5px 50px 50px;
+}
+
+
+
+  
+.loader100{
+    float:right ;
+    margin-right:30px;
+    margin-bottom: 25px;
+}
+
+
+
+
+.bagian11{
+    padding-left: 300px;
+}
+
+
+
+
+.pengalaman{
+    margin-left: 15px;
+}
+
+
+
+
+
+.akhir1{
+    background-color: rgb(0, 0, 0);
+    box-shadow: 7px 7px 30px 7px rgb(255, 255, 255);
+width: 100%;
+height: 400px;
+margin: auto;
+margin-top: 50px;
+font-family: 'Courier New', Courier, monospace;
+text-align: center;
+
+}
+
+.penutup{
+    color:white;
+   font-size: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+   padding-top: 150px;
+   margin-left: 20px;
+   padding-right: 20px;
+
+}
+
+
+.tgl {
+    color: white;
+    font-size: 18px;
+    padding-top: -100px;
+    margin-left: 20px;
+    
+    
+    
+}
+
+.logoo{
+    color: white;
+    margin: 80px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+     margin-top: 130px;
+}
+
+
+.marvel{
+    color: white;
+}
+
+
+
+
+
+.puisi{
+    color: white;
+    text-align: center ;
+    margin-top: 50px;
+    font-size: 15px;
+}
+
+.site-footer {
+    background-color: #363636; /* Warna background gelap */
+    color: #ffffff;
+    padding: 40px 0 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Agar responsif di layar kecil */
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.footer-col h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    border-bottom: 2px solid #ffffff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+}
+
+/* Sosmed Link */
+.social-links a {
+    color: #ffffff;
+    background-color: #4d4d4d;
+    padding: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.social-links a:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Bagian Copyright Bawah */
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #ffffff;
+    padding-top: 20px;
+    color: #ffffff;
+    font-size: 14px;
+}
+}
+
+
+
+
+
+@media (min-width: 768px) and (orientation: landscape) {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+      overflow-x: hidden;
+    scrollbar-width: thin; /* Membuat scrollbar menjadi tipis */
+    scrollbar-color: #ffffff #ffffff; /* Warna thumb dan track */
+
+}
+
+
+
+body{
+    background-image: url(fotosatuan1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 600px;
+    z-index: 9000;
+}
+
+
+video{
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+   
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    background-color: transparent  ;
+    background-color: rgba(255, 255, 255, 0); /* Warna background gelap */
+    color: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9000;
+   border-bottom:2px solid #ffffff;
+   
+   
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+/* Styling Menu Links (Desktop) */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
+    
+}
+
+.nav-links li a:hover {
+    color: #979393; /* Warna saat kursor di atas menu */
+}
+
+/* Styling Hamburger Icon (Hidden di Desktop) */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+
+
+h2{
+    margin: 20px 20px 20px 20px;
+    padding-top: 100px;
+    font-size: 100px;
+    float: left;
+    color: white;
+
+}
+
+
+.HM{
+    font-size: 80px;    
+}
+
+.judulporto{
+    font-size: 100px;
+    text-decoration: 2px underline  rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+section {
+    height: 620px; /* Setiap section setinggi layar */
+    width: 100%;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#Home { background-color:rgb(0, 0, 0); 
+width: 100%;
+}
+
+#about { background-color:rgb(0, 0, 0); 
+width: 100%;
+}
+#profil{background-color: rgb(0, 0, 0);
+width: 100%;
+}
+#galery { background-color:rgb(0, 0, 0); 
+width: 100%;
+}
+#kontak{ background-color:rgb(0, 0, 0);
+width: 100%;
+}
+
+
+
+mark{
+    
+    cursor: pointer;
+}
+
+abbr{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body { font-family: sans-serif; margin: 0; }
+
+.loader {
+  width:215px;
+  height: 215px;
+  display: block;
+  padding-left: 21px;
+  margin-left: 30px;
+  position: relative;
+  background: #ffffff;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 30px rgb(221, 220, 220);
+  border-radius: 50px 50px 50px 0px;
+}
+
+
+
+  
+.loader{
+    float:left ;
+    margin-right:50px;
+    margin-bottom: 25px;
+}
+
+
+
+.bagportfolio,small{
+    color: white;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+}
+
+
+
+
+
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin: 30px;
+}
+
+input{
+    width: 80%;
+    height:10px;
+    background-color: white;
+}
+
+.name{
+    margin:2px 2px 2px 10px;
+   margin-top: -10px;
+}
+
+
+
+
+
+
+
+
+
+.spinner {
+  width: 70px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid rgb(255, 255, 255);
+  border-right-color: darkgray;
+  animation: l2  3s infinite linear;
+}
+
+.spinnerr {
+  width: 70px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid rgb(255, 255, 255);
+  border-right-color:darkgray;
+  animation: l2 4s infinite linear;
+}
+
+.spinnerrr {
+  width: 70px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid rgb(255, 255, 255);
+  border-right-color: darkgray;
+  animation: l2 5s infinite linear;
+}
+
+.spinner,.spinnerr,.spinnerrr{
+    margin-top: 15px;
+}
+@keyframes l2 {to{transform: rotate(1turn)}}
+
+
+
+.isian{
+    width: 140px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 10px;
+}
+
+h4{
+    color: #979393;
+   
+}
+
+
+
+.isiann{
+    width: 100px;
+    background-color: rgb(44, 44, 44);
+    height:3px;
+
+}
+
+.hobi{
+    color: white;
+    margin-left: 100px;
+}
+
+
+.penjelasanhobii{
+    text-align: left;
+    padding: 100px;
+    
+}
+
+.small1{
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+}
+
+
+
+#galerya{
+    background-color: #000000;
+}
+
+.loader10 {
+  width:215px;
+  height: 215px;
+  display: block;
+  padding-left: 21px;
+  margin-left: 30px;
+  position: relative;
+  background: #ffffff;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 30px rgb(255, 255, 255);
+  border-radius: 5px 50px 50px 50px;
+}
+
+
+
+  
+.loader10{
+    float: left;
+    margin-right:50px;
+    margin-bottom: 25px;
+    
+}
+
+
+.bagian10{
+    margin-left: 80px;
+}
+
+.name10{
+    margin-left: 10px;
+}
+
+
+
+
+.loader100 {
+  width:215px;
+  height: 215px;
+  display: block;
+  padding-left: 21px;
+  margin-left: 58px;
+  position: relative;
+  background: #ffffff;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 30px rgb(255, 255, 255);
+  border-radius: 50px 5px 50px 50px;
+}
+
+
+
+  
+.loader100{
+    float:right;
+    margin-right:30px;
+    margin-bottom: 25px;
+    
+}
+.bagian1{
+    margin-left: 50px;
+    font-size: 20px;
+    
+}
+
+
+
+.bagian11{
+    padding-left: 85%;
+    font-size: 20px;
+    
+}
+
+
+
+
+.pengalaman{
+    margin-left: 15px;
+}
+
+
+
+
+
+.akhir1{
+    background-color: rgb(0, 0, 0);
+    box-shadow: 7px 7px 30px 7px rgb(255, 255, 255);
+width: 100%;
+height: 400px;
+margin: auto;
+margin-top: 30px;
+font-family: 'Courier New', Courier, monospace;
+text-align: center;
+}
+
+.penutup{
+    color:white;
+   font-size: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+   padding-top: 100px;
+   margin-left: 20px;
+
+}
+
+
+.tgl {
+    color: white;
+    font-size: 18px;
+    padding-top: 10px;
+    margin-left: 20px;
+    
+    
+    
+}
+
+.logoo{
+    color: white;
+    margin: 80px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+     margin-top: 130px;
+}
+
+
+.marvel{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.h44{
+    padding: 100px;
+}
+
+
+.puisi{
+    color: white;
+    text-align: center ;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.site-footer {
+    background-color: #363636; /* Warna background gelap */
+    color: #ffffff;
+    padding: 40px 0 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Agar responsif di layar kecil */
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.footer-col h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    border-bottom: 2px solid #ffffff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+}
+
+/* Sosmed Link */
+.social-links a {
+    color: #ffffff;
+    background-color: #4d4d4d;
+    padding: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.social-links a:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Bagian Copyright Bawah */
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #ffffff;
+    padding-top: 20px;
+    color: #ffffff;
+    font-size: 14px;
+}
+}
+
+
+@media (min-width: 1201px) {
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+      overflow-x: hidden;
+    scrollbar-width: thin; /* Membuat scrollbar menjadi tipis */
+    scrollbar-color: #ffffff #ffffff; /* Warna thumb dan track */
+
+}
+
+
+
+body{
+    background-image: url(fotosatuan1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 600px;
+    z-index: 9000;
+}
+
+
+video{
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    overflow-x: hidden;
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    background-color: transparent  ;
+    background-color: rgba(255, 255, 255, 0); /* Warna background gelap */
+    color: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9000;
+   border-bottom:2px solid #ffffff;
+   
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+/* Styling Menu Links (Desktop) */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
+    
+}
+
+.nav-links li a:hover {
+    color: #979393; /* Warna saat kursor di atas menu */
+}
+
+/* Styling Hamburger Icon (Hidden di Desktop) */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+
+
+h2{
+    margin: 20px 20px 20px 20px;
+    padding-top: 100px;
+    font-size: 100px;
+    float: left;
+    color: white;
+
+}
+
+
+.HM{
+    font-size: 100px;    
+}
+
+.judulporto{
+    font-size: 100px;
+    text-decoration: 2px underline  rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+section {
+    height: 620px; /* Setiap section setinggi layar */
+    width: 100%;
+    padding: 20px;
+}
+#Home { background-color:rgb(0, 0, 0); 
+
+}
+
+#about { background-color:rgb(0, 0, 0); 
+
+}
+#profil{background-color: rgb(0, 0, 0);
+
+}
+#galery { background-color:rgb(0, 0, 0); 
+
+}
+#kontak{ background-color:rgb(0, 0, 0);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body { font-family: sans-serif; margin: 0; }
+
+.loader {
+  width:215px;
+  height: 215px;
+  display: block;
+  padding-left: 21px;
+  margin-left: 30px;
+  position: relative;
+  background: #ffffff;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 30px rgb(221, 220, 220);
+  border-radius: 50px 50px 50px 0px;
+}
+
+
+
+  
+.loader{
+    float:left ;
+    margin-right:50px;
+    margin-bottom: 25px;
+}
+
+
+
+.bagportfolio,small{
+    color: white;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+}
+
+
+
+
+
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin: 30px;
+}
+
+input{
+    width: 80%;
+    height:10px;
+    background-color: white;
+}
+
+.name{
+    margin:2px 2px 2px 10px;
+   margin-top: -10px;
+}
+
+
+
+
+
+
+
+
+
+.spinner {
+  width: 70px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid rgb(255, 255, 255);
+  border-right-color: darkgray;
+  animation: l2  3s infinite linear;
+}
+
+.spinnerr {
+  width: 70px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid rgb(255, 255, 255);
+  border-right-color:darkgray;
+  animation: l2 4s infinite linear;
+}
+
+.spinnerrr {
+  width: 70px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid rgb(255, 255, 255);
+  border-right-color: darkgray;
+  animation: l2 5s infinite linear;
+}
+
+.spinner,.spinnerr,.spinnerrr{
+    margin-top: 15px;
+}
+@keyframes l2 {to{transform: rotate(1turn)}}
+
+
+
+.isian{
+    width: 140px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 10px;
+}
+
+h4{
+    color: #979393;
+   
+}
+
+
+
+.isiann{
+    width: 100px;
+    background-color: rgb(44, 44, 44);
+    height:3px;
+}
+
+.hobi{
+    color: white;
+    margin-left: 100px;
+}
+
+
+.penjelasanhobii{
+    text-align: left;
+    padding: 100px;
+    
+}
+
+.small1{
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+}
+
+
+
+#galerya{
+    background-color: #000000;
+}
+
+.loader10 {
+  width:215px;
+  height: 215px;
+  display: block;
+  padding-left: 21px;
+  margin-left: 30px;
+  position: relative;
+  background: #ffffff;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 30px rgb(255, 255, 255);
+  border-radius: 5px 50px 50px 50px;
+}
+
+
+
+  
+.loader10{
+    float: left;
+    margin-right:50px;
+    margin-bottom: 25px;
+    
+}
+
+
+.bagian10{
+    margin-left: 80px;
+}
+
+.name10{
+    margin-left: 10px;
+}
+
+
+
+
+.loader100 {
+  width:215px;
+  height: 215px;
+  display: block;
+  padding-left: 21px;
+  margin-left: 58px;
+  position: relative;
+  background: #ffffff;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 30px rgb(255, 255, 255);
+  border-radius: 50px 5px 50px 50px;
+}
+
+
+
+  
+.loader100{
+    float:right;
+    margin-right:30px;
+    margin-bottom: 25px;
+    
+}
+.bagian1{
+    margin-left: 50px;
+    font-size: 30px;
+    
+}
+
+
+
+.bagian11{
+    padding-left: 85%;
+    font-size: 30px;
+    
+}
+
+
+
+
+.pengalaman1 {float: left; margin: 20px auto; margin-right: 30px;
+}
+
+
+
+
+.akhir1{
+    background-color: rgb(0, 0, 0);
+    box-shadow: 7px 7px 30px 7px rgb(255, 255, 255);
+width: 100%;
+height: 400px;
+margin: auto;
+margin-top: 30px;
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+padding: 8px;
+
+
+}
+
+.penutup{
+    color:white;
+   font-size: 23px;
+   font-family: Arial, Helvetica, sans-serif;
+   padding-top: 100px;
+   margin-left: 20px;
+
+}
+
+
+.tgl {
+    color: white;
+    font-size: 18px;
+    padding-top: 10px;
+    margin-left: 20px;
+    
+    
+    
+}
+
+.logoo{
+    color: white;
+    margin: 80px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+     margin-top: 130px;
+}
+
+
+.marvel{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.h44{
+    padding: 100px;
+}
+
+
+.puisi{
+    color: white;
+    text-align: center ;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+
+.site-footer {
+    background-color: #363636; /* Warna background gelap */
+    color: #ffffff;
+    padding: 40px 0 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Agar responsif di layar kecil */
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.footer-col h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    border-bottom: 2px solid #ffffff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+}
+
+/* Sosmed Link */
+.social-links a {
+    color: #ffffff;
+    background-color: #4d4d4d;
+    padding: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.social-links a:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Bagian Copyright Bawah */
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #ffffff;
+    padding-top: 20px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+   .containerrr { width: 300px; margin:0 850px; 
+            margin-top: -15%;
+        
+       
+        }
+
+        /* Styling Details */
+        details {
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            
+            
+        }
+
+        /* Saat details terbuka */
+        details[open] {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        /* Styling Summary (Judul) */
+        summary {
+            font-weight: bold;
+            cursor: pointer;
+            list-style: none; /* Sembunyikan panah default */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #000;
+        }
+
+        /* Kustomisasi Panah */
+        summary::after {
+            content: '+';
+            font-size: 1.2rem;
+            transition: transform 0.3s;
+        }
+
+        details[open] summary::after {
+            transform: rotate(45deg); /* Putar saat terbuka */
+        }
+
+        /* Konten di dalam Details */
+        details p {
+            margin: 15px 0 0;
+            color: #555;
+            line-height: 1.6;
+            border-top: 1px solid #eee;
+            padding-top: 10px;
+        }
+
+
+}
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Tampilkan hamburger di layar kecil */
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0; /* Hilangkan tengah */
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg); /* Animasi X atas */
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg); /* Animasi X bawah */
+    }
+
+    /* Menu变成竖列 dan disembunyikan */
+    .nav-links {
+        position: absolute;
+        top: 100%; /* Di bawah navbar */
+        left: -100%; /* Semula di luar layar kiri */
+        flex-direction: column;
+        background-color: #000000;
+        width: 75%;
+        text-align: 50px left;
+        transition: 0.3s;
+        padding: 20px 0;
+        height: 1000%;
+        border-right: 2px  solid white;
+        padding-left: 20px;
+        height: 1200%;
+    }
+
+    .nav-links.active {
+        left: 0; /* Munculkan menu ke layar */
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+}
