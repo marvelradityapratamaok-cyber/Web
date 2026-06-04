@@ -1,89 +1,997 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WEB INFO PLKV</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link class="web-favicon" rel="icon" href="WhatsApp Image 2026-06-04 at 16.58.32.jpeg">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .tab-active { background: #1e40af; color: #fff; box-shadow: 0 4px 6px -1px rgba(30, 64, 175, 0.2); }
+    .modal-backdrop { background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(4px); }
+    .priority-urgent { border-left: 5px solid #ef4444; }
+    .priority-biasa { border-left: 5px solid #3b82f6; }
+    .priority-rendah { border-left: 5px solid #10b981; }
+    .task-done { opacity: 0.65; background-color: #f8fafc; }
+    .task-done h3 { text-decoration: line-through; color: #64748b; }
+    .view-tab-active { border-bottom: 3px solid #1e40af; color: #1e40af; font-weight: 700; }
+    .custom-scroll::-webkit-scrollbar { height: 4px; }
+    .custom-scroll::-webkit-scrollbar-track { background: #f1f5f9; }
+    .custom-scroll::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+  </style>
 </head>
- 
-    
-   
-     <div class="stuck-grid">
-  <div class="grid-item">oklch()</div>
-  <div class="grid-item">scroll()</div>
-  <div class="grid-item">text-box-trim</div>
-  <div class="grid-item">pow()</div>
-  <div class="grid-item">@property</div>
-  <div class="grid-item">top-layer</div>
-  <div class="grid-item">
-    <div>
-       
-      </div>
-      <div>
-        <a href="index1.html" style="text-decoration: none;">
-    <button anim="fill">Klik di Sini</button>
-</a>
+<body class="bg-slate-50 min-h-screen w-full text-slate-800 antialiased pb-12">
+  
+  <header class="relative h-56 sm:h-64 md:h-72 overflow-hidden shadow-md">
+    <img class="w-full h-full object-cover object-center" loading="lazy" src="plkv.jpeg" alt="Classroom">
+    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent flex items-end p-6 sm:p-8">
+      <div class="max-w-6xl mx-auto w-full">
+        <span class="bg-blue-600 text-white text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded-md shadow-sm mb-2 inline-block">Akademik</span>
+        <h1 class="text-white font-extrabold text-2xl sm:text-3xl md:text-4xl tracking-tight drop-shadow-md">WEB Informasi Kelas X PLKV</h1>
+        <p class="text-slate-200 text-xs sm:text-sm mt-1 max-w-xl font-medium opacity-90">"Web Informasi Perbanyak Literasi"</p>
       </div>
     </div>
-  <div class="grid-item">var()</div>
-  <div class="grid-item"> 
-    <div>
-        <a href="https://www.instagram.com/mrvel_r.p/" style="text-decoration: none;">
-    <button anim="fill">Klik di Sini</button>
-</a>
-      </div></div>
-  <div class="grid-item">view()</div>
-  <div class="grid-item special"><b>Memory</b></div>
-  <div class="grid-item">@layer</div>
-  <div class="grid-item">@swash</div>
-  <div class="grid-item">subgrid</div>
-  <div class="grid-item">in oklab</div>
-  <div class="grid-item">:popover-open</div>
-  <div class="grid-item">abs()</div>
-  <div class="grid-item">sin()</div>
-  <div class="grid-item">:has()</div>
-  <div class="grid-item">::marker</div>
-  <div class="grid-item">1cap</div>
-  <div class="grid-item">scrollbar-color</div>
-  <div class="grid-item">scroll-timeline</div>
-  <div class="grid-item">view-timeline</div>
-  <div class="grid-item">overlay</div>
-  <div class="grid-item">scale</div>
-  <div class="grid-item">ascent-override</div>
-  <div class="grid-item">initial-letter</div>
-  <div class="grid-item">inset</div>
-  <div class="grid-item">@container</div>
-  <div class="grid-item">accent-color</div>
-  <div class="grid-item">color-mix()</div>
-  <div class="grid-item">@scope</div>
-  <div class="grid-item">@starting-style</div>
-  <div class="grid-item">override-colors</div>
-  <div class="grid-item">anchor()</div>
-  <div class="grid-item">scroll-snap</div>
-  <div class="grid-item">::backdrop</div>
-  <div class="grid-item">::cue</div>
-  <div class="grid-item">:focus-visible</div>
-  <div class="grid-item">:user-valid</div>
-  <div class="grid-item">:fullscreen</div>
-  <div class="grid-item">:dir()</div>
-  <div class="grid-item">caret-color</div>
-  <div class="grid-item">aspect-ratio</div>
-  <div class="grid-item">cross-fade()</div>
-  <div class="grid-item">image-set()</div>
-  <div class="grid-item">env()</div>
-  <div class="grid-item">place-content</div>
-  <div class="grid-item">gap</div>
-  
-</div>
-<body>
+  </header>
 
+  <div class="max-w-6xl mx-auto px-4">
+    
+    <div id="urgent-deadline-banner" class="mt-4 bg-gradient-to-r from-amber-500 to-rose-600 rounded-2xl p-4 text-white shadow-sm flex items-center justify-between gap-4 hidden">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 bg-white/20 rounded-xl flex items-center justify-center animate-pulse"><i data-lucide="alarm-clock" class="w-5 h-5"></i></div>
+        <div>
+          <div class="text-[10px] font-bold uppercase tracking-wider text-amber-100">Peringatan Tugas Terdekat!</div>
+          <div class="text-xs sm:text-sm font-bold mt-0.5" id="countdown-text">Mengecek deadline tugas...</div>
+        </div>
+      </div>
+    </div>
 
+    <div class="mt-4 bg-gradient-to-br from-indigo-900 to-slate-900 rounded-2xl p-4 text-white shadow-sm border border-slate-800 relative overflow-hidden">
+      <div class="absolute -right-6 -bottom-6 text-white/5 pointer-events-none"><i data-lucide="quote" class="w-32 h-32"></i></div>
+      <div class="flex items-start gap-3 relative z-10">
+        <div class="p-2 bg-indigo-500/20 text-indigo-300 rounded-xl mt-0.5"><i data-lucide="sparkles" class="w-4 h-4"></i></div>
+        <div>
+          <span class="text-[10px] font-bold uppercase tracking-widest text-indigo-300">Quotes & Motivasi Hari Ini</span>
+          <p id="quote-text" class="text-xs sm:text-sm italic font-medium text-slate-100 mt-1">"Sedang memuat motivasi hari ini..."</p>
+          <p id="quote-author" class="text-[10px] font-bold text-indigo-400 mt-1">&mdash; Anonim</p>
+        </div>
+      </div>
+    </div>
 
+    <section class="py-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-100 flex items-center gap-4">
+          <div class="p-3 bg-blue-50 text-blue-600 rounded-xl"><i data-lucide="book-open" class="w-6 h-6"></i></div>
+          <div>
+            <div class="text-2xl font-bold tracking-tight text-slate-900" id="stat-total-num">0</div>
+            <div class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Total Tugas</div>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-100 flex items-center gap-4">
+          <div class="p-3 bg-emerald-50 text-emerald-600 rounded-xl"><i data-lucide="check-circle-2" class="w-6 h-6"></i></div>
+          <div>
+            <div class="text-2xl font-bold tracking-tight text-emerald-600" id="stat-done-num">0</div>
+            <div class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Selesai</div>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-100 flex items-center gap-4">
+          <div class="p-3 bg-rose-50 text-rose-600 rounded-xl"><i data-lucide="alert-triangle" class="w-6 h-6"></i></div>
+          <div>
+            <div class="text-2xl font-bold tracking-tight text-rose-600" id="stat-urgent-num">0</div>
+            <div class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Urgent</div>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-100 flex items-center gap-4">
+          <div class="p-3 bg-indigo-50 text-indigo-600 rounded-xl"><i data-lucide="users" class="w-6 h-6"></i></div>
+          <div>
+            <div class="text-2xl font-bold tracking-tight text-indigo-600" id="stat-attend-num">0</div>
+            <div class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Hadir Hari Ini</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-</body>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
+    <section class="pb-6 grid gap-4 md:grid-cols-2">
+      <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-100 flex items-center justify-between gap-4">
+        <div class="flex items-center gap-3 w-full">
+          <div id="holiday-icon-bg" class="w-10 h-10 bg-emerald-50 rounded-full flex items-center justify-center text-emerald-500 shrink-0">
+            <i id="holiday-icon" data-lucide="calendar-days" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <div class="text-xs font-bold text-slate-400 uppercase tracking-wider">Status Hari Ini (Kalender Pemerintah)</div>
+            <div class="font-extrabold text-sm mt-0.5" id="holiday-status-text">Mengecek Kalender...</div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-100 flex items-center justify-between gap-4">
+        <div class="flex items-center gap-3 w-full">
+          <div class="w-10 h-10 bg-violet-50 rounded-full flex items-center justify-center text-violet-500 shrink-0">
+            <i data-lucide="hourglass" class="w-5 h-5"></i>
+          </div>
+          <div class="w-full">
+            <div class="flex justify-between items-center">
+              <div class="text-xs font-bold text-slate-400 uppercase tracking-wider" id="countdown-event-title">Countdown Event Kelas</div>
+              <button onclick="showModal('event-modal')" class="text-[10px] font-bold text-blue-600 hover:underline">Set Event</button>
+            </div>
+            <div class="font-extrabold text-slate-800 text-sm mt-0.5 tracking-wide" id="countdown-timer">Belum dikonfigurasi</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="border-b border-slate-200 mb-6 overflow-hidden">
+      <div class="flex gap-6 overflow-x-auto custom-scroll pb-px" id="view-tabs">
+        <button class="view-tab view-tab-active py-3 px-1 text-sm font-semibold whitespace-nowrap transition flex items-center gap-2 text-slate-600" data-view="tugas"><i data-lucide="clipboard-list" class="w-4 h-4"></i> Tugas Kelas</button> 
+        <button class="view-tab py-3 px-1 text-sm font-semibold whitespace-nowrap transition flex items-center gap-2 text-slate-500 hover:text-blue-700" data-view="piket"><i data-lucide="trash-2" class="w-4 h-4"></i> Piket Harian</button>
+        <button class="view-tab py-3 px-1 text-sm font-semibold whitespace-nowrap transition flex items-center gap-2 text-slate-500 hover:text-blue-700" data-view="pengumuman"><i data-lucide="megaphone" class="w-4 h-4"></i> Pengumuman</button> 
+        <button class="view-tab py-3 px-1 text-sm font-semibold whitespace-nowrap transition flex items-center gap-2 text-slate-500 hover:text-blue-700" data-view="jadwal"><i data-lucide="calendar" class="w-4 h-4"></i> Jadwal Pelajaran</button> 
+        <button class="view-tab py-3 px-1 text-sm font-semibold whitespace-nowrap transition flex items-center gap-2 text-slate-500 hover:text-blue-700" data-view="catatan"><i data-lucide="file-text" class="w-4 h-4"></i> Catatan</button> 
+        <button class="view-tab py-3 px-1 text-sm font-semibold whitespace-nowrap transition flex items-center gap-2 text-slate-500 hover:text-blue-700" data-view="absen"><i data-lucide="user-check" class="w-4 h-4"></i> Presensi</button> 
+        <button class="view-tab py-3 px-1 text-sm font-semibold whitespace-nowrap transition flex items-center gap-2 text-slate-500 hover:text-blue-700" data-view="kas"><i data-lucide="wallet" class="w-4 h-4"></i> Kas Kelas</button> 
+        <button class="view-tab py-3 px-1 text-sm font-semibold whitespace-nowrap transition flex items-center gap-2 text-slate-500 hover:text-blue-700" data-view="curhat"><i data-lucide="message-square-dashed" class="w-4 h-4"></i> Kotak Saran</button>
+        <button class="view-tab py-3 px-1 text-sm font-semibold whitespace-nowrap transition flex items-center gap-2 text-slate-500 hover:text-blue-700" data-view="galeri"><i data-lucide="image" class="w-4 h-4"></i> Galeri Kelas</button>
+        <button class="view-tab py-3 px-1 text-sm font-semibold whitespace-nowrap transition flex items-center gap-2 text-slate-500 hover:text-blue-700" data-view="guru"><i data-lucide="graduation-cap" class="w-4 h-4"></i> Data Guru</button> 
+        <button class="view-tab py-3 px-1 text-sm font-semibold whitespace-nowrap transition flex items-center gap-2 text-slate-500 hover:text-blue-700" data-view="kontak"><i data-lucide="contact-2" class="w-4 h-4"></i> Kontak Teman</button> 
+      </div>
+    </nav>
+
+    <main>
+      <div id="view-tugas" class="view-content">
+        <div class="bg-white p-2.5 rounded-2xl shadow-sm border border-slate-100 mb-4 overflow-hidden">
+          <div class="flex gap-1.5 overflow-x-auto custom-scroll py-1" id="subject-tabs">
+            <button class="subject-tab tab-active whitespace-nowrap px-4 py-1.5 rounded-xl text-xs font-semibold transition" data-subject="all">Semua Mapel</button> 
+            <button class="subject-tab whitespace-nowrap px-4 py-1.5 rounded-xl text-xs font-semibold bg-slate-50 hover:bg-slate-100 text-slate-600 transition" data-subject="IPAS">IPAS</button> 
+            <button class="subject-tab whitespace-nowrap px-4 py-1.5 rounded-xl text-xs font-semibold bg-slate-50 hover:bg-slate-100 text-slate-600 transition" data-subject="PKN">PKN</button> 
+            <button class="subject-tab whitespace-nowrap px-4 py-1.5 rounded-xl text-xs font-semibold bg-slate-50 hover:bg-slate-100 text-slate-600 transition" data-subject="B. Indonesia">B. Indonesia</button> 
+            <button class="subject-tab whitespace-nowrap px-4 py-1.5 rounded-xl text-xs font-semibold bg-slate-50 hover:bg-slate-100 text-slate-600 transition" data-subject="B. Sunda">B. Sunda</button> 
+            <button class="subject-tab whitespace-nowrap px-4 py-1.5 rounded-xl text-xs font-semibold bg-slate-50 hover:bg-slate-100 text-slate-600 transition" data-subject="B. Inggris">B. Inggris</button> 
+            <button class="subject-tab whitespace-nowrap px-4 py-1.5 rounded-xl text-xs font-semibold bg-slate-50 hover:bg-slate-100 text-slate-600 transition" data-subject="PABP">PABP</button> 
+            <button class="subject-tab whitespace-nowrap px-4 py-1.5 rounded-xl text-xs font-semibold bg-slate-50 hover:bg-slate-100 text-slate-600 transition" data-subject="PJOK">PJOK</button> 
+            <button class="subject-tab whitespace-nowrap px-4 py-1.5 rounded-xl text-xs font-semibold bg-slate-50 hover:bg-slate-100 text-slate-600 transition" data-subject="Seni Budaya">Seni Budaya</button> 
+            <button class="subject-tab whitespace-nowrap px-4 py-1.5 rounded-xl text-xs font-semibold bg-slate-50 hover:bg-slate-100 text-slate-600 transition" data-subject="Informatika">Informatika</button> 
+            <button class="subject-tab whitespace-nowrap px-4 py-1.5 rounded-xl text-xs font-semibold bg-slate-50 hover:bg-slate-100 text-slate-600 transition" data-subject="Matematika">Matematika</button>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-3 mb-5">
+          <button class="flex items-center gap-2 px-4 py-2.5 rounded-xl font-bold text-xs shadow-sm bg-blue-600 hover:bg-blue-700 text-white transition tracking-wide" onclick="showModal('task-modal')"><i data-lucide="plus" class="w-4 h-4"></i> TAMBAH TUGAS</button> 
+          <button class="flex items-center gap-2 px-4 py-2.5 rounded-xl font-bold text-xs shadow-sm bg-emerald-600 hover:bg-emerald-700 text-white transition tracking-wide" onclick="showModal('absen-modal')"><i data-lucide="user-check" class="w-4 h-4"></i> PRESENSI MASUK</button>
+          <button class="flex items-center gap-2 px-4 py-2.5 rounded-xl font-bold text-xs shadow-sm bg-amber-500 hover:bg-amber-600 text-white transition tracking-wide" onclick="kirimRekapWA()"><i data-lucide="send" class="w-4 h-4"></i> LAPOR TUGAS KE WALI KELAS</button>
+        </div>
+        <div id="task-list" class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3"></div>
+        <div id="empty-msg" class="text-center py-16 bg-white rounded-2xl border border-dashed border-slate-200 hidden">
+          <i data-lucide="folder-open" class="w-12 h-12 text-slate-300 mx-auto mb-2"></i>
+          <p class="text-slate-400 text-sm font-medium italic">Belum ada tugas tercatat.</p>
+        </div>
+      </div>
+
+      <div id="view-piket" class="view-content hidden">
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="font-bold text-lg text-slate-800 flex items-center gap-2"><i data-lucide="trash-2" class="w-5 h-5 text-blue-600"></i> Jadwal Piket Kebersihan Kelas</h2>
+          <button class="flex items-center gap-2 px-3 py-2 rounded-xl text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white shadow-sm transition" onclick="showModal('piket-modal')"><i data-lucide="plus" class="w-3.5 h-3.5"></i> TAMBAH ANGGOTA PIKET</button>
+        </div>
+        <div class="grid gap-4 sm:grid-cols-5" id="piket-grid-container"></div>
+      </div>
+
+      <div id="view-pengumuman" class="view-content hidden">
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="font-bold text-lg text-slate-800 flex items-center gap-2"><i data-lucide="megaphone" class="w-5 h-5 text-amber-500"></i> Informasi & Pengumuman</h2>
+          <button class="flex items-center gap-2 px-3 py-2 rounded-xl text-xs font-bold bg-amber-500 hover:bg-amber-600 text-white shadow-sm transition" onclick="showModal('announce-modal')"><i data-lucide="plus" class="w-3.5 h-3.5"></i> BUAT BARU</button>
+        </div>
+        <div id="announce-list" class="space-y-3"></div>
+        <div id="announce-empty" class="text-center py-12 bg-white rounded-2xl border border-dashed border-slate-200 hidden"><p class="text-slate-400 text-sm italic">Mading kelas kosong.</p></div>
+      </div>
+
+      <div id="view-jadwal" class="view-content hidden">
+        <h2 class="font-bold text-lg text-slate-800 mb-4 flex items-center gap-2"><i data-lucide="calendar" class="w-5 h-5 text-blue-600"></i> Jadwal Pelajaran Mingguan</h2>
+        <div class="overflow-x-auto bg-white rounded-2xl shadow-sm border border-slate-100 p-4">
+          <table class="w-full text-sm text-left border-collapse">
+            <thead>
+              <tr class="bg-slate-50 text-slate-500 font-bold border-b border-slate-200">
+                <th class="px-4 py-3 rounded-l-xl">Hari</th><th class="px-4 py-3">07:00</th><th class="px-4 py-3">08:30</th><th class="px-4 py-3">10:30</th><th class="px-4 py-3">12:00</th><th class="px-4 py-3 rounded-r-xl">00:00</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100 font-medium text-slate-700">
+              <tr class="hover:bg-slate-50/80 transition"><td class="px-4 py-3.5 font-bold text-blue-600">Senin</td><td>MTK</td><td>B.INGGRIS</td><td>INFORMATIKA</td><td>( - )</td><td>( - )</td></tr>
+              <tr class="hover:bg-slate-50/80 transition"><td class="px-4 py-3.5 font-bold text-blue-600">Selasa</td><td>B.SUNDA</td><td>SBK</td><td>IPAS</td><td>( - )</td><td>( - )</td></tr>
+              <tr class="hover:bg-slate-50/80 transition"><td class="px-4 py-3.5 font-bold text-blue-600">Rabu</td><td>PKN</td><td>PABP</td><td>MTK</td><td>B.INDONESIA</td><td>( - )</td></tr>
+              <tr class="hover:bg-slate-50/80 transition"><td class="px-4 py-3.5 font-bold text-blue-600">Kamis</td><td>B.INGGRIS</td><td>B.INDONESIA</td><td>PJOK</td><td>Informatika</td><td>( - )</td></tr>
+              <tr class="hover:bg-slate-50/80 transition"><td class="px-4 py-3.5 font-bold text-blue-600">Jumat</td><td>PRODUKTIF</td><td class="text-slate-300">( - )</td><td class="text-slate-300">( - )</td><td class="text-slate-300">( - )</td><td class="text-slate-300">( - )</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div id="view-catatan" class="view-content hidden">
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="font-bold text-lg text-slate-800 flex items-center gap-2"><i data-lucide="file-text" class="w-5 h-5 text-violet-500"></i> Catatan Materi Pelajaran</h2>
+          <button class="flex items-center gap-2 px-3 py-2 rounded-xl text-xs font-bold bg-violet-600 hover:bg-violet-700 text-white shadow-sm transition" onclick="showModal('note-modal')"><i data-lucide="plus" class="w-3.5 h-3.5"></i> TAMBAH CATATAN</button>
+        </div>
+        <div id="note-list" class="grid gap-4 sm:grid-cols-2"></div>
+        <div id="note-empty" class="text-center py-12 bg-white rounded-2xl border border-dashed border-slate-200 hidden"><p class="text-slate-400 text-sm italic">Belum ada catatan.</p></div>
+      </div>
+
+      <div id="view-absen" class="view-content hidden">
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="font-bold text-lg text-slate-800 flex items-center gap-2"><i data-lucide="user-check" class="w-5 h-5 text-emerald-600"></i> Log Riwayat Absensi Kelas</h2>
+          <div class="flex gap-2">
+            <button onclick="kirimAbsenWA()" class="text-xs font-bold text-emerald-600 hover:underline flex items-center gap-1"><i data-lucide="share-2" class="w-3.5 h-3.5"></i> Kirim Rekap Ke WA</button>
+            <span class="text-slate-300">|</span>
+            <button onclick="clearData('absen')" class="text-xs font-semibold text-rose-500 hover:underline">Reset Absen</button>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-4 overflow-hidden">
+          <div id="absen-list" class="divide-y divide-slate-100"></div>
+          <div id="absen-empty" class="text-center py-8 text-slate-400 text-sm italic hidden">Belum ada presensi hari ini.</div>
+        </div>
+      </div>
+
+      <div id="view-kas" class="view-content hidden">
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="font-bold text-lg text-slate-800 flex items-center gap-2"><i data-lucide="wallet" class="w-5 h-5 text-emerald-500"></i> Manajemen Transaksi Kas</h2>
+          <button class="flex items-center gap-2 px-3 py-2 rounded-xl text-xs font-bold bg-emerald-600 hover:bg-emerald-700 text-white shadow-sm transition" onclick="showModal('kas-modal')"><i data-lucide="plus" class="w-3.5 h-3.5"></i> INPUT KAS</button>
+        </div>
+        
+        <div class="bg-gradient-to-br from-emerald-600 to-teal-700 rounded-2xl p-6 text-white shadow-md mb-4 flex items-center justify-between">
+          <div>
+            <div class="text-emerald-100 text-xs font-bold uppercase tracking-wider">Total Kas Terkumpul</div>
+            <div class="text-3xl font-extrabold tracking-tight mt-1" id="kas-saldo">Rp 0</div>
+          </div>
+          <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center backdrop-blur-sm"><i data-lucide="banknote" class="w-7 h-7 text-emerald-100"></i></div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4 mb-6">
+          <div class="bg-white p-3.5 rounded-xl border border-slate-100 shadow-sm flex items-center gap-3">
+            <div class="p-2 bg-emerald-50 text-emerald-600 rounded-lg"><i data-lucide="trending-up" class="w-4 h-4"></i></div>
+            <div>
+              <div class="text-[10px] font-bold text-slate-400 uppercase">Total Pemasukan</div>
+              <div id="kas-total-masuk" class="text-sm font-extrabold text-slate-800">Rp 0</div>
+            </div>
+          </div>
+          <div class="bg-white p-3.5 rounded-xl border border-slate-100 shadow-sm flex items-center gap-3">
+            <div class="p-2 bg-rose-50 text-rose-600 rounded-lg"><i data-lucide="trending-down" class="w-4 h-4"></i></div>
+            <div>
+              <div class="text-[10px] font-bold text-slate-400 uppercase">Total Pengeluaran</div>
+              <div id="kas-total-keluar" class="text-sm font-extrabold text-slate-800">Rp 0</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="space-y-2" id="kas-list"></div>
+        <div id="kas-empty" class="text-center py-12 bg-white rounded-2xl border border-dashed border-slate-200 hidden"><p class="text-slate-400 text-sm italic">Buku kas kosong.</p></div>
+      </div>
+
+      <div id="view-curhat" class="view-content hidden">
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="font-bold text-lg text-slate-800 flex items-center gap-2"><i data-lucide="message-square-dashed" class="w-5 h-5 text-fuchsia-500"></i> Kotak Saran & Curhat Kelas (Anonymous)</h2>
+          <button class="flex items-center gap-2 px-3 py-2 rounded-xl text-xs font-bold bg-fuchsia-600 hover:bg-fuchsia-700 text-white shadow-sm transition" onclick="showModal('curhat-modal')"><i data-lucide="plus" class="w-3.5 h-3.5"></i> KIRIM SARAN</button>
+        </div>
+        <div id="curhat-list" class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3"></div>
+        <div id="curhat-empty" class="text-center py-12 bg-white rounded-2xl border border-dashed border-slate-200 hidden"><p class="text-slate-400 text-sm italic">Kotak saran masih kosong.</p></div>
+      </div>
+
+      <div id="view-galeri" class="view-content hidden">
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="font-bold text-lg text-slate-800 flex items-center gap-2"><i data-lucide="image" class="w-5 h-5 text-blue-500"></i> Galeri Dokumentasi Kelas</h2>
+          <button class="flex items-center gap-2 px-3 py-2 rounded-xl text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white shadow-sm transition" onclick="showModal('galeri-modal')"><i data-lucide="plus" class="w-3.5 h-3.5"></i> UNGGAH FOTO</button>
+        </div>
+        <div id="galeri-list" class="grid gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-4"></div>
+        <div id="galeri-empty" class="text-center py-12 bg-white rounded-2xl border border-dashed border-slate-200 hidden"><p class="text-slate-400 text-sm italic">Belum ada foto.</p></div>
+      </div>
+
+      <div id="view-guru" class="view-content hidden">
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="font-bold text-lg text-slate-800 flex items-center gap-2"><i data-lucide="graduation-cap" class="w-5 h-5 text-indigo-500"></i> Database Kontak Guru</h2>
+          <button class="flex items-center gap-2 px-3 py-2 rounded-xl text-xs font-bold bg-indigo-600 hover:bg-indigo-700 text-white shadow-sm transition" onclick="showModal('guru-modal')"><i data-lucide="plus" class="w-3.5 h-3.5"></i> TAMBAH BARU</button>
+        </div>
+        <div id="guru-list" class="grid gap-4 sm:grid-cols-2"></div>
+        <div id="guru-empty" class="text-center py-12 bg-white rounded-2xl border border-dashed border-slate-200 hidden"><p class="text-slate-400 text-sm italic">Kontak guru kosong.</p></div>
+      </div>
+
+      <div id="view-kontak" class="view-content hidden">
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="font-bold text-lg text-slate-800 flex items-center gap-2"><i data-lucide="contact-2" class="w-5 h-5 text-blue-500"></i> Buku Telepon Anggota Kelas</h2>
+          <button class="flex items-center gap-2 px-3 py-2 rounded-xl text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white shadow-sm transition" onclick="showModal('kontak-modal')"><i data-lucide="plus" class="w-3.5 h-3.5"></i> TAMBAH KONTAK</button>
+        </div>
+        <div id="kontak-list" class="grid gap-3 sm:grid-cols-2 md:grid-cols-3"></div>
+        <div id="kontak-empty" class="text-center py-12 bg-white rounded-2xl border border-dashed border-slate-200 hidden"><p class="text-slate-400 text-sm italic">Kontak teman kosong.</p></div>
+      </div>
+    </main>
+
+    <footer class="mt-12 pt-6 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+      <div>Papan Tugas Kelas X PLKV &copy; 2026. Sinkronisasi Data Cloud Firebase Aktif.</div>
+    </footer>
+  </div>
+
+  <div id="task-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center modal-backdrop p-4">
+    <div class="bg-white w-full max-w-md rounded-2xl p-6 shadow-xl max-h-[90vh] overflow-y-auto">
+      <div class="flex justify-between items-center mb-4 border-b pb-2">
+        <h2 class="font-bold text-lg text-slate-800 flex items-center gap-2"><i data-lucide="plus-circle" class="w-5 h-5 text-blue-600"></i> Tambah Tugas Baru</h2>
+        <button onclick="hideModal('task-modal')" class="p-1.5 text-slate-400 hover:bg-slate-100 rounded-xl"><i data-lucide="x" class="w-5 h-5"></i></button>
+      </div>
+      <form id="task-form" class="space-y-4" onsubmit="handleTaskSubmit(event)">
+        <div>
+          <label class="block text-xs font-bold uppercase text-slate-500 mb-1">Mata Pelajaran</label>
+          <select id="f-subject" class="w-full border bg-slate-50 rounded-xl px-3 py-2.5 text-sm" required>
+            <option value="">Pilih mapel</option><option>IPAS</option><option>PKN</option><option>B. Indonesia</option><option>B. Sunda</option><option>B. Inggris</option><option>PABP</option><option>PJOK</option><option>Seni Budaya</option><option>Informatika</option><option>Matematika</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-xs font-bold uppercase text-slate-500 mb-1">Judul Tugas</label>
+          <input id="f-title" type="text" placeholder="Contoh: LKS Halaman 45" class="w-full border bg-slate-50 rounded-xl px-3 py-2.5 text-sm" required>
+        </div>
+        <div>
+          <label class="block text-xs font-bold uppercase text-slate-500 mb-1">Instruksi</label>
+          <textarea id="f-desc" rows="3" placeholder="Deskripsi..." class="w-full border bg-slate-50 rounded-xl px-3 py-2.5 text-sm"></textarea>
+        </div>
+        <div>
+          <label class="block text-xs font-bold uppercase text-slate-500 mb-1">Foto Lampiran (Opsional)</label>
+          <input id="f-task-img" type="file" accept="image/*" class="w-full text-xs border bg-slate-50 rounded-xl px-3 py-2">
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div><label class="block text-xs font-bold uppercase text-slate-500 mb-1">Tanggal</label><input id="f-date" type="date" class="w-full border bg-slate-50 rounded-xl px-3 py-2.5 text-sm" required></div>
+          <div><label class="block text-xs font-bold uppercase text-slate-500 mb-1">Jam</label><input id="f-time" type="time" class="w-full border bg-slate-50 rounded-xl px-3 py-2.5 text-sm" required></div>
+        </div>
+        <div>
+          <label class="block text-xs font-bold uppercase text-slate-500 mb-1">Tingkat Kepentingan</label>
+          <select id="f-priority" class="w-full border bg-slate-50 rounded-xl px-3 py-2.5 text-sm">
+            <option value="biasa">Biasa (Biru)</option><option value="urgent">Urgent (Merah)</option><option value="rendah">Rendah (Hijau)</option>
+          </select>
+        </div>
+        <button type="submit" class="w-full py-3 rounded-xl font-bold text-sm text-white bg-blue-600 hover:bg-blue-700 shadow-md">SIMPAN TUGAS KELAS</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="piket-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center modal-backdrop p-4">
+    <div class="bg-white w-full max-w-md rounded-2xl p-6 shadow-xl">
+      <div class="flex justify-between items-center mb-4 border-b pb-2">
+        <h2 class="font-bold text-lg text-slate-800 flex items-center gap-2"><i data-lucide="trash-2" class="w-5 h-5 text-blue-600"></i> Tambah Jadwal Piket</h2>
+        <button onclick="hideModal('piket-modal')" class="p-1.5 text-slate-400 hover:bg-slate-100 rounded-xl"><i data-lucide="x" class="w-5 h-5"></i></button>
+      </div>
+      <form id="piket-form" class="space-y-4" onsubmit="handlePiketSubmit(event)">
+        <div><label class="block text-xs font-bold uppercase text-slate-500 mb-1">Nama Siswa</label><input id="f-piket-name" type="text" placeholder="Nama..." class="w-full border bg-slate-50 rounded-xl px-3 py-2.5 text-sm" required></div>
+        <div><label class="block text-xs font-bold uppercase text-slate-500 mb-1">Hari Kerja Piket</label><select id="f-piket-hari" class="w-full border bg-slate-50 rounded-xl px-3 py-2.5 text-sm" required><option>Senin</option><option>Selasa</option><option>Rabu</option><option>Kamis</option><option>Jumat</option></select></div>
+        <button type="submit" class="w-full py-3 rounded-xl font-bold text-sm text-white bg-blue-600 hover:bg-blue-700 shadow-md">MASUKKAN JADWAL PIKET</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="absen-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center modal-backdrop p-4">
+    <div class="bg-white w-full max-w-md rounded-2xl p-6 shadow-xl">
+      <div class="flex justify-between items-center mb-4 border-b pb-2">
+        <h2 class="font-bold text-lg text-slate-800 flex items-center gap-2"><i data-lucide="user-check" class="w-5 h-5 text-emerald-600"></i> Absen Presensi Kelas</h2>
+        <button onclick="hideModal('absen-modal')" class="p-1.5 text-slate-400 hover:bg-slate-100 rounded-xl"><i data-lucide="x" class="w-5 h-5"></i></button>
+      </div>
+      <form id="absen-form" class="space-y-4" onsubmit="handleAbsenSubmit(event)">
+        <div><label class="block text-xs font-bold uppercase text-slate-500 mb-1">Nama Siswa</label><input id="f-name" type="text" placeholder="Nama lengkap..." class="w-full border bg-slate-50 rounded-xl px-3 py-2.5 text-sm" required></div>
+        <div><label class="block text-xs font-bold uppercase text-slate-500 mb-1">Status</label><select id="f-status" class="w-full border bg-slate-50 rounded-xl px-3 py-2.5 text-sm" required><option value="Hadir">Hadir</option><option value="Izin">Izin</option><option value="Sakit">Sakit</option><option value="Alpha">Alpha</option></select></div>
+        <button type="submit" class="w-full py-3 rounded-xl font-bold text-sm text-white bg-emerald-600 hover:bg-emerald-700 shadow-md">KIRIM ABSENSI</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="announce-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center modal-backdrop p-4">
+    <div class="bg-white w-full max-w-md rounded-2xl p-6 shadow-xl">
+      <div class="flex justify-between items-center mb-4 border-b pb-2">
+        <h2 class="font-bold text-lg text-slate-800 flex items-center gap-2"><i data-lucide="megaphone" class="w-5 h-5 text-amber-500"></i> Posting Pengumuman Baru</h2>
+        <button onclick="hideModal('announce-modal')" class="p-1.5 text-slate-400 hover:bg-slate-100 rounded-xl"><i data-lucide="x" class="w-5 h-5"></i></button>
+      </div>
+      <form id="announce-form" class="space-y-4" onsubmit="handleAnnounceSubmit(event)">
+        <div><label class="block text-xs font-bold uppercase text-slate-500 mb-1">Judul Topik</label><input id="f-ann-title" type="text" placeholder="Topik..." class="w-full border bg-slate-50 rounded-xl px-3 py-2.5 text-sm" required></div>
+        <div><label class="block text-xs font-bold uppercase text-slate-500 mb-1">Detail</label><textarea id="f-ann-desc" rows="4" placeholder="Rincian informasi..." class="w-full border bg-slate-50 rounded-xl px-3 py-2.5 text-sm" required></textarea></div>
+        <button type="submit" class="w-full py-3 rounded-xl font-bold text-sm text-white bg-amber-500 hover:bg-amber-600 shadow-md">SIARKAN PENGUMUMAN</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="event-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center modal-backdrop p-4">
+    <div class="bg-white w-full max-w-md rounded-2xl p-6 shadow-xl">
+      <div class="flex justify-between items-center mb-4 border-b pb-2">
+        <h2 class="font-bold text-lg text-slate-800 flex items-center gap-2"><i data-lucide="calendar" class="w-5 h-5 text-blue-600"></i> Atur Countdown Event</h2>
+        <button onclick="hideModal('event-modal')" class="p-1.5 text-slate-400 hover:bg-slate-100 rounded-xl"><i data-lucide="x" class="w-5 h-5"></i></button>
+      </div>
+      <form id="event-form" class="space-y-4" onsubmit="handleEventSubmit(event)">
+        <div><label class="block text-xs font-bold uppercase text-slate-500 mb-1">Nama Event</label><input id="f-event-title" type="text" placeholder="Contoh: Libur Semester / PTS" class="w-full border bg-slate-50 rounded-xl px-3 py-2.5 text-sm" required></div>
+        <div><label class="block text-xs font-bold uppercase text-slate-500 mb-1">Tanggal & Waktu Event</label><input id="f-event-date" type="datetime-local" class="w-full border bg-slate-50 rounded-xl px-3 py-2.5 text-sm" required></div>
+        <button type="submit" class="w-full py-3 rounded-xl font-bold text-sm text-white bg-blue-600 hover:bg-blue-700 shadow-md">PASANG COUNTDOWN</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="curhat-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center modal-backdrop p-4">
+    <div class="bg-white w-full max-w-md rounded-2xl p-6 shadow-xl">
+      <div class="flex justify-between items-center mb-4 border-b pb-2">
+        <h2 class="font-bold text-lg text-slate-800 flex items-center gap-2"><i data-lucide="message-square-dashed" class="w-5 h-5 text-fuchsia-600"></i> Kirim Saran Rahasia</h2>
+        <button onclick="hideModal('curhat-modal')" class="p-1.5 text-slate-400 hover:bg-slate-100 rounded-xl"><i data-lucide="x" class="w-5 h-5"></i></button>
+      </div>
+      <form id="curhat-form" class="space-y-4" onsubmit="handleCurhatSubmit(event)">
+        <div><label class="block text-xs font-bold uppercase text-slate-500 mb-1">Isi Saran / Kritik / Curhatan</label><textarea id="f-curhat-text" rows="4" placeholder="Tulis aspirasimu di sini, namamu tidak akan kelihatan..." class="w-full border bg-slate-50 rounded-xl px-3 py-2.5 text-sm" required></textarea></div>
+        <button type="submit" class="w-full py-3 rounded-xl font-bold text-sm text-white bg-fuchsia-600 hover:bg-fuchsia-700 shadow-md">KIRIM SECARA ANONYMOUS</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="note-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center modal-backdrop p-4">
+    <div class="bg-white w-full max-w-md rounded-2xl p-6 shadow-xl">
+      <div class="flex justify-between items-center mb-4 border-b pb-2">
+        <h2 class="font-bold text-lg text-slate-800 flex items-center gap-2"><i data-lucide="file-text" class="w-5 h-5 text-violet-500"></i> Buat Catatan Ringkas</h2>
+        <button onclick="hideModal('note-modal')" class="p-1.5 text-slate-400 hover:bg-slate-100 rounded-xl"><i data-lucide="x" class="w-5 h-5"></i></button>
+      </div>
+      <form id="note-form" class="space-y-4" onsubmit="handleNoteSubmit(event)">
+        <div><label class="block text-xs font-bold uppercase text-slate-500 mb-1">Mata Pelajaran</label><select id="f-note-subject" class="w-full border bg-slate-50 rounded-xl px-3 py-2.5 text-sm" required><option value="">Pilih mapel</option><option>IPAS</option><option>PKN</option><option>B. Indonesia</option><option>B. Sunda</option><option>B. Inggris</option><option>PABP</option><option>PJOK</option><option>Seni Budaya</option><option>Informatika</option><option>Matematika</option></select></div>
+        <div><label class="block text-xs font-bold uppercase text-slate-500 mb-1">Isi Rangkuman</label><textarea id="f-note-content" rows="5" placeholder="Tulis catatan..." class="w-full border bg-slate-50 rounded-xl px-3 py-2.5 text-sm" required></textarea></div>
+        <button type="submit" class="w-full py-3 rounded-xl font-bold text-sm text-white bg-violet-600 hover:bg-violet-700 shadow-md">SIMPAN RANGKUMAN</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="kas-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center modal-backdrop p-4">
+    <div class="bg-white w-full max-w-md rounded-2xl p-6 shadow-xl">
+      <div class="flex justify-between items-center mb-4 border-b pb-2">
+        <h2 class="font-bold text-lg text-slate-800 flex items-center gap-2"><i data-lucide="wallet" class="w-5 h-5 text-emerald-600"></i> Uang Kas Kelas</h2>
+        <button onclick="hideModal('kas-modal')" class="p-1.5 text-slate-400 hover:bg-slate-100 rounded-xl"><i data-lucide="x" class="w-5 h-5"></i></button>
+      </div>
+      <form id="kas-form" class="space-y-4" onsubmit="handleKasSubmit(event)">
+        <div><label class="block text-xs font-bold uppercase text-slate-500 mb-1">Aliran Dana</label><select id="f-kas-type" class="w-full border bg-slate-50 rounded-xl px-3 py-2.5 text-sm" required><option value="masuk">Uang Masuk / Pemasukan</option><option value="keluar">Uang Keluar / Pengeluaran</option></select></div>
+        <div><label class="block text-xs font-bold uppercase text-slate-500 mb-1">Keterangan</label><input id="f-kas-name" type="text" placeholder="Contoh: Kas Budi" class="w-full border bg-slate-50 rounded-xl px-3 py-2.5 text-sm" required></div>
+        <div><label class="block text-xs font-bold uppercase text-slate-500 mb-1">Nominal (Rp)</label><input id="f-kas-amount" type="number" placeholder="5000" class="w-full border bg-slate-50 rounded-xl px-3 py-2.5 text-sm" required></div>
+        <button type="submit" class="w-full py-3 rounded-xl font-bold text-sm text-white bg-emerald-600 hover:bg-emerald-700 shadow-md">INPUT TRANSAKSI</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="galeri-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center modal-backdrop p-4">
+    <div class="bg-white w-full max-w-md rounded-2xl p-6 shadow-xl">
+      <div class="flex justify-between items-center mb-4 border-b pb-2">
+        <h2 class="font-bold text-lg text-slate-800 flex items-center gap-2"><i data-lucide="image" class="w-5 h-5 text-blue-600"></i> Unggah Foto Kegiatan</h2>
+        <button onclick="hideModal('galeri-modal')" class="p-1.5 text-slate-400 hover:bg-slate-100 rounded-xl"><i data-lucide="x" class="w-5 h-5"></i></button>
+      </div>
+      <form id="galeri-form" class="space-y-4" onsubmit="handleGaleriSubmit(event)">
+        <div><label class="block text-xs font-bold uppercase text-slate-500 mb-1">Nama Kegiatan</label><input id="f-gal-title" type="text" placeholder="Contoh: Kerja Bakti" class="w-full border bg-slate-50 rounded-xl px-3 py-2.5 text-sm" required></div>
+        <div><label class="block text-xs font-bold uppercase text-slate-500 mb-1">File Gambar</label><input id="f-gal-img" type="file" accept="image/*" class="w-full text-xs border bg-slate-50 rounded-xl px-3 py-2" required></div>
+        <button type="submit" class="w-full py-3 rounded-xl font-bold text-sm text-white bg-blue-600 hover:bg-blue-700 shadow-md">UNGGAH SEKARANG</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="guru-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center modal-backdrop p-4">
+    <div class="bg-white w-full max-w-md rounded-2xl p-6 shadow-xl">
+      <div class="flex justify-between items-center mb-4 border-b pb-2">
+        <h2 class="font-bold text-lg text-slate-800 flex items-center gap-2"><i data-lucide="graduation-cap" class="w-5 h-5 text-indigo-600"></i> Tambah Kontak Guru</h2>
+        <button onclick="hideModal('guru-modal')" class="p-1.5 text-slate-400 hover:bg-slate-100 rounded-xl"><i data-lucide="x" class="w-5 h-5"></i></button>
+      </div>
+      <form id="guru-form" class="space-y-4" onsubmit="handleGuruSubmit(event)">
+        <div><label class="block text-xs font-bold uppercase text-slate-500 mb-1">Nama Guru</label><input id="f-guru-name" type="text" placeholder="Dra. Sri..." class="w-full border bg-slate-50 rounded-xl px-3 py-2.5 text-sm" required></div>
+        <div><label class="block text-xs font-bold uppercase text-slate-500 mb-1">Mata Pelajaran</label><input id="f-guru-subject" type="text" placeholder="Matematika..." class="w-full border bg-slate-50 rounded-xl px-3 py-2.5 text-sm" required></div>
+        <div><label class="block text-xs font-bold uppercase text-slate-500 mb-1">No. WhatsApp (Awali angka 62 atau 08)</label><input id="f-guru-phone" type="text" placeholder="628123456789" class="w-full border bg-slate-50 rounded-xl px-3 py-2.5 text-sm"></div>
+        <button type="submit" class="w-full py-3 rounded-xl font-bold text-sm text-white bg-indigo-600 hover:bg-indigo-700 shadow-md">SIMPAN DATA GURU</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="kontak-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center modal-backdrop p-4">
+    <div class="bg-white w-full max-w-md rounded-2xl p-6 shadow-xl">
+      <div class="flex justify-between items-center mb-4 border-b pb-2">
+        <h2 class="font-bold text-lg text-slate-800 flex items-center gap-2"><i data-lucide="contact-2" class="w-5 h-5 text-blue-600"></i> Tambah Anggota Kelas</h2>
+        <button onclick="hideModal('kontak-modal')" class="p-1.5 text-slate-400 hover:bg-slate-100 rounded-xl"><i data-lucide="x" class="w-5 h-5"></i></button>
+      </div>
+      <form id="kontak-form" class="space-y-4" onsubmit="handleKontakSubmit(event)">
+        <div><label class="block text-xs font-bold uppercase text-slate-500 mb-1">Nama Teman</label><input id="f-kon-name" type="text" placeholder="Nama..." class="w-full border bg-slate-50 rounded-xl px-3 py-2.5 text-sm" required></div>
+        <div><label class="block text-xs font-bold uppercase text-slate-500 mb-1">Jabatan</label><select id="f-kon-role" class="w-full border bg-slate-50 rounded-xl px-3 py-2.5 text-sm" required><option>Siswa</option><option>Ketua Kelas</option><option>Wakil Ketua</option><option>Sekretaris</option><option>Bendahara</option></select></div>
+        <div><label class="block text-xs font-bold uppercase text-slate-500 mb-1">No. Telepon</label><input id="f-kon-phone" type="text" placeholder="089..." class="w-full border bg-slate-50 rounded-xl px-3 py-2.5 text-sm" required></div>
+        <button type="submit" class="w-full py-3 rounded-xl font-bold text-sm text-white bg-blue-600 hover:bg-blue-700 shadow-md">SIMPAN KONTAK</button>
+      </form>
+    </div>
+  </div>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+    import { getFirestore, collection, addDoc, deleteDoc, doc, updateDoc, onSnapshot } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyDYMsohQFwqJG5O64yTng84ypYu0_587e4",
+      authDomain: "plkv-d7444.firebaseapp.com",
+      projectId: "plkv-d7444",
+      storageBucket: "plkv-d7444.firebasestorage.app",
+      messagingSenderId: "139306191479",
+      appId: "1:139306191479:web:e8fc57cb5facd53b795472",
+      measurementId: "G-CV1SQ337G0"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const firestoreDb = getFirestore(app);
+
+    // SILAKAN ISI NO WHATSAPP DI BAWAH INI (AWALI DENGAN KODE NEGARA 62)
+    const NO_WA_SAYA = "081945497854";       
+    const NO_WA_WALI_KELAS = "081317539378"; 
+
+    let db = { tugas: [], pengumuman: [], catatan: [], absen: [], kas: [], curhat: [], galeri: [], guru: [], kontak: [], event: [], piket: [] };
+    let selectedSubject = 'all';
+    let countdownInterval = null;
+
+    // LIST DATA QUOTES UNTUK FITUR NO 2
+    const LIST_QUOTES = [
+      { text: "Pendidikan adalah senjata paling mematikan di dunia, karena dengan itu kamu bisa mengubah dunia.", author: "Nelson Mandela" },
+      { text: "Jangan biarkan hari kemarin menyita terlalu banyak hari ini. Tetap semangat anak PLKV!", author: "Will Rogers" },
+      { text: "Masa depan adalah milik mereka yang percaya pada keindahan impian mereka.", author: "Eleanor Roosevelt" },
+      { text: "Bukan karena hari ini indah kita bahagia, tetapi karena kita bahagia maka hari ini menjadi indah.", author: "Anonim" },
+      { text: "Fokuslah menjadi versi terbaik dari dirimu sendiri setiap harinya.", author: "Motivation" },
+      { text: "Capek boleh, menyerah jangan. Masa depan cerah sedang menunggumu di depan sana.", author: "Kakak Kelas" },
+      { text: "Hari ini berliterasi, esok hari menginspirasi banyak negeri.", author: "Slogan PLKV" }
+    ];
+
+    function updateQuotesOfTheDay() {
+      const dayOfYear = Math.floor(Date.now() / (1000 * 60 * 60 * 24));
+      const quoteIndex = dayOfYear % LIST_QUOTES.length;
+      const currentQuote = LIST_QUOTES[quoteIndex];
+      
+      document.getElementById('quote-text').innerText = `"${currentQuote.text}"`;
+      document.getElementById('quote-author').innerText = `— ${currentQuote.author}`;
+    }
+
+    function getBase64(file) {
+      return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onload = () => resolve(reader.result);
+        reader.onerror = error => reject(error);
+      });
+    }
+
+    const collections = ['tugas', 'pengumuman', 'catatan', 'absen', 'kas', 'curhat', 'galeri', 'guru', 'kontak', 'event', 'piket'];
+    collections.forEach(colName => {
+      onSnapshot(collection(firestoreDb, colName), (snapshot) => {
+        db[colName] = [];
+        snapshot.forEach((docSnap) => { db[colName].push({ id: docSnap.id, ...docSnap.data() }); });
+        renderAll();
+      });
+    });
+
+    window.kirimRekapWA = function() {
+      const tugasAktif = db.tugas.filter(t => !t.done);
+      if(tugasAktif.length === 0) {
+        alert("Semua tugas kelas sudah selesai dikerjakan! Tidak ada laporan.");
+        return;
+      }
+      let pesan = `*LAPORAN TUGAS AKTIF KELAS X PLKV*\n\nHalo Bapak/Ibu Wali Kelas, berikut rekap tugas siswa yang belum selesai:\n\n`;
+      tugasAktif.forEach((t, index) => {
+        pesan += `${index + 1}. *[${t.subject}]* ${t.title}\n⏰ Batas: ${t.date} (${t.time})\n\n`;
+      });
+      pesan += `_Dikirim otomatis via Sistem Dashboard Kelas X PLKV_`;
+      window.open(`https://wa.me/${NO_WA_WALI_KELAS}?text=${encodeURIComponent(pesan)}`, '_blank');
+    }
+
+    window.kirimAbsenWA = function() {
+      if(db.absen.length === 0) {
+        alert("Belum ada data presensi siswa hari ini.");
+        return;
+      }
+      let pesan = `*REKAP ABSENSI HARIAN KELAS X PLKV*\n\nBerikut data presensi siswa per hari ini:\n\n`;
+      db.absen.forEach((a) => {
+        pesan += `• *${a.name}* : _${a.status}_ (${a.timestamp} WIB)\n`;
+      });
+      pesan += `\n_Mohon diperiksa kembali, terima kasih._`;
+      window.open(`https://wa.me/${NO_WA_WALI_KELAS}?text=${encodeURIComponent(pesan)}`, '_blank');
+    }
+
+    function checkAutomaticHoliday() {
+      const hariIni = new Date();
+      const bulan = hariIni.getMonth() + 1;
+      const tanggal = hariIni.getDate();
+      const hariAngka = hariIni.getDay();
+
+      const statusTextEl = document.getElementById('holiday-status-text');
+      const iconBgEl = document.getElementById('holiday-icon-bg');
+
+      const liburTetap = {
+        "1-1": "Tahun Baru Masehi",
+        "1-5": "Hari Buruh Internasional",
+        "1-6": "Hari Lahir Pancasila",
+        "17-8": "Hari Kemerdekaan RI",
+        "25-12": "Hari Raya Natal"
+      };
+
+      const keyLibur = `${tanggal}-${bulan}`;
+
+      if (hariAngka === 0 || hariAngka === 6) {
+        statusTextEl.innerText = "Hari Libur Sekolah (Weekend) 🏖️";
+        statusTextEl.className = "font-extrabold text-sm mt-0.5 text-blue-600";
+        iconBgEl.className = "w-10 h-10 bg-blue-50 rounded-full flex items-center justify-center text-blue-500 shrink-0";
+      } else if (liburTetap[keyLibur]) {
+        statusTextEl.innerText = `Libur Nasional: ${liburTetap[keyLibur]} 🇮🇩`;
+        statusTextEl.className = "font-extrabold text-sm mt-0.5 text-rose-600";
+        iconBgEl.className = "w-10 h-10 bg-rose-50 rounded-full flex items-center justify-center text-rose-500 shrink-0";
+      } else {
+        statusTextEl.innerText = "Hari Sekolah Aktif (Silakan Belajar) 📝";
+        statusTextEl.className = "font-extrabold text-sm mt-0.5 text-emerald-600";
+        iconBgEl.className = "w-10 h-10 bg-emerald-50 rounded-full flex items-center justify-center text-emerald-500 shrink-0";
+      }
+    }
+
+    window.handleTaskSubmit = async function(e) {
+      e.preventDefault();
+      const sub = document.getElementById('f-subject').value;
+      const tit = document.getElementById('f-title').value;
+      const tgl = document.getElementById('f-date').value;
+      const jam = document.getElementById('f-time').value;
+      
+      const imgFile = document.getElementById('f-task-img').files[0];
+      const imgBase64 = imgFile ? await getBase64(imgFile) : "";
+      
+      await addDoc(collection(firestoreDb, 'tugas'), {
+        subject: sub, title: tit, desc: document.getElementById('f-desc').value,
+        date: tgl, time: jam, priority: document.getElementById('f-priority').value,
+        image: imgBase64, done: false, createdAt: Date.now()
+      });
+
+      if(confirm("Tugas disimpan! Kirim info tugas baru ini ke WhatsApp kamu?")) {
+        const textWA = `*ADA TUGAS BARU DI WEB KELAS!*\n\nMapel: *${sub}*\nJudul: ${tit}\nDeadline: ${tgl} jam ${jam}\n\n_Buka web kelas untuk detailnya!_`;
+        window.open(`https://wa.me/${NO_WA_SAYA}?text=${encodeURIComponent(textWA)}`, '_blank');
+      }
+
+      e.target.reset(); hideModal('task-modal');
+    }
+
+    window.handlePiketSubmit = async function(e) {
+      e.preventDefault();
+      await addDoc(collection(firestoreDb, 'piket'), {
+        name: document.getElementById('f-piket-name').value,
+        hari: document.getElementById('f-piket-hari').value,
+        createdAt: Date.now()
+      });
+      e.target.reset(); hideModal('piket-modal');
+    }
+
+    window.handleAbsenSubmit = async function(e) {
+      e.preventDefault();
+      const nm = document.getElementById('f-name').value;
+      const st = document.getElementById('f-status').value;
+      const skrg = new Date();
+      const jamMinit = String(skrg.getHours()).padStart(2, '0') + ':' + String(skrg.getMinutes()).padStart(2, '0');
+      
+      await addDoc(collection(firestoreDb, 'absen'), {
+        name: nm, status: st, timestamp: jamMinit, createdAt: Date.now()
+      });
+      e.target.reset(); hideModal('absen-modal');
+    }
+
+    window.handleAnnounceSubmit = async function(e) {
+      e.preventDefault();
+      const tglStr = new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'short' });
+      await addDoc(collection(firestoreDb, 'pengumuman'), {
+        title: document.getElementById('f-ann-title').value,
+        desc: document.getElementById('f-ann-desc').value,
+        date: tglStr, createdAt: Date.now()
+      });
+      e.target.reset(); hideModal('announce-modal');
+    }
+
+    window.handleEventSubmit = async function(e) {
+      e.preventDefault();
+      db.event.forEach(async (ev) => { await deleteDoc(doc(firestoreDb, 'event', ev.id)); });
+      await addDoc(collection(firestoreDb, 'event'), {
+        title: document.getElementById('f-event-title').value,
+        targetDate: document.getElementById('f-event-date').value,
+        createdAt: Date.now()
+      });
+      e.target.reset(); hideModal('event-modal');
+    }
+
+    window.handleCurhatSubmit = async function(e) {
+      e.preventDefault();
+      const txt = document.getElementById('f-curhat-text').value;
+      const tglStr = new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
+      
+      await addDoc(collection(firestoreDb, 'curhat'), {
+        text: txt, date: tglStr, createdAt: Date.now()
+      });
+
+      alert("Saran terkirim anonim!");
+      const textWA = `*KOTAK SARAN WEB KELAS X PLKV*\n\nSeseorang mengirim saran/kritik baru:\n\n_"${txt}"_\n\n_(Nama pengirim dirahasiakan oleh sistem)_`;
+      window.open(`https://wa.me/${NO_WA_SAYA}?text=${encodeURIComponent(textWA)}`, '_blank');
+
+      e.target.reset(); hideModal('curhat-modal');
+    }
+
+    window.handleNoteSubmit = async function(e) {
+      e.preventDefault();
+      await addDoc(collection(firestoreDb, 'catatan'), {
+        subject: document.getElementById('f-note-subject').value,
+        content: document.getElementById('f-note-content').value,
+        createdAt: Date.now()
+      });
+      e.target.reset(); hideModal('note-modal');
+    }
+
+    window.handleKasSubmit = async function(e) {
+      e.preventDefault();
+      await addDoc(collection(firestoreDb, 'kas'), {
+        type: document.getElementById('f-kas-type').value,
+        name: document.getElementById('f-kas-name').value,
+        amount: parseInt(document.getElementById('f-kas-amount').value || 0),
+        createdAt: Date.now()
+      });
+      e.target.reset(); hideModal('kas-modal');
+    }
+
+    window.handleGaleriSubmit = async function(e) {
+      e.preventDefault();
+      const imgFile = document.getElementById('f-gal-img').files[0];
+      const imgBase64 = imgFile ? await getBase64(imgFile) : "";
+      if(imgBase64) {
+        await addDoc(collection(firestoreDb, 'galeri'), {
+          title: document.getElementById('f-gal-title').value,
+          image: imgBase64, createdAt: Date.now()
+        });
+      }
+      e.target.reset(); hideModal('galeri-modal');
+    }
+
+    window.handleGuruSubmit = async function(e) {
+      e.preventDefault();
+      await addDoc(collection(firestoreDb, 'guru'), {
+        name: document.getElementById('f-guru-name').value,
+        subject: document.getElementById('f-guru-subject').value,
+        phone: document.getElementById('f-guru-phone').value || "-",
+        createdAt: Date.now()
+      });
+      e.target.reset(); hideModal('guru-modal');
+    }
+
+    window.handleKontakSubmit = async function(e) {
+      e.preventDefault();
+      await addDoc(collection(firestoreDb, 'kontak'), {
+        name: document.getElementById('f-kon-name').value,
+        role: document.getElementById('f-kon-role').value,
+        phone: document.getElementById('f-kon-phone').value,
+        createdAt: Date.now()
+      });
+      e.target.reset(); hideModal('kontak-modal');
+    }
+
+    window.toggleTask = async function(id) {
+      const targetTask = db.tugas.find(t => t.id === id);
+      if(targetTask) { await updateDoc(doc(firestoreDb, 'tugas', id), { done: !targetTask.done }); }
+    }
+
+    window.deleteItem = async function(type, id) {
+      if(confirm("Hapus data ini secara permanen?")) { await deleteDoc(doc(firestoreDb, type, id)); }
+    }
+
+    window.clearData = async function(type) {
+      if(confirm(`Hapus seluruh data ${type}?`)) {
+        db[type].forEach(async (item) => { await deleteDoc(doc(firestoreDb, type, item.id)); });
+      }
+    }
+
+    document.querySelectorAll('.view-tab').forEach(btn => {
+      btn.onclick = () => {
+        document.querySelectorAll('.view-tab').forEach(b => b.className = "view-tab py-3 px-1 text-sm font-semibold whitespace-nowrap transition flex items-center gap-2 text-slate-500 hover:text-blue-700");
+        document.querySelectorAll('.view-content').forEach(c => c.classList.add('hidden'));
+        btn.className = "view-tab view-tab-active py-3 px-1 text-sm font-semibold whitespace-nowrap transition flex items-center gap-2 text-slate-600";
+        document.getElementById(`view-${btn.dataset.view}`).classList.remove('hidden');
+      };
+    });
+
+    document.querySelectorAll('.subject-tab').forEach(btn => {
+      btn.onclick = () => {
+        document.querySelectorAll('.subject-tab').forEach(b => b.className = "subject-tab whitespace-nowrap px-4 py-1.5 rounded-xl text-xs font-semibold bg-slate-50 hover:bg-slate-100 text-slate-600 transition");
+        btn.className = "subject-tab tab-active whitespace-nowrap px-4 py-1.5 rounded-xl text-xs font-semibold transition";
+        selectedSubject = btn.dataset.subject; renderTugas();
+      };
+    });
+
+    window.showModal = function(id) { document.getElementById(id).classList.remove('hidden'); }
+    window.hideModal = function(id) { document.getElementById(id).classList.add('hidden'); }
+
+    function runEventCountdown() {
+      if (countdownInterval) clearInterval(countdownInterval);
+      const timerEl = document.getElementById('countdown-timer');
+      const titleEl = document.getElementById('countdown-event-title');
+      
+      if (!db.event || db.event.length === 0) {
+        timerEl.innerText = "Belum dikonfigurasi";
+        titleEl.innerText = "Countdown Event Kelas";
+        return;
+      }
+      
+      const currentEvent = db.event[0];
+      titleEl.innerText = "Menuju: " + currentEvent.title;
+      const targetTime = new Date(currentEvent.targetDate).getTime();
+
+      countdownInterval = setInterval(() => {
+        const selisih = targetTime - Date.now();
+        if (selisih <= 0) {
+          timerEl.innerText = "Hari H Event Telah Tiba! 🎉";
+          clearInterval(countdownInterval);
+        } else {
+          const hari = Math.floor(selisih / (1000 * 60 * 60 * 24));
+          const jam = Math.floor((selisih % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const menit = Math.floor((selisih % (1000 * 60 * 60)) / (1000 * 60));
+          const detik = Math.floor((selisih % (1000 * 60)) / 1000);
+          timerEl.innerText = `${hari} Hari, ${jam} Jam, ${menit} Menit, ${detik} Detik lagi`;
+        }
+      }, 1000);
+    }
+
+    function renderTugas() {
+      const list = document.getElementById('task-list');
+      const empty = document.getElementById('empty-msg');
+      list.innerHTML = "";
+      const filtered = db.tugas.filter(t => selectedSubject === 'all' || t.subject === selectedSubject);
+      if(filtered.length === 0) { empty.classList.remove('hidden'); } else {
+        empty.classList.add('hidden');
+        filtered.forEach(t => {
+          const div = document.createElement('div');
+          div.className = `bg-white rounded-2xl p-5 border border-slate-100 shadow-sm relative transition hover:shadow-md priority-${t.priority} ${t.done ? 'task-done' : ''}`;
+          div.innerHTML = `
+            <div class="flex items-start justify-between gap-4 mb-2">
+              <div>
+                <span class="text-[10px] font-extrabold uppercase tracking-widest px-2 py-0.5 rounded bg-slate-100 text-slate-600">${t.subject}</span>
+                <h3 class="font-bold text-slate-900 mt-1.5 leading-snug">${t.title}</h3>
+              </div>
+              <button onclick="deleteItem('tugas', '${t.id}')" class="text-slate-300 hover:text-rose-500"><i data-lucide="trash-2" class="w-4 h-4"></i></button>
+            </div>
+            <p class="text-xs text-slate-500 mb-4 line-clamp-3">${t.desc || 'Tidak ada deskripsi.'}</p>
+            ${t.image ? `<img src="${t.image}" class="w-full h-32 object-cover rounded-xl mb-3 border">` : ''}
+            <div class="flex items-center justify-between border-t border-slate-100 pt-3 mt-2">
+              <div class="flex items-center gap-1.5 text-slate-400"><i data-lucide="calendar" class="w-3.5 h-3.5"></i><span class="text-[11px] font-bold">${t.date} &bull; ${t.time}</span></div>
+              <button onclick="toggleTask('${t.id}')" class="flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-bold ${t.done ? 'bg-slate-100 text-slate-500' : 'bg-blue-50 text-blue-600'}">
+                <i data-lucide="${t.done ? 'rotate-ccw' : 'check'}" class="w-3.5 h-3.5"></i> ${t.done ? 'Batal' : 'Selesai'}
+              </button>
+            </div>
+          `;
+          list.appendChild(div);
+        });
+      }
+      lucide.createIcons();
+    }
+
+    function renderPiket() {
+      const container = document.getElementById('piket-grid-container');
+      container.innerHTML = "";
+      const daftarHari = ["Senin", "Selasa", "Rabu", "Kamis", "Jumat"];
+      const hariIniAngka = new Date().getDay();
+      const namaHariIniIndo = daftarHari[hariIniAngka - 1] || "Libur";
+
+      daftarHari.forEach(hari => {
+        const timPiketHari = db.piket.filter(p => p.hari.toLowerCase() === hari.toLowerCase());
+        const isHariIni = (hari === namaHariIniIndo);
+        const card = document.createElement('div');
+        card.className = `p-4 rounded-xl border shadow-sm ${isHariIni ? 'bg-blue-50/70 border-blue-200 ring-2 ring-blue-500/20' : 'bg-white border-slate-100'}`;
+        
+        let listSiswaHtml = "";
+        if(timPiketHari.length === 0) {
+          listSiswaHtml = `<p class="text-xs text-slate-400 italic">Belum ada anggota</p>`;
+        } else {
+          timPiketHari.forEach(p => {
+            listSiswaHtml += `<div class="flex items-center justify-between py-1 text-xs font-semibold text-slate-700"><span>• ${p.name}</span><button onclick="deleteItem('piket', '${p.id}')" class="text-slate-300 hover:text-rose-500"><i data-lucide="x" class="w-3 h-3"></i></button></div>`;
+          });
+        }
+        card.innerHTML = `<div class="flex items-center justify-between border-b pb-2 mb-2"><h3 class="font-bold text-xs ${isHariIni ? 'text-blue-700' : 'text-slate-800'} uppercase">${hari}</h3>${isHariIni ? `<span class="bg-blue-600 text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full uppercase tracking-wider">Hari Ini</span>` : ''}</div><div class="space-y-1">${listSiswaHtml}</div>`;
+        container.appendChild(card);
+      });
+      lucide.createIcons();
+    }
+
+    function renderAll() {
+      document.getElementById('stat-total-num').innerText = db.tugas.length;
+      document.getElementById('stat-done-num').innerText = db.tugas.filter(t => t.done).length;
+      document.getElementById('stat-urgent-num').innerText = db.tugas.filter(t => t.priority === 'urgent' && !t.done).length;
+      document.getElementById('stat-attend-num').innerText = db.absen.filter(a => a.status === 'Hadir').length;
+
+      const activeDeadlines = db.tugas.filter(t => !t.done).sort((a,b) => new Date(a.date + 'T' + a.time) - new Date(b.date + 'T' + b.time));
+      const bannerEl = document.getElementById('urgent-deadline-banner');
+      if(activeDeadlines.length > 0) {
+        bannerEl.classList.remove('hidden');
+        document.getElementById('countdown-text').innerHTML = `<span class="bg-white text-rose-600 text-[10px] font-extrabold px-1.5 py-0.5 rounded mr-1.5 uppercase tracking-wide">${activeDeadlines[0].subject}</span> ${activeDeadlines[0].title} &mdash; Batas pengumpulan: <b class="underline">${activeDeadlines[0].date} (${activeDeadlines[0].time})</b>`;
+      } else { 
+        bannerEl.classList.add('hidden'); 
+      }
+
+      renderTugas();
+      renderPiket();
+      runEventCountdown();
+      checkAutomaticHoliday();
+      updateQuotesOfTheDay(); // Jalankan Update Quotes
+
+      // Mading Pengumuman
+      const annList = document.getElementById('announce-list');
+      document.getElementById('announce-empty').className = db.pengumuman.length === 0 ? "text-center py-12 bg-white rounded-2xl border border-dashed border-slate-200" : "hidden";
+      annList.innerHTML = "";
+      db.pengumuman.forEach(p => {
+        annList.innerHTML += `<div class="bg-white p-4 rounded-xl border flex justify-between items-start"><div><span class="text-[10px] bg-amber-100 text-amber-800 font-bold px-1.5 py-0.5 rounded">${p.date}</span><h4 class="font-bold text-slate-800 text-sm mt-1">${p.title}</h4><p class="text-xs text-slate-500 mt-1 whitespace-pre-line">${p.desc}</p></div><button onclick="deleteItem('pengumuman', '${p.id}')" class="text-slate-300 hover:text-rose-500"><i data-lucide="trash-2" class="w-4 h-4"></i></button></div>`;
+      });
+
+      // Catatan Rangkuman
+      const noteList = document.getElementById('note-list');
+      document.getElementById('note-empty').className = db.catatan.length === 0 ? "text-center py-12 bg-white rounded-2xl border border-dashed border-slate-200" : "hidden";
+      noteList.innerHTML = "";
+      db.catatan.forEach(n => {
+        noteList.innerHTML += `<div class="bg-amber-50/60 p-4 rounded-xl border border-amber-100 relative shadow-sm"><div class="flex justify-between items-center mb-2"><span class="text-xs font-bold text-violet-700 uppercase">${n.subject}</span><button onclick="deleteItem('catatan', '${n.id}')" class="text-slate-300 hover:text-rose-500"><i data-lucide="trash-2" class="w-4 h-4"></i></button></div><p class="text-xs text-slate-700 font-medium whitespace-pre-line">${n.content}</p></div>`;
+      });
+
+      // Absen Log List
+      const abList = document.getElementById('absen-list');
+      document.getElementById('absen-empty').className = db.absen.length === 0 ? "text-center py-8 text-slate-400 text-sm italic" : "hidden";
+      abList.innerHTML = "";
+      db.absen.forEach(a => {
+        let bc = "bg-emerald-100 text-emerald-800";
+        if(a.status === "Izin") bc = "bg-blue-100 text-blue-800";
+        if(a.status === "Sakit") bc = "bg-amber-100 text-amber-800";
+        if(a.status === "Alpha") bc = "bg-rose-100 text-rose-800";
+        abList.innerHTML += `<div class="py-3 flex items-center justify-between text-sm"><div class="flex items-center gap-3"><span class="w-2 h-2 rounded-full ${a.status === 'Hadir'?'bg-emerald-500':'bg-rose-400'}"></span><span class="font-semibold text-slate-800">${a.name}</span></div><div class="flex items-center gap-4"><span class="text-xs px-2 py-0.5 rounded-full font-bold ${bc}">${a.status}</span><span class="text-xs text-slate-400 font-medium">${a.timestamp}</span></div></div>`;
+      });
+
+      // Kas Keuangan & Kalkulasi Fitur No 5
+      const kasList = document.getElementById('kas-list');
+      document.getElementById('kas-empty').className = db.kas.length === 0 ? "text-center py-12 bg-white rounded-2xl border border-dashed border-slate-200" : "hidden";
+      kasList.innerHTML = ""; 
+      
+      let totalSaldo = 0;
+      let totalMasuk = 0;
+      let totalKeluar = 0;
+
+      db.kas.forEach(k => {
+        if(k.type === 'masuk') {
+          totalSaldo += k.amount;
+          totalMasuk += k.amount;
+        } else {
+          totalSaldo -= k.amount;
+          totalKeluar += k.amount;
+        }
+        kasList.innerHTML += `<div class="bg-white p-3 rounded-xl border flex items-center justify-between"><div class="flex items-center gap-3"><div class="p-2 rounded-lg ${k.type === 'masuk' ? 'bg-emerald-50 text-emerald-600' : 'bg-rose-50 text-rose-600'}"><i data-lucide="${k.type === 'masuk' ? 'trending-up' : 'trending-down'}" class="w-4 h-4"></i></div><div><h5 class="text-xs font-bold text-slate-800">${k.name}</h5><span class="text-[10px] text-slate-400 font-semibold uppercase">${k.type}</span></div></div><div class="flex items-center gap-4"><span class="text-xs font-bold ${k.type === 'masuk' ? 'text-emerald-600' : 'text-rose-600'}">+${k.type === 'masuk' ? '' : '-'} Rp ${k.amount.toLocaleString('id-ID')}</span><button onclick="deleteItem('kas', '${k.id}')" class="text-slate-300 hover:text-rose-500"><i data-lucide="trash-2" class="w-3.5 h-3.5"></i></button></div></div>`;
+      });
+      
+      // Update data Teks Transparansi ke Layar
+      document.getElementById('kas-saldo').innerText = `Rp ${totalSaldo.toLocaleString('id-ID')}`;
+      document.getElementById('kas-total-masuk').innerText = `Rp ${totalMasuk.toLocaleString('id-ID')}`;
+      document.getElementById('kas-total-keluar').innerText = `Rp ${totalKeluar.toLocaleString('id-ID')}`;
+
+      // Kotak Saran Anonymous
+      const curhatList = document.getElementById('curhat-list');
+      document.getElementById('curhat-empty').className = db.curhat.length === 0 ? "text-center py-12 bg-white rounded-2xl border border-dashed border-slate-200" : "hidden";
+      curhatList.innerHTML = "";
+      db.curhat.forEach(c => {
+        curhatList.innerHTML += `<div class="bg-white p-4 rounded-xl border border-fuchsia-100 shadow-sm flex flex-col justify-between"><p class="text-xs text-slate-700 italic font-medium whitespace-pre-line">"${c.text}"</p><div class="flex justify-between items-center mt-4 pt-2 border-t border-slate-50"><span class="text-[10px] font-bold text-fuchsia-500 bg-fuchsia-50 px-2 py-0.5 rounded-full"><i data-lucide="user-x" class="w-3 h-3 inline mr-1"></i>Anonymous</span><div class="flex items-center gap-2"><span class="text-[10px] text-slate-400">${c.date}</span><button onclick="deleteItem('curhat', '${c.id}')" class="text-slate-300 hover:text-rose-500"><i data-lucide="trash-2" class="w-3.5 h-3.5"></i></button></div></div></div>`;
+      });
+
+      // Galeri Foto
+      const galList = document.getElementById('galeri-list');
+      document.getElementById('galeri-empty').className = db.galeri.length === 0 ? "text-center py-12 bg-white rounded-2xl border border-dashed border-slate-200" : "hidden";
+      galList.innerHTML = "";
+      db.galeri.forEach(g => {
+        galList.innerHTML += `<div class="bg-white rounded-xl border p-2 shadow-sm"><img src="${g.image}" class="w-full h-32 object-cover rounded-lg"><div class="mt-2 flex items-center justify-between"><span class="text-xs font-bold text-slate-700 truncate max-w-[80%] block">${g.title}</span><button onclick="deleteItem('galeri', '${g.id}')" class="text-slate-300 hover:text-rose-500"><i data-lucide="trash-2" class="w-3.5 h-3.5"></i></button></div></div>`;
+      });
+
+      // Data Guru
+      const guList = document.getElementById('guru-list');
+      document.getElementById('guru-empty').className = db.guru.length === 0 ? "text-center py-12 bg-white rounded-2xl border border-dashed border-slate-200" : "hidden";
+      guList.innerHTML = "";
+      db.guru.forEach(gu => {
+        let cleanPhone = gu.phone.replace(/[^0-9]/g, '');
+        if (cleanPhone.startsWith('0')) { cleanPhone = '62' + cleanPhone.slice(1); }
+        const waLink = cleanPhone !== "" ? `https://wa.me/${cleanPhone}` : "#";
+        const waButton = cleanPhone !== "" 
+          ? `<a href="${waLink}" target="_blank" class="flex items-center gap-1 px-3 py-1.5 bg-emerald-500 hover:bg-emerald-600 text-white rounded-xl text-[10px] font-bold shadow-sm transition mt-2 inline-flex"><i data-lucide="message-circle" class="w-3.5 h-3.5"></i> CHAT WA</a>`
+          : `<span class="text-[10px] text-slate-400 block mt-2 italic">No. WA Kosong</span>`;
+
+        guList.innerHTML += `<div class="bg-white p-4 rounded-xl border flex justify-between items-center"><div class="flex items-center gap-3"><div class="w-9 h-9 rounded-full bg-indigo-50 text-indigo-600 flex items-center justify-center font-bold text-xs"><i data-lucide="user" class="w-4 h-4"></i></div><div><h4 class="font-bold text-slate-900 text-xs">${gu.name}</h4><p class="text-[11px] text-indigo-600 font-bold uppercase mt-0.5">${gu.subject}</p>${waButton}</div></div><button onclick="deleteItem('guru', '${gu.id}')" class="text-slate-300 hover:text-rose-500"><i data-lucide="trash-2" class="w-4 h-4"></i></button></div>`;
+      });
+
+      // Buku Kontak Teman
+      const konList = document.getElementById('kontak-list');
+      document.getElementById('kontak-empty').className = db.kontak.length === 0 ? "text-center py-12 bg-white rounded-2xl border border-dashed border-slate-200" : "hidden";
+      konList.innerHTML = "";
+      db.kontak.forEach(ko => {
+        konList.innerHTML += `<div class="bg-white p-3.5 rounded-xl border flex justify-between items-center"><div><h4 class="font-bold text-slate-800 text-xs">${ko.name}</h4><span class="text-[10px] font-bold px-1.5 py-0.5 rounded bg-blue-50 text-blue-600 inline-block mt-1">${ko.role}</span><span class="text-[11px] text-slate-400 block mt-1.5 font-medium"><i data-lucide="phone" class="w-3 h-3 inline mr-1"></i>${ko.phone}</span></div><button onclick="deleteItem('kontak', '${ko.id}')" class="text-slate-300 hover:text-rose-500"><i data-lucide="trash-2" class="w-4 h-4"></i></button></div>`;
+      });
+      lucide.createIcons();
+    }
+
+    window.onload = renderAll;
   </script>
+</body>
 </html>
