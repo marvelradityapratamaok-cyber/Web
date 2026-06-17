@@ -2,71 +2,444 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index6.css">
-</head>
-<nav class="navbar" data-aos="fade-down" data-aos-duration="1000">
-        <!-- Logo / Brand -->
-        <div class="logo"><i>𝙈𝙮𝙬𝙚𝙗</i></div>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-        <!-- Menu Links (4 Menu) -->
+        html {
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+            scrollbar-width: thin;
+            scrollbar-color: #ffffff #ffffff;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* --- MEDIA QUERY MOBILE (< 480px) --- */
+        @media (max-width: 480px) {
+            html {
+                
+                overflow-x: hidden;
+            }
+
+            body {
+                background-color: #000000;
+                width: 100%;
+            }
+
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                backdrop-filter: blur(10px);
+                background-color: rgba(255, 255, 255, 0);
+                color: white;
+                padding: 1rem 2rem;
+                position: fixed;
+                width: 100%;
+                top: 0;
+                z-index: 9000;
+                border-bottom: 2px solid #ffffff;
+            }
+
+            .logo {
+                font-size: 1.3rem;
+                font-weight: bold;
+                color: white;
+                text-decoration: none;
+            }
+
+            .nav-links {
+                display: flex;
+                list-style: none;
+                gap: 20px;
+            }
+
+            .nav-links li a {
+                text-decoration: none;
+                color: white;
+                font-size: 1rem;
+                transition: color 0.3s;
+            }
+
+            .nav-links li a:hover {
+                color: #979393;
+            }
+
+            .hamburger {
+                display: none;
+                cursor: pointer;
+            }
+
+            .bar {
+                display: block;
+                width: 25px;
+                height: 3px;
+                margin: 5px auto;
+                background-color: white;
+                transition: all 0.3s ease-in-out;
+            }
+
+            .site-footer {
+                background-color: #363636;
+                color: #ffffff;
+                padding: 40px 0 20px 0;
+                font-family: Arial, sans-serif;
+                padding-top: 146px;
+            }
+
+            .footer-container {
+                width: 85%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+
+            .footer-col {
+                flex: 1;
+                min-width: 250px;
+                margin-bottom: 20px;
+                text-align: left;
+            }
+
+            .footer-col h3 {
+                margin-bottom: 15px;
+                font-size: 18px;
+                border-bottom: 2px solid #ffffff;
+                display: inline-block;
+                padding-bottom: 5px;
+            }
+
+            .footer-col ul {
+                list-style: none;
+                padding: 0;
+            }
+
+            .footer-col ul li {
+                margin-bottom: 10px;
+            }
+
+            .footer-col ul li a {
+                color: #bdc3c7;
+                text-decoration: none;
+                transition: color 0.3s;
+            }
+
+            .footer-col ul li a:hover {
+                color: #ffffff;
+            }
+
+            .social-links a {
+                color: #ffffff;
+                background-color: #4d4d4d;
+                padding: 10px;
+                margin-right: 10px;
+                text-decoration: none;
+                border-radius: 50%;
+                transition: background 0.3s;
+            }
+
+            .social-links a:hover {
+                background-color: #ffffff;
+                color: #000000;
+            }
+
+            .footer-bottom {
+                text-align: center;
+                margin-top: 30px;
+                border-top: 1px solid #ffffff;
+                padding-top: 20px;
+                font-size: 14px;
+            }
+        }
+
+         /* ================= CONTACT SECTION (RESPONSIVE GRID) ================= */
+        .contact-section {
+            display: grid;
+            grid-template-columns: 1fr; /* Default mobile: 1 kolom */
+            gap: 30px;
+            background-color: #ffffff;
+            padding: 24px;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+            margin: 40px 0;
+        }
+
+        .contact-info h2, .contact-form h2 {
+            color: #0f172a;
+            font-size: 1.5rem;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        .contact-info p {
+            color: #64748b;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Form Controls */
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: #334155;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px 14px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            color: #0f172a;
+            background-color: #f8fafc;
+            box-sizing: border-box;
+            transition: all 0.2s ease;
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            border-color: #25d366;
+            background-color: #ffffff;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(37, 211, 102, 0.15);
+        }
+
+        .btn-wa {
+            width: 100%;
+            padding: 12px;
+            background-color: #25d366;
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .btn-wa:hover {
+            background-color: #1ea952;
+        }
+
+       
+        /* ================= BREAKPOINTS (MEDIA QUERIES) ================= */
+       
+        /* --- MEDIA QUERY DESKTOP (> 1201px) --- */
+        @media (min-width: 1201px) {
+            html {
+                overflow-y: hidden;
+                overflow-x: hidden;
+            }
+
+            body {
+                background-color: #000000;
+                width: 100%;
+            }
+
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                backdrop-filter: blur(10px);
+                background-color: rgba(255, 255, 255, 0);
+                color: white;
+                padding: 1rem 2rem;
+                position: fixed;
+                width: 100%;
+                top: 0;
+                z-index: 9000;
+                border-bottom: 2px solid #ffffff;
+            }
+
+            .logo {
+                font-size: 1.3rem;
+                font-weight: bold;
+                color: white;
+                text-decoration: none;
+            }
+
+            .nav-links {
+                display: flex;
+                list-style: none;
+                gap: 20px;
+            }
+
+            .nav-links li a {
+                text-decoration: none;
+                color: white;
+                font-size: 1rem;
+                transition: color 0.3s;
+            }
+
+            .nav-links li a:hover {
+                color: #979393;
+            }
+
+            .hamburger {
+                display: none;
+                cursor: pointer;
+            }
+
+            .bar {
+                display: block;
+                width: 25px;
+                height: 3px;
+                margin: 5px auto;
+                background-color: white;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+
+        /* --- MEDIA QUERY TABLET (max 768px) --- */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+
+            .nav-links {
+                position: fixed;
+                left: -100%;
+                top: 60px;
+                flex-direction: column;
+                background-color: #000;
+                width: 100%;
+                height: 100vh;
+                text-align: center;
+                padding-top: 50px;
+                transition: 0.5s;
+            }
+
+            .nav-links.active {
+                left: 0;
+            }
+
+            .hamburger.active .bar:nth-child(2) { opacity: 0; }
+            .hamburger.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+            .hamburger.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+        }
+
+        audio { display: none; }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar" data-aos="fade-down" data-aos-duration="1000">
+        <div class="logo"><i>𝙈𝙮𝙬𝙚𝙙</i></div>
         <ul class="nav-links">
             <li><a href="index2.html">Home</a></li>
-             <li><a href="index3.html">About</a></li>
+            <li><a href="index3.html">About</a></li>
             <li><a href="index4.html">Galeri</a></li>
-            <li><a href="index5.html"  >Services</a></li>
+            <li><a href="index5.html">Services</a></li>
             <li><a href="index6.html">Kontak</a></li>
         </ul>
-
-        <!-- Hamburger Icon (Untuk Mobile) -->
         <div class="hamburger">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
         </div>
     </nav>
-<body>
-    
 
-
-  <footer class="site-footer">
-    <div class="footer-container">
-        <!-- Bagian Kiri: Tentang/Logo -->
-        <div class="footer-col">
-            <h3>Nama Website</h3>
-            <p class="akhir">Membangun pengalaman web yang luar biasa dan fungsional.</p>
-        </div>
-
-        <!-- Bagian Tengah: Link Cepat -->
-        <div class="footer-col">
-            <h3>Tautan</h3>
-            <ul>
-                <li><a href="#">Beranda</a></li>
-                <li><a href="#">Layanan</a></li>
-                <li><a href="#">Portofolio</a></li>
-                <li><a href="#">Kontak</a></li>
-            </ul>
-        </div>
-
-        <!-- Bagian Kanan: Sosial Media -->
-        <div class="footer-col">
-            <h3>Ikuti Kami</h3>
-            <div class="social-links">
-                <a href="#">FB</a>
-                <a href="#">IG</a>
-                <a href="#">WA</a>
+        <section class="contact-section">
+            <div class="contact-info">
+                <h2>Tertarik Bekerja Sama?</h2>
+                <p>Silakan isi formulir di samping untuk mengajukan penawaran proyek, diskusi bisnis, atau sekadar menyapa saya.</p>
+                <p>Setelah menekan tombol kirim, obrolan akan langsung diteruskan ke WhatsApp pribadi saya untuk respon yang lebih instan.</p>
             </div>
-        </div>
-    </div>
+
+            <div class="contact-form">
+                <h2>Kirim Pesan Langsung</h2>
+                <form id="portfolioContactForm">
+                    <div class="form-group">
+                        <label for="inputNama">Nama Lengkap</label>
+                        <input type="text" id="inputNama" placeholder="Masukkan nama Anda..." required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputSubjek">Tujuan / Subjek</label>
+                        <input type="text" id="inputSubjek" placeholder="Contoh: Penawaran Kerja / Proyek..." required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputPesan">Isi Pesan Anda</label>
+                        <textarea id="inputPesan" rows="4" placeholder="Ketik rincian pesan di sini..." required></textarea>
+                    </div>
+
+                    <button type="button" onclick="prosesKirimWA()" class="btn-wa">
+                        💬 Kirim via WhatsApp
+                    </button>
+                </form>
+            </div>
+        </section>
 
 
-    <!-- Copyright -->
-    <div class="footer-bottom">
-        <p class="akhir">&copy;  Myweb.2026.</p>
-    </div>
-</footer>
 
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navLinks.classList.toggle("active");
+        });
+
+        document.querySelectorAll(".nav-links li a").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navLinks.classList.remove("active");
+        }));
+
+        // Logika Audio dengan pengaman if statement
+        const judul = document.getElementById('judulBunyi');
+        const audio = new Audio('audio.wav');
+
+        if (judul) {
+            judul.addEventListener('click', function() {
+                audio.play();
+            });
+        }
+
+         function prosesKirimWA() {
+            // SILAKAN GANTI angka di bawah dengan nomor WhatsApp kamu sendiri.
+            // Gunakan format kode negara (62 untuk Indonesia) tanpa spasi dan tanda '+'
+            const whatsappNumber = "6281945497854"; 
+
+            const namaValue = document.getElementById('inputNama').value.trim();
+            const subjekValue = document.getElementById('inputSubjek').value.trim();
+            const pesanValue = document.getElementById('inputPesan').value.trim();
+
+            if (namaValue === "" || subjekValue === "" || pesanValue === "") {
+                alert("Mohon maaf, semua kolom harus diisi terlebih dahulu!");
+                return;
+            }
+
+            // Membangun teks terstruktur rapi untuk WhatsApp (%0A artinya baris baru)
+            const textResult = `Halo, saya *${namaValue}*%0A%0A` +
+                               `*Keperluan:* ${subjekValue}%0A` +
+                               `*Pesan:*%0A${pesanValue}`;
+
+            const finalUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${textResult}`;
+
+            // Membuka tautan WhatsApp di tab baru
+            window.open(finalUrl, '_blank');
+        }
+    </script>
 </body>
-<script src="index.js"></script>
 </html>
