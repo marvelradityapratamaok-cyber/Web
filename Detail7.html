@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Desain</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f7;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Bagian Atas / Header untuk Tombol Kembali */
+        .top-bar {
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px 20px 10px 20px;
+        }
+
+        .close-button {
+            text-decoration: none;
+            color: #333;
+            font-size: 28px;
+            font-weight: bold;
+            line-height: 1;
+            transition: color 0.2s;
+            padding: 5px 10px;
+        }
+
+        .close-button:hover {
+            color: #ff4d4d;
+        }
+
+        /* Kontainer Utama Detail Desain */
+        .detail-container {
+            width: 90%;
+            max-width: 800px;
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            margin-bottom: 40px;
+        }
+
+        /* Area Foto Desain */
+        .image-wrapper {
+            width: 100%;
+            background-color: #e5e5e5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .design-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+
+        /* Bagian Teks / Detail */
+        .content-wrapper {
+            padding: 30px;
+        }
+
+        .design-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #111;
+        }
+
+        .design-meta {
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 20px;
+        }
+
+        .design-description {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <a href="index4.html" class="close-button" title="Kembali">&times;</a>
+    </div>
+
+    <main class="detail-container">
+        
+        <div class="image-wrapper">
+            <img src="WhatsApp Image 2026-01-16 at 12.53.27 (1).jpeg" alt="Foto Desain" class="design-image">
+        </div>
+
+        <div class="content-wrapper">
+            <h1 class="design-title">Judul Desain Kreatif</h1>
+            <p class="design-meta">Dipublikasikan pada: 14 Juni 2026 | Kategori: UI/UX & Web Design</p>
+            <hr style="border: 0; border-top: 1px solid #eee; margin-bottom: 20px;">
+            
+            <p class="design-description">
+                Ini adalah tempat untuk menuliskan detail lebih lanjut mengenai desain kamu. Kamu bisa menceritakan konsep, warna yang digunakan, tools yang dipakai, atau proses pembuatan desain ini agar pengunjung web bisa lebih paham.
+            </p>
+        </div>
+
+    </main>
+
+</body>
+</html>
